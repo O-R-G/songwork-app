@@ -1,0 +1,50 @@
+ffmpeg version 3.2.4 Copyright (c) 2000-2017 the FFmpeg developers
+  built with Apple LLVM version 8.0.0 (clang-800.0.42.1)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.2.4 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-libmp3lame --enable-libx264 --enable-libxvid --enable-opencl --disable-lzma --enable-vda
+  libavutil      55. 34.101 / 55. 34.101
+  libavcodec     57. 64.101 / 57. 64.101
+  libavformat    57. 56.101 / 57. 56.101
+  libavdevice    57.  1.100 / 57.  1.100
+  libavfilter     6. 65.100 /  6. 65.100
+  libavresample   3.  1.  0 /  3.  1.  0
+  libswscale      4.  2.100 /  4.  2.100
+  libswresample   2.  3.100 /  2.  3.100
+  libpostproc    54.  1.100 / 54.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/reinfurt/Documents/Softwares/Processing/songworks/spectrogram/out/in-spectrogram.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.56.101
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+  Duration: 00:00:39.33, start: 0.000000, bitrate: 422 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 720x1280, 419 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Guessed Channel Layout for Input Stream #1.0 : stereo
+Input #1, wav, from '/Users/reinfurt/Documents/Softwares/Processing/songworks/data/in.wav':
+  Metadata:
+    encoder         : Lavf57.56.101
+  Duration: 00:01:16.00, bitrate: 512 kb/s
+    Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, stereo, s16, 512 kb/s
+Output #0, mp4, to '/Users/reinfurt/Documents/Softwares/Processing/songworks/spectrogram/temp-with-audio.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+    encoder         : Lavf57.56.101
+    Stream #0:0: Audio: aac (LC) ([64][0][0][0] / 0x0040), 16000 Hz, stereo, fltp, 128 kb/s
+    Metadata:
+      encoder         : Lavc57.64.101 aac
+    Stream #0:1(und): Video: h264 (High) ([33][0][0][0] / 0x0021), yuv420p, 720x1280, q=2-31, 419 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #1:0 (pcm_s16le) -> apad
+  apad -> Stream #0:0 (aac)
+  Stream #0:0 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame= 1120 fps=0.0 q=-1.0 size=    2547kB time=00:00:37.31 bitrate= 559.2kbits/s speed=74.5x    frame= 1180 fps=0.0 q=-1.0 Lsize=    2652kB time=00:00:39.36 bitrate= 551.9kbits/s speed=73.2x    
+video:2014kB audio:614kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.894115%
+[aac @ 0x7f8cab001200] Qavg: 13340.838
