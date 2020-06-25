@@ -30,4 +30,8 @@ rm _*.wav
 open -a "/Applications/Quicktime Player.app" ../spectrogram/out/*.mp4
 echo "done."
 
+# ** to do **
+# generate animated gif?
+# although perhaps better if we hear the sounds on www, so .mov
+
 exit
