@@ -10,15 +10,15 @@ ffmpeg version 4.3 Copyright (c) 2000-2020 the FFmpeg developers
   libswscale      5.  7.100 /  5.  7.100
   libswresample   3.  7.100 /  3.  7.100
   libpostproc    55.  7.100 / 55.  7.100
-Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/reinfurt/Documents/Softwares/Processing/songworks/_make/../spectrogram/out/in-spectrogram.mp4':
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/reinfurt/Documents/Softwares/Processing/songworks/spectrogram/out/in-spectrogram.mp4':
   Metadata:
     major_brand     : isom
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf58.45.100
     comment         : Made with Video Export for Processing - https://git.io/vAXLk
-  Duration: 00:00:29.43, start: 0.000000, bitrate: 412 kb/s
-    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 720x1280, 409 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+  Duration: 00:00:28.43, start: 0.000000, bitrate: 799 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 720x1280, 795 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
     Metadata:
       handler_name    : VideoHandler
 Guessed Channel Layout for Input Stream #1.0 : stereo
@@ -32,7 +32,7 @@ Stream mapping:
   apad -> Stream #0:0 (aac)
   Stream #0:0 -> #0:1 (copy)
 Press [q] to stop, [?] for help
-Output #0, mp4, to '/Users/reinfurt/Documents/Softwares/Processing/songworks/_make/../spectrogram/temp-with-audio.mp4':
+Output #0, mp4, to '/Users/reinfurt/Documents/Softwares/Processing/songworks/spectrogram/temp-with-audio.mp4':
   Metadata:
     major_brand     : isom
     minor_version   : 512
@@ -42,9 +42,9 @@ Output #0, mp4, to '/Users/reinfurt/Documents/Softwares/Processing/songworks/_ma
     Stream #0:0: Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s
     Metadata:
       encoder         : Lavc58.91.100 aac
-    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 720x1280, q=2-31, 409 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 720x1280, q=2-31, 795 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
     Metadata:
       handler_name    : VideoHandler
-frame=  883 fps=0.0 q=-1.0 Lsize=    1958kB time=00:00:29.44 bitrate= 544.7kbits/s speed= 164x    
-video:1470kB audio:470kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.927043%
-[aac @ 0x7fc93d829800] Qavg: 4937.144
+frame=  853 fps=0.0 q=-1.0 Lsize=    3234kB time=00:00:28.41 bitrate= 932.3kbits/s speed= 119x    
+video:2763kB audio:454kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.541132%
+[aac @ 0x7fb36d012800] Qavg: 5108.027
