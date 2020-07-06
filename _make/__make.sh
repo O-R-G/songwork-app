@@ -21,9 +21,10 @@ PATH_TO=$(pwd)
 for f in _*.wav
     do 
         echo "Processing ******** '$f'"
+echo $PATH_TO
         cp "$f" ../data/in.wav
         # pjava ../spectrogram/.
-        processing-java --sketch=$PATH_TO/../spectrogram --run
+        /processing/processing-java --sketch=$PATH_TO/../spectrogram --run
         ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=720:720:0:720" $PATH_TO/../spectrogram/out/"$f".mp4
         rm ../spectrogram/out/in-spectrogram.mp4
 done

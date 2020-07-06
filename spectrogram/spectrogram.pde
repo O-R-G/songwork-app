@@ -41,7 +41,7 @@ int pointer;                // current index in verdicts[]
 int counter;                // draw loop
 float display_scale = 1.0;  // adjust to match size() [0.5,1.0,1.5]
 Boolean playing = false;
-String data_path = "/Users/reinfurt/Documents/Softwares/Processing/songworks/data/";
+String data_path = "/home/reinfurt/sketchbook/songworks/data/";
 String file_name = "in.wav";
 String sketch_name = "spectrogram";
 
