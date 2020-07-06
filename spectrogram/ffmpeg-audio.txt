@@ -1,15 +1,15 @@
-ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
-  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
-  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
-  libavutil      55. 78.100 / 55. 78.100
-  libavcodec     57.107.100 / 57.107.100
-  libavformat    57. 83.100 / 57. 83.100
-  libavdevice    57. 10.100 / 57. 10.100
-  libavfilter     6.107.100 /  6.107.100
-  libavresample   3.  7.  0 /  3.  7.  0
-  libswscale      4.  8.100 /  4.  8.100
-  libswresample   2.  9.100 /  2.  9.100
-  libpostproc    54.  7.100 / 54.  7.100
+ffmpeg version 4.3 Copyright (c) 2000-2020 the FFmpeg developers
+  built with Apple clang version 11.0.3 (clang-1103.0.32.62)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/4.3_1 --enable-shared --enable-pthreads --enable-version3 --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libbluray --enable-libdav1d --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librtmp --enable-libspeex --enable-libsoxr --enable-videotoolbox --disable-libjack --disable-indev=jack
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
 Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/reinfurt/sketchbook/songworks/_make/../spectrogram/out/in-spectrogram.mp4':
   Metadata:
     major_brand     : isom
@@ -17,8 +17,8 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/reinfurt/sketchbook/songworks/_ma
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf57.83.100
     comment         : Made with Video Export for Processing - https://git.io/vAXLk
-  Duration: 00:00:29.43, start: 0.000000, bitrate: 343 kb/s
-    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 360x640, 340 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+  Duration: 00:00:28.43, start: 0.000000, bitrate: 799 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 720x1280, 795 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
     Metadata:
       handler_name    : VideoHandler
 Guessed Channel Layout for Input Stream #1.0 : stereo
@@ -41,10 +41,10 @@ Output #0, mp4, to '/home/reinfurt/sketchbook/songworks/_make/../spectrogram/tem
     encoder         : Lavf57.83.100
     Stream #0:0: Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s
     Metadata:
-      encoder         : Lavc57.107.100 aac
-    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 360x640, q=2-31, 340 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
+      encoder         : Lavc58.91.100 aac
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 720x1280, q=2-31, 795 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
     Metadata:
       handler_name    : VideoHandler
-frame=  794 fps=0.0 q=-1.0 size=    1536kB time=00:00:26.43 bitrate= 476.1kbits/s speed=52.8x    frame=  883 fps=0.0 q=-1.0 Lsize=    1673kB time=00:00:29.44 bitrate= 465.5kbits/s speed=54.4x    
-video:1222kB audio:433kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.086180%
-[aac @ 0x558f479f9aa0] Qavg: 62458.680
+frame=  853 fps=0.0 q=-1.0 Lsize=    3234kB time=00:00:28.41 bitrate= 932.3kbits/s speed= 119x    
+video:2763kB audio:454kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.541132%
+[aac @ 0x7fb36d012800] Qavg: 5108.027
