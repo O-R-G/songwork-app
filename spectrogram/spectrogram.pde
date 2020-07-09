@@ -41,7 +41,7 @@ int pointer;                // current index in verdicts[]
 int counter;                // draw loop
 float display_scale = 1.0;  // adjust to match size() [0.5,1.0,1.5]
 Boolean playing = false;
-String data_path = "/home/reinfurt/sketchbook/songworks/data/";
+String data_path = "/var/www/app/songworks/data/";
 String file_name = "in.wav";
 String sketch_name = "spectrogram";
 
@@ -72,7 +72,8 @@ public void setup() {
     // FX2D is *much* faster but exits with nullpointer
     // as cannot seem to also kill the FX2D thread on exit
     // for now, use standard processing display
-    //size(360, 640);             // display_scale = 1.0 (720p @2x))
+    // size(360, 640);             // display_scale = 1.0 (720p @2x))
+    // size(720, 1280);
     size(540, 960);
     // size(540, 960, FX2D);    // display_scale = 1.5 (1080p @2x)
     pixelDensity(displayDensity());
