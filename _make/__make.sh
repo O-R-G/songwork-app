@@ -21,22 +21,25 @@ PATH_TO=$(pwd)
 for f in _*.wav
     do 
         echo "Processing ******** '$f'"
+	# get file name
+        filename=$(basename -- "$f")
+        # keep file extension
+        extension="${filename##*.}"
+        # remove file extension
+        filename="${filename%.*}"
+        # remove '_' at the begining
+        filename="${filename//_/$''}"
+	echo $filename
+	echo "$filename"
         cp "$f" ../data/in.wav
         # pjava ../spectrogram/.
-	# get file name
-	filename=$(basename -- "$f")
-	# keep file extension
-	extension="${filename##*.}"
-	# remove file extension
-	filename="${filename%.*}"
-	# remove '_' at the begining
-	filename="${filename//_/$''}"
         /processing/processing-java --sketch=$PATH_TO/../spectrogram --run
-        ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=100:100:0:0" $PATH_TO/../spectrogram/out/"$filename".mp4
+        ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=250:250:0:250" $PATH_TO/../spectrogram/out/"$filename".mp4
+	ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 250x250 -ss 3 /var/www/html/media/placeholder/"$filename".jpg
 	# move example.mp4 to media/
 	mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/
 	# move example.wav to media/original-audio/
-	mv $filename.$extension /var/www/html/media/original-audio/
+	mv $filename.$extension /var/www/html/media/audio/
 	# remove _example.wav
 	rm $f
         rm ../spectrogram/out/in-spectrogram.mp4
