@@ -4,6 +4,7 @@
 # process *.wav in folder to 16-bit
 # generate spectrogram
 # crop and output .mp4
+# /var/www/app/songworks
 
 # convert audio to 16-bit wav
 for f in *.wav 
