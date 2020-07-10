@@ -15,7 +15,6 @@ for f in *.wav
 
 # get absolute path
 PATH_TO=$(pwd)
-
 # run processing for *.wav
 # crop resulting mov
 # ? generate animated .gif ** todo **
