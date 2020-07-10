@@ -187,9 +187,12 @@ String[] read_audio_from_txt(int columns, Boolean video) {
     if (line == null) {
         // done reading the file.
         // close the video file.
+        /*
         if (video) 
             videoExport.endMovie();
-        exit();
+        */
+        // exit();
+        stop();
     } else
         data = split(line, SEP);
 

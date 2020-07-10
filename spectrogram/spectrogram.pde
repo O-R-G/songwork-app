@@ -61,16 +61,21 @@ int video_fps = 30;
 int audio_duration;
 Boolean snap_shots = true;  // show only timed stills, otherwise scrolling
 Boolean debug = false;      // display time debug
-Boolean mute = true;         // no sound
+Boolean mute = true;        // no sound
 Boolean sync = false;       // start audio w/sync_sample()
 Boolean render = true;      // render audio to txt, read txt, output video
 Boolean video = true;       // export video when rendering
 
 public void setup() {
     // size(180, 320, FX2D);    // display_scale = 0.5 (360p @2x))
-    size(540, 960);    // display_scale = 1.0 (720p @2x))
-    // size(540, 960, FX2D);       // display_scale = 1.5 (1080p @2x)
-    pixelDensity(displayDensity());
+    // size(360, 640, FX2D);    // display_scale = 1.0 (720p @2x))
+    // FX2D is *much* faster but exits with nullpointer
+    // as cannot seem to also kill the FX2D thread on exit
+    // for now, use standard processing display
+    //size(360, 640);             // display_scale = 1.0 (720p @2x))
+    size(540, 960);
+    // size(540, 960, FX2D);    // display_scale = 1.5 (1080p @2x)
+    pixelDensity(1);
     background(0);
     noStroke();
     colorMode(HSB);
@@ -91,10 +96,8 @@ public void setup() {
         minim = new Minim(this);
         sample = minim.loadFile(data_path + file_name, buffer_size);
         audio_duration = sample.length();
-
-println(data_path + file_name);
-println(audio_duration);
-
+        println(data_path + file_name);
+        println(audio_duration);
         sample.close();
         minim.stop();
         String[] file_name_split = split(file_name, '.');
@@ -148,11 +151,15 @@ public void draw() {
                 fft_time = int(float(data[0]) * 1000);
             }
             current_time = int(videoExport.getCurrentTime()*1000);
-            println(current_time + " : " + fft_time);
-            if (current_time >= audio_duration) {
+            // println(current_time + " : " + fft_time);
+            // println(current_time + " : " + audio_duration);
+            println(current_time + " : " + fft_time + " --> " + audio_duration);
+            // crashes with FX2D display lib
+            // but works if standard processing display lib
+            // if (current_time >= audio_duration) {
+            if (current_time >= audio_duration/2 - 100) {
                 println("End of audio, stopping video export.");
-                videoExport.endMovie();
-                exit();
+                stop();
             }
         } else 
             current_time = millis() - millis_start;
@@ -161,7 +168,7 @@ public void draw() {
             show_current_time(width-100, 24);
         /*
         if (pointer >= verdicts.length)
-            exit();
+            stop();
         */
         if (video)
             videoExport.saveFrame();    // rm exit() in render.pde
@@ -499,8 +506,13 @@ Boolean sync_sample() {
 }
 
 public void stop() {
-    // always dispose minim object
+    // stop videoExport (optional)
+    if (video)
+        videoExport.endMovie();
+    // dispose minim object (reqd)
     sample.close();
     minim.stop();
     super.stop();
+    exit();
 }
+

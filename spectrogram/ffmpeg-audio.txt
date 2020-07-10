@@ -1,52 +1,50 @@
-ffmpeg version 4.3 Copyright (c) 2000-2020 the FFmpeg developers
-  built with Apple clang version 11.0.0 (clang-1100.0.33.17)
-  configuration: --prefix=/usr/local/Cellar/ffmpeg/4.3_1 --enable-shared --enable-pthreads --enable-version3 --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libbluray --enable-libdav1d --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librtmp --enable-libspeex --enable-libsoxr --enable-videotoolbox --disable-libjack --disable-indev=jack
-  libavutil      56. 51.100 / 56. 51.100
-  libavcodec     58. 91.100 / 58. 91.100
-  libavformat    58. 45.100 / 58. 45.100
-  libavdevice    58. 10.100 / 58. 10.100
-  libavfilter     7. 85.100 /  7. 85.100
-  libavresample   4.  0.  0 /  4.  0.  0
-  libswscale      5.  7.100 /  5.  7.100
-  libswresample   3.  7.100 /  3.  7.100
-  libpostproc    55.  7.100 / 55.  7.100
-Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/ouerohiroshi/Documents/Processing/songworks/_make/../spectrogram/out/in-spectrogram.mp4':
+ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songworks/_make/../spectrogram/out/in-spectrogram.mp4':
   Metadata:
     major_brand     : isom
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
-    encoder         : Lavf58.45.100
+    encoder         : Lavf57.83.100
     comment         : Made with Video Export for Processing - https://git.io/vAXLk
-  Duration: 00:00:53.43, start: 0.000000, bitrate: 456 kb/s
-    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 720x1280, 453 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+  Duration: 00:00:06.87, start: 0.000000, bitrate: 170 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 166 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
     Metadata:
       handler_name    : VideoHandler
 Guessed Channel Layout for Input Stream #1.0 : stereo
-Input #1, wav, from '/Users/ouerohiroshi/Documents/Processing/songworks/data/in.wav':
+Input #1, wav, from '/var/www/app/songworks/data/in.wav':
   Metadata:
-    date            : 2016-01-20
-    encoder         : Lavf58.45.100
-    encoded_by      : Logic Pro X
-  Duration: 00:01:43.13, bitrate: 512 kb/s
+    encoder         : Lavf57.83.100
+  Duration: 00:00:13.93, bitrate: 512 kb/s
     Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, stereo, s16, 512 kb/s
 Stream mapping:
   Stream #1:0 (pcm_s16le) -> apad
   apad -> Stream #0:0 (aac)
   Stream #0:0 -> #0:1 (copy)
 Press [q] to stop, [?] for help
-Output #0, mp4, to '/Users/ouerohiroshi/Documents/Processing/songworks/_make/../spectrogram/temp-with-audio.mp4':
+Output #0, mp4, to '/var/www/app/songworks/_make/../spectrogram/temp-with-audio.mp4':
   Metadata:
     major_brand     : isom
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     comment         : Made with Video Export for Processing - https://git.io/vAXLk
-    encoder         : Lavf58.45.100
+    encoder         : Lavf57.83.100
     Stream #0:0: Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s
     Metadata:
-      encoder         : Lavc58.91.100 aac
-    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 720x1280, q=2-31, 453 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
+      encoder         : Lavc57.107.100 aac
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, q=2-31, 166 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
     Metadata:
       handler_name    : VideoHandler
-frame= 1603 fps=0.0 q=-1.0 Lsize=    3823kB time=00:00:53.44 bitrate= 586.1kbits/s speed= 172x    
-video:2955kB audio:837kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.830850%
-[aac @ 0x7f827a001200] Qavg: 156.578
+frame=  206 fps=0.0 q=-1.0 Lsize=     247kB time=00:00:06.84 bitrate= 294.9kbits/s speed=21.2x    
+video:139kB audio:102kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.192455%
+[aac @ 0x5597dcd3e660] Qavg: 6113.938
