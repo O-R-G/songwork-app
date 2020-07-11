@@ -31,13 +31,13 @@ for f in _*.wav
         filename="${filename//_/$''}"
         cp "$f" ../data/in.wav
         # pjava ../spectrogram/.
-        /processing/processing-java --sketch=$PATH_TO/../spectrogram --run
+        /opt/processing/processing-java --sketch=$PATH_TO/../spectrogram --run
         ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=250:250:0:250" $PATH_TO/../spectrogram/out/"$filename".mp4
 	ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 250x250 -ss 3 /var/www/html/media/placeholder/"$filename".jpg
 	# move example.mp4 to media/
-	sudo mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/
+	mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/
 	# move example.wav to media/original-audio/
-	sudo mv $filename.$extension /var/www/html/media/audio/
+	mv $filename.$extension /var/www/html/media/audio/
 	# remove _example.wav
 	rm $f
         rm ../spectrogram/out/in-spectrogram.mp4

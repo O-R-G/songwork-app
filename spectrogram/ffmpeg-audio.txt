@@ -17,15 +17,15 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spec
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf57.83.100
     comment         : Made with Video Export for Processing - https://git.io/vAXLk
-  Duration: 00:00:06.87, start: 0.000000, bitrate: 170 kb/s
-    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 166 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+  Duration: 00:00:01.13, start: 0.000000, bitrate: 152 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 143 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
     Metadata:
       handler_name    : VideoHandler
 Guessed Channel Layout for Input Stream #1.0 : stereo
 Input #1, wav, from '/var/www/app/songwork-app/data/in.wav':
   Metadata:
     encoder         : Lavf57.83.100
-  Duration: 00:00:13.93, bitrate: 512 kb/s
+  Duration: 00:00:02.45, bitrate: 512 kb/s
     Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, stereo, s16, 512 kb/s
 Stream mapping:
   Stream #1:0 (pcm_s16le) -> apad
@@ -42,9 +42,9 @@ Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/temp-with-aud
     Stream #0:0: Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s
     Metadata:
       encoder         : Lavc57.107.100 aac
-    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, q=2-31, 166 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, q=2-31, 143 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
     Metadata:
       handler_name    : VideoHandler
-frame=  206 fps=0.0 q=-1.0 Lsize=     247kB time=00:00:06.84 bitrate= 294.9kbits/s speed=60.9x    
-video:139kB audio:102kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.192455%
-[aac @ 0x556cc04ac660] Qavg: 6113.938
+frame=   34 fps=0.0 q=-1.0 Lsize=      41kB time=00:00:01.15 bitrate= 292.8kbits/s speed=13.6x    
+video:20kB audio:19kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 5.272882%
+[aac @ 0x55867bef6700] Qavg: 1204.206
