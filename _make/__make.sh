@@ -4,9 +4,11 @@
 # process *.wav in folder to 16-bit
 # generate spectrogram
 # crop and output .mp4
+# /var/www/app/songworks
 
 # convert audio to 16-bit wav
-for f in *.wav
+shopt -s nullglob
+for f in *.wav *.mp3 *.m4a
     do
         echo $f >> __list.txt
         ffmpeg -i "$f" -acodec pcm_s16le -ar 16000 _"$f"
@@ -14,17 +16,14 @@ for f in *.wav
 
 # get absolute path
 PATH_TO=$(pwd)
-
 # run processing for *.wav
 # crop resulting mov
 # ? generate animated .gif ** todo **
-for f in _*.wav 
+shopt -s nullglob
+for f in _*.wav _*.mp3 _*.m4a
     do 
         echo "Processing ******** '$f'"
-	cp "$f" ../data/in.wav
-        # pjava ../spectrogram/.
-
-	# get file name
+        # get file name
         filename=$(basename -- "$f")
         # keep file extension
         extension="${filename##*.}"
@@ -32,16 +31,19 @@ for f in _*.wav
         filename="${filename%.*}"
         # remove '_' at the begining
         filename="${filename//_/$''}"
-
-        /processing/processing-java --sketch=$PATH_TO/../spectrogram --run
-        ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=720:720:0:720" $PATH_TO/../spectrogram/out/"$filename".mp4
-	# ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 400x400 -ss 6 /var/www/html/media/placholder/"$filename".jpg
-	# move example.mp4 to media/
-	mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/
-	# move example.wav to media/original-audio/
-	mv $filename.$extension /var/www/html/media/audio/
-	# remove _example.wav
-	rm $f
+        cp "$f" ../data/in.$extension
+        ffmpeg ../data/in.$extension ../data/in.wav
+	rm ../data/in.$extension
+        # pjava ../spectrogram/.
+        /opt/processing/processing-java --sketch=$PATH_TO/../spectrogram --run
+        ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=250:250:0:250" $PATH_TO/../spectrogram/out/"$filename".mp4
+    	ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 250x250 -ss 3 /var/www/html/media/placeholder/"$filename".jpg
+    	# move example.mp4 to media/
+    	mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/
+    	# move example.wav to media/original-audio/
+    	mv $filename.$extension /var/www/html/media/audio/
+    	# remove _example.wav
+    	rm $f
         rm ../spectrogram/out/in-spectrogram.mp4
 done
 # cleanup 

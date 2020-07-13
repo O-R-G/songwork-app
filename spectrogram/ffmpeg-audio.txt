@@ -10,7 +10,11 @@ ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg develop
   libswscale      4.  8.100 /  4.  8.100
   libswresample   2.  9.100 /  2.  9.100
   libpostproc    54.  7.100 / 54.  7.100
+<<<<<<< HEAD
 Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songworks/_make/../spectrogram/out/in-spectrogram.mp4':
+=======
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4':
+>>>>>>> 3469e435271274222c04a72ff88197c40a4ee96c
   Metadata:
     major_brand     : isom
     minor_version   : 512
@@ -22,7 +26,11 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songworks/_make/../spectro
     Metadata:
       handler_name    : VideoHandler
 Guessed Channel Layout for Input Stream #1.0 : stereo
+<<<<<<< HEAD
 Input #1, wav, from '/var/www/app/songworks/data/in.wav':
+=======
+Input #1, wav, from '/var/www/app/songwork-app/data/in.wav':
+>>>>>>> 3469e435271274222c04a72ff88197c40a4ee96c
   Metadata:
     encoder         : Lavf57.83.100
   Duration: 00:00:13.93, bitrate: 512 kb/s
@@ -32,7 +40,11 @@ Stream mapping:
   apad -> Stream #0:0 (aac)
   Stream #0:0 -> #0:1 (copy)
 Press [q] to stop, [?] for help
+<<<<<<< HEAD
 Output #0, mp4, to '/var/www/app/songworks/_make/../spectrogram/temp-with-audio.mp4':
+=======
+Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/temp-with-audio.mp4':
+>>>>>>> 3469e435271274222c04a72ff88197c40a4ee96c
   Metadata:
     major_brand     : isom
     minor_version   : 512
@@ -45,6 +57,12 @@ Output #0, mp4, to '/var/www/app/songworks/_make/../spectrogram/temp-with-audio.
     Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, q=2-31, 166 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
     Metadata:
       handler_name    : VideoHandler
+<<<<<<< HEAD
 frame=  206 fps=0.0 q=-1.0 Lsize=     247kB time=00:00:06.84 bitrate= 294.9kbits/s speed=50.4x    
 video:139kB audio:102kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.192455%
 [aac @ 0x557a0d7e5660] Qavg: 6113.938
+=======
+frame=   34 fps=0.0 q=-1.0 Lsize=      41kB time=00:00:01.15 bitrate= 292.8kbits/s speed=13.6x    
+video:20kB audio:19kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 5.272882%
+[aac @ 0x55867bef6700] Qavg: 1204.206
+>>>>>>> 3469e435271274222c04a72ff88197c40a4ee96c
