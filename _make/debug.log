@@ -1,0 +1,329 @@
+ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Guessed Channel Layout for Input Stream #0.0 : stereo
+Input #0, wav, from '00117.wav':
+  Duration: 00:00:02.45, bitrate: 1411 kb/s
+    Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, stereo, s16, 1411 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '_00117.wav':
+  Metadata:
+    ISFT            : Lavf57.83.100
+    Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, stereo, s16, 512 kb/s
+    Metadata:
+      encoder         : Lavc57.107.100 pcm_s16le
+size=     153kB time=00:00:02.44 bitrate= 512.3kbits/s speed= 153x    
+video:0kB audio:153kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.049765%
+Processing ******** '_00117.wav'
+4067:5067 TRUTH
+8133:9133 SUBJECT EMPHATIC
+12200:13200 TRUTH
+16267:17267 SUBJECT MANIPULATING VOICE
+36567:37567 TRUTH
+44700:45700 TRUTH
+48733:49733 LIE
+57067:58067 INACCURACY
+113400:114400 LIE
+135300:136300 INACCURACY
+140367:141367 LIE
+143433:144433 INACCURACY
+147500:148500 LIE
+151567:152567 INACCURACY
+159667:160667 LIE
+168000:169000 INACCURACY
+186433:187433 INACCURACY
+203667:204667 INACCURACY
+207700:208700 SUBJECT EMPHATIC
+211767:212767 LIE
+220100:221100 INACCURACY
+224167:225167 SUBJECT EMPHATIC
+232267:233267 LIE
+236333:237333 INACCURACY
+240400:241400 SUBJECT MANIPULATING VOICE
+244467:245467 LIE
+260700:261700 SUBJECT MANIPULATING VOICE
+264767:265767 INACCURACY
+281067:282067 SUBJECT ATTEMPTING OUTSMART
+291000:292000 AVOIDANCE
+303200:304200 SUBJECT EMPHATIC
+307233:308233 LIE
+319433:320433 SUBJECT MANIPULATING VOICE
+352133:353133 SUBJECT EMPHATIC
+372433:373433 SUBJECT ATTEMPTING OUTSMART
+376500:377500 SUBJECT MANIPULATING VOICE
+406667:407667 LIE
+411367:412367 SUBJECT EMPHATIC
+458633:459633 SUBJECT EMPHATIC
+507567:508567 SUBJECT ATTEMPTING OUTSMART
+515667:516667 SUBJECT MANIPULATING VOICE
+564600:565600 SUBJECT EMPHATIC
+581067:582067 SUBJECT ATTEMPTING OUTSMART
+585100:586100 SUBJECT MANIPULATING VOICE
+601367:602367 SUBJECT EMPHATIC
+617600:618600 SUBJECT MANIPULATING VOICE
+619067:620067 INACCURACY
+619600:620600 SUBJECT MANIPULATING VOICE
+644167:645167 SUBJECT EMPHATIC
+648233:649233 LIE
+652300:653300 INACCURACY
+660400:661400 SUBJECT EMPHATIC
+668533:669533 LIE
+676467:677467 SUBJECT ATTEMPTING OUTSMART
+740200:741200 SUBJECT MANIPULATING VOICE
+756433:757433 SUBJECT EMPHATIC
+793200:794200 INACCURACY
+797267:798267 LIE
+801300:802300 INACCURACY
+813500:814500 LIE
+834000:835000 INACCURACY
+838067:839067 LIE
+857067:858067 INACCURACY
+866500:867500 TRUTH
+874600:875600 INACCURACY
+878667:879667 TRUTH
+903233:904233 SUBJECT IS NOT SURE
+907300:908300 TRUTH
+915433:916433 TRUTH
+923533:924533 TRUTH
+927600:928600 SUBJECT IS NOT SURE
+931667:932667 LIE
+935733:936733 INACCURACY
+941133:942133 AVOIDANCE
+957367:958367 SUBJECT EMPHATIC
+973633:974633 SUBJECT IS NOT SURE
+981733:982733 INACCURACY
+994133:995133 LIE
+998200:999200 TRUTH
+1002233:1003233 LIE
+1006300:1007300 TRUTH
+1026600:1027600 SUBJECT EMPHATIC
+1043067:1044067 INACCURACY
+1047133:1048133 TRUTH
+1055267:1056267 INACCURACY
+1059300:1060300 LIE
+1063367:1064367 TRUTH
+1067433:1068433 LIE
+1075567:1076567 INACCURACY
+1083667:1084667 TRUTH
+1092000:1093000 LIE
+1115067:1116067 SUBJECT ATTEMPTING OUTSMART
+1133100:1134100 TRUTH
+1137167:1138167 LIE
+1141200:1142200 TRUTH
+1149333:1150333 TRUTH
+1155400:1156400 LIE
+1158300:1159300 TRUTH
+1166433:1167433 LIE
+1170167:1171167 TRUTH
+1198500:1199500 TRUTH
+1234000:1235000 SUBJECT EMPHATIC
+1247067:1248067 LIE
+1258267:1259267 INACCURACY
+1258733:1259733 TRUTH
+1263000:1264000 LIE
+1267067:1268067 INACCURACY
+1275167:1276167 LIE
+1279233:1280233 INACCURACY
+1283300:1284300 TRUTH
+1290600:1291600 LIE
+1305400:1306400 TRUTH
+1314067:1315067 TRUTH
+1318133:1319133 LIE
+1326267:1327267 TRUTH
+1330333:1331333 LIE
+1346567:1347567 INACCURACY
+1350633:1351633 TRUTH
+1358733:1359733 INACCURACY
+1359600:1360600 LIE
+1359700:1360700 TRUTH
+1363767:1364767 INACCURACY
+1368033:1369033 LIE
+1385300:1386300 SUBJECT ATTEMPTING OUTSMART
+1389367:1390367 SUBJECT MANIPULATING VOICE
+1397500:1398500 SUBJECT ATTEMPTING OUTSMART
+1405600:1406600 SUBJECT MANIPULATING VOICE
+1409667:1410667 SUBJECT ATTEMPTING OUTSMART
+1412300:1413300 LIE
+1414300:1415300 SUBJECT MANIPULATING VOICE
+1429767:1430767 SUBJECT ATTEMPTING OUTSMART
+1435467:1436467 * END OF FILE *
+132 rows
+FFT started (please wait) ...
+513 bands
+FFT done.
+/var/www/app/songwork-app/data/in.wav
+2449
+0 : 0 --> 2449
+33 : 0 --> 2449
+66 : 192 --> 2449
+100 : 192 --> 2449
+133 : 192 --> 2449
+166 : 192 --> 2449
+200 : 192 --> 2449
+233 : 576 --> 2449
+266 : 576 --> 2449
+300 : 576 --> 2449
+333 : 576 --> 2449
+366 : 576 --> 2449
+400 : 576 --> 2449
+433 : 576 --> 2449
+466 : 576 --> 2449
+500 : 576 --> 2449
+533 : 576 --> 2449
+566 : 576 --> 2449
+600 : 576 --> 2449
+633 : 1408 --> 2449
+666 : 1408 --> 2449
+700 : 1408 --> 2449
+733 : 1408 --> 2449
+766 : 1408 --> 2449
+800 : 1408 --> 2449
+833 : 1408 --> 2449
+866 : 1408 --> 2449
+900 : 1408 --> 2449
+933 : 1408 --> 2449
+966 : 1408 --> 2449
+1000 : 1408 --> 2449
+1033 : 1408 --> 2449
+1066 : 1408 --> 2449
+1100 : 1408 --> 2449
+1133 : 1408 --> 2449
+End of audio, stopping video export.
+/var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4 saved.
+java.lang.NullPointerException
+	at com.hamoid.VideoExport.saveFrame(Unknown Source)
+	at spectrogram.draw(spectrogram.java:195)
+	at processing.core.PApplet.handleDraw(PApplet.java:2475)
+	at processing.awt.PSurfaceAWT$12.callDraw(PSurfaceAWT.java:1547)
+	at processing.core.PSurfaceNone$AnimationThread.run(PSurfaceNone.java:313)
+
+VideoExport error: Ffmpeg failed. Study /var/www/app/songwork-app/_make/../spectrogram/ffmpeg.txt for more details.
+
+Finished.
+Could not run the sketch (Target VM failed to initialize).
+For more information, read revisions.txt and Help ? Troubleshooting.
+Could not run the sketch.
+ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.83.100
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+  Duration: 00:00:01.22, start: 0.000000, bitrate: 277 kb/s
+    Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 130 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 143 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:0 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0x55a1a82ed920] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+[libx264 @ 0x55a1a82ed920] profile High, level 1.3
+[libx264 @ 0x55a1a82ed920] 264 - core 152 r2854 e9a5903 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/out/00117.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: h264 (libx264) (avc1 / 0x31637661), yuv420p, 250x250, q=-1--1, 30 fps, 15360 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc57.107.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      encoder         : Lavc57.107.100 aac
+frame=   34 fps=0.0 q=29.0 Lsize=      22kB time=00:00:01.15 bitrate= 158.0kbits/s speed=7.56x    
+video:1kB audio:19kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 10.493347%
+[libx264 @ 0x55a1a82ed920] frame I:1     Avg QP:10.00  size:    61
+[libx264 @ 0x55a1a82ed920] frame P:9     Avg QP:10.89  size:    21
+[libx264 @ 0x55a1a82ed920] frame B:24    Avg QP:13.67  size:    14
+[libx264 @ 0x55a1a82ed920] consecutive B-frames:  5.9%  0.0%  0.0% 94.1%
+[libx264 @ 0x55a1a82ed920] mb I  I16..4: 100.0%  0.0%  0.0%
+[libx264 @ 0x55a1a82ed920] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
+[libx264 @ 0x55a1a82ed920] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct: 0.0%  skip:100.0%
+[libx264 @ 0x55a1a82ed920] 8x8 transform intra:0.0%
+[libx264 @ 0x55a1a82ed920] coded y,uvDC,uvAC intra: 0.0% 0.0% 0.0% inter: 0.0% 0.0% 0.0%
+[libx264 @ 0x55a1a82ed920] i16 v,h,dc,p: 94%  0%  6%  0%
+[libx264 @ 0x55a1a82ed920] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 0x55a1a82ed920] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x55a1a82ed920] kb/s:4.09
+[aac @ 0x55a1a831afc0] Qavg: 1135.182
+ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/00117.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.83.100
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+  Duration: 00:00:01.22, start: 0.000000, bitrate: 149 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 250x250, 8 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+[swscaler @ 0x561bd1206ea0] deprecated pixel format used, make sure you did set range correctly
+Output #0, image2, to '/var/www/html/media/placeholder/00117.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: mjpeg, yuvj420p(pc), 250x250, q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc57.107.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
+frame=    0 fps=0.0 q=0.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
+video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Output file is empty, nothing was encoded (check -ss / -t / -frames parameters if used)
+done.
