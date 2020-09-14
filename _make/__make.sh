@@ -7,6 +7,8 @@
 # /var/www/app/songworks
 
 # convert audio to 16-bit wav
+echo ls
+
 for f in *.wav 
     do
         echo $f >> __list.txt

@@ -41,7 +41,11 @@ int pointer;                // current index in verdicts[]
 int counter;                // draw loop
 float display_scale = 1.0;  // adjust to match size() [0.5,1.0,1.5]
 Boolean playing = false;
+<<<<<<< HEAD
+String data_path = "/Users/ouerohiroshi/Documents/Processing/songworks/data/";
+=======
 String data_path = "/var/www/app/songwork-app/data/";
+>>>>>>> 3469e435271274222c04a72ff88197c40a4ee96c
 String file_name = "in.wav";
 String sketch_name = "spectrogram";
 
