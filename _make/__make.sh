@@ -42,7 +42,7 @@ for f in _*.wav
 	mv $filename.$extension /var/www/html/media/audio/
 	# remove _example.wav
 	rm $f
-        rm ../spectrogram/out/in-spectrogram.mp4
+    rm ../spectrogram/out/in-spectrogram.mp4
 done
 # cleanup 
 rm __list.txt
