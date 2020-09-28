@@ -1,6 +1,12 @@
-ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
-  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
-  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+#log
+00167.wav
+00168.wav
+__make.sh
+debug.log
+error
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
   libavutil      55. 78.100 / 55. 78.100
   libavcodec     57.107.100 / 57.107.100
   libavformat    57. 83.100 / 57. 83.100
@@ -11,21 +17,58 @@ ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg develop
   libswresample   2.  9.100 /  2.  9.100
   libpostproc    54.  7.100 / 54.  7.100
 Guessed Channel Layout for Input Stream #0.0 : stereo
-Input #0, wav, from '00117.wav':
-  Duration: 00:00:02.45, bitrate: 1411 kb/s
+Input #0, wav, from '00167.wav':
+  Metadata:
+    time_reference  : 0
+    coding_history  : 
+  Duration: 00:00:13.93, bitrate: 1412 kb/s
     Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, stereo, s16, 1411 kb/s
 Stream mapping:
   Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
 Press [q] to stop, [?] for help
-Output #0, wav, to '_00117.wav':
+Output #0, wav, to '_00167.wav':
   Metadata:
+    time_reference  : 0
+    coding_history  : 
     ISFT            : Lavf57.83.100
     Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, stereo, s16, 512 kb/s
     Metadata:
       encoder         : Lavc57.107.100 pcm_s16le
-size=     153kB time=00:00:02.44 bitrate= 512.3kbits/s speed= 153x    
-video:0kB audio:153kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.049765%
-Processing ******** '_00117.wav'
+size=     871kB time=00:00:13.93 bitrate= 512.0kbits/s speed= 356x    
+video:0kB audio:871kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.008748%
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Guessed Channel Layout for Input Stream #0.0 : stereo
+Input #0, wav, from '00168.wav':
+  Metadata:
+    time_reference  : 0
+    coding_history  : 
+  Duration: 00:00:13.93, bitrate: 1412 kb/s
+    Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, stereo, s16, 1411 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '_00168.wav':
+  Metadata:
+    time_reference  : 0
+    coding_history  : 
+    ISFT            : Lavf57.83.100
+    Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, stereo, s16, 512 kb/s
+    Metadata:
+      encoder         : Lavc57.107.100 pcm_s16le
+size=     871kB time=00:00:13.93 bitrate= 512.0kbits/s speed= 480x    
+video:0kB audio:871kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.008748%
+Processing ******** '_00167.wav'
 4067:5067 TRUTH
 8133:9133 SUBJECT EMPHATIC
 12200:13200 TRUTH
@@ -163,42 +206,214 @@ FFT started (please wait) ...
 513 bands
 FFT done.
 /var/www/app/songwork-app/data/in.wav
-2449
-0 : 0 --> 2449
-33 : 0 --> 2449
-66 : 192 --> 2449
-100 : 192 --> 2449
-133 : 192 --> 2449
-166 : 192 --> 2449
-200 : 192 --> 2449
-233 : 576 --> 2449
-266 : 576 --> 2449
-300 : 576 --> 2449
-333 : 576 --> 2449
-366 : 576 --> 2449
-400 : 576 --> 2449
-433 : 576 --> 2449
-466 : 576 --> 2449
-500 : 576 --> 2449
-533 : 576 --> 2449
-566 : 576 --> 2449
-600 : 576 --> 2449
-633 : 1408 --> 2449
-666 : 1408 --> 2449
-700 : 1408 --> 2449
-733 : 1408 --> 2449
-766 : 1408 --> 2449
-800 : 1408 --> 2449
-833 : 1408 --> 2449
-866 : 1408 --> 2449
-900 : 1408 --> 2449
-933 : 1408 --> 2449
-966 : 1408 --> 2449
-1000 : 1408 --> 2449
-1033 : 1408 --> 2449
-1066 : 1408 --> 2449
-1100 : 1408 --> 2449
-1133 : 1408 --> 2449
+13931
+0 : 0 --> 13931
+33 : 0 --> 13931
+66 : 192 --> 13931
+100 : 192 --> 13931
+133 : 192 --> 13931
+166 : 192 --> 13931
+200 : 192 --> 13931
+233 : 576 --> 13931
+266 : 576 --> 13931
+300 : 576 --> 13931
+333 : 576 --> 13931
+366 : 576 --> 13931
+400 : 576 --> 13931
+433 : 576 --> 13931
+466 : 576 --> 13931
+500 : 576 --> 13931
+533 : 576 --> 13931
+566 : 576 --> 13931
+600 : 576 --> 13931
+633 : 1408 --> 13931
+666 : 1408 --> 13931
+700 : 1408 --> 13931
+733 : 1408 --> 13931
+766 : 1408 --> 13931
+800 : 1408 --> 13931
+833 : 1408 --> 13931
+866 : 1408 --> 13931
+900 : 1408 --> 13931
+933 : 1408 --> 13931
+966 : 1408 --> 13931
+1000 : 1408 --> 13931
+1033 : 1408 --> 13931
+1066 : 1408 --> 13931
+1100 : 1408 --> 13931
+1133 : 1408 --> 13931
+1166 : 1408 --> 13931
+1200 : 1408 --> 13931
+1233 : 1408 --> 13931
+1266 : 1408 --> 13931
+1300 : 1408 --> 13931
+1333 : 1408 --> 13931
+1366 : 1408 --> 13931
+1400 : 1408 --> 13931
+1433 : 1408 --> 13931
+1466 : 3072 --> 13931
+1500 : 3072 --> 13931
+1533 : 3072 --> 13931
+1566 : 3072 --> 13931
+1600 : 3072 --> 13931
+1633 : 3072 --> 13931
+1666 : 3072 --> 13931
+1700 : 3072 --> 13931
+1733 : 3072 --> 13931
+1766 : 3072 --> 13931
+1800 : 3072 --> 13931
+1833 : 3072 --> 13931
+1866 : 3072 --> 13931
+1900 : 3072 --> 13931
+1933 : 3072 --> 13931
+1966 : 3072 --> 13931
+2000 : 3072 --> 13931
+2033 : 3072 --> 13931
+2066 : 3072 --> 13931
+2100 : 3072 --> 13931
+2133 : 3072 --> 13931
+2166 : 3072 --> 13931
+2200 : 3072 --> 13931
+2233 : 3072 --> 13931
+2266 : 3072 --> 13931
+2300 : 3072 --> 13931
+2333 : 3072 --> 13931
+2366 : 3072 --> 13931
+2400 : 3072 --> 13931
+2433 : 3072 --> 13931
+2466 : 3072 --> 13931
+2500 : 3072 --> 13931
+2533 : 3072 --> 13931
+2566 : 3072 --> 13931
+2600 : 3072 --> 13931
+2633 : 3072 --> 13931
+2666 : 3072 --> 13931
+2700 : 3072 --> 13931
+2733 : 3072 --> 13931
+2766 : 3072 --> 13931
+2800 : 3072 --> 13931
+2833 : 3072 --> 13931
+2866 : 3072 --> 13931
+2900 : 3072 --> 13931
+2933 : 3072 --> 13931
+2966 : 3072 --> 13931
+3000 : 3072 --> 13931
+3033 : 3072 --> 13931
+3066 : 3072 --> 13931
+3100 : 3072 --> 13931
+3133 : 6336 --> 13931
+3166 : 6336 --> 13931
+3200 : 6336 --> 13931
+3233 : 6336 --> 13931
+3266 : 6336 --> 13931
+3300 : 6336 --> 13931
+3333 : 6336 --> 13931
+3366 : 6336 --> 13931
+3400 : 6336 --> 13931
+3433 : 6336 --> 13931
+3466 : 6336 --> 13931
+3500 : 6336 --> 13931
+3533 : 6336 --> 13931
+3566 : 6336 --> 13931
+3600 : 6336 --> 13931
+3633 : 6336 --> 13931
+3666 : 6336 --> 13931
+3700 : 6336 --> 13931
+3733 : 6336 --> 13931
+3766 : 6336 --> 13931
+3800 : 6336 --> 13931
+3833 : 6336 --> 13931
+3866 : 6336 --> 13931
+3900 : 6336 --> 13931
+3933 : 6336 --> 13931
+3966 : 6336 --> 13931
+4000 : 6336 --> 13931
+4033 : 6336 --> 13931
+4066 : 6336 --> 13931
+4100 : 6336 --> 13931
+4133 : 6336 --> 13931
+4166 : 6336 --> 13931
+4200 : 6336 --> 13931
+4233 : 6336 --> 13931
+4266 : 6336 --> 13931
+4300 : 6336 --> 13931
+4333 : 6336 --> 13931
+4366 : 6336 --> 13931
+4400 : 6336 --> 13931
+4433 : 6336 --> 13931
+4466 : 6336 --> 13931
+4500 : 6336 --> 13931
+4533 : 6336 --> 13931
+4566 : 6336 --> 13931
+4600 : 6336 --> 13931
+4633 : 6336 --> 13931
+4666 : 6336 --> 13931
+4700 : 6336 --> 13931
+4733 : 6336 --> 13931
+4766 : 6336 --> 13931
+4800 : 6336 --> 13931
+4833 : 6336 --> 13931
+4866 : 6336 --> 13931
+4900 : 6336 --> 13931
+4933 : 6336 --> 13931
+4966 : 6336 --> 13931
+5000 : 6336 --> 13931
+5033 : 6336 --> 13931
+5066 : 6336 --> 13931
+5100 : 6336 --> 13931
+5133 : 6336 --> 13931
+5166 : 6336 --> 13931
+5200 : 6336 --> 13931
+5233 : 6336 --> 13931
+5266 : 6336 --> 13931
+5300 : 6336 --> 13931
+5333 : 6336 --> 13931
+5366 : 6336 --> 13931
+5400 : 6336 --> 13931
+5433 : 6336 --> 13931
+5466 : 6336 --> 13931
+5500 : 6336 --> 13931
+5533 : 6336 --> 13931
+5566 : 6336 --> 13931
+5600 : 6336 --> 13931
+5633 : 6336 --> 13931
+5666 : 6336 --> 13931
+5700 : 6336 --> 13931
+5733 : 6336 --> 13931
+5766 : 6336 --> 13931
+5800 : 6336 --> 13931
+5833 : 6336 --> 13931
+5866 : 6336 --> 13931
+5900 : 6336 --> 13931
+5933 : 6336 --> 13931
+5966 : 6336 --> 13931
+6000 : 6336 --> 13931
+6033 : 6336 --> 13931
+6066 : 6336 --> 13931
+6100 : 6336 --> 13931
+6133 : 6336 --> 13931
+6166 : 6336 --> 13931
+6200 : 6336 --> 13931
+6233 : 6336 --> 13931
+6266 : 6336 --> 13931
+6300 : 6336 --> 13931
+6333 : 6336 --> 13931
+6366 : 6336 --> 13931
+6400 : 12672 --> 13931
+6433 : 12672 --> 13931
+6466 : 12672 --> 13931
+6500 : 12672 --> 13931
+6533 : 12672 --> 13931
+6566 : 12672 --> 13931
+6600 : 12672 --> 13931
+6633 : 12672 --> 13931
+6666 : 12672 --> 13931
+6700 : 12672 --> 13931
+6733 : 12672 --> 13931
+6766 : 12672 --> 13931
+6800 : 12672 --> 13931
+6833 : 12672 --> 13931
+6866 : 12672 --> 13931
 End of audio, stopping video export.
 /var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4 saved.
 java.lang.NullPointerException
@@ -214,9 +429,9 @@ Finished.
 Could not run the sketch (Target VM failed to initialize).
 For more information, read revisions.txt and Help ? Troubleshooting.
 Could not run the sketch.
-ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
-  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
-  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
   libavutil      55. 78.100 / 55. 78.100
   libavcodec     57.107.100 / 57.107.100
   libavformat    57. 83.100 / 57. 83.100
@@ -233,21 +448,21 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spec
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf57.83.100
     comment         : Made with Video Export for Processing - https://git.io/vAXLk
-  Duration: 00:00:01.22, start: 0.000000, bitrate: 277 kb/s
-    Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 130 kb/s (default)
+  Duration: 00:00:06.91, start: 0.000000, bitrate: 292 kb/s
+    Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 120 kb/s (default)
     Metadata:
       handler_name    : SoundHandler
-    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 143 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 166 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
     Metadata:
       handler_name    : VideoHandler
 Stream mapping:
   Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
   Stream #0:0 -> #0:1 (aac (native) -> aac (native))
 Press [q] to stop, [?] for help
-[libx264 @ 0x55a1a82ed920] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
-[libx264 @ 0x55a1a82ed920] profile High, level 1.3
-[libx264 @ 0x55a1a82ed920] 264 - core 152 r2854 e9a5903 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/out/00117.mp4':
+[libx264 @ 0x55d8d4929fc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+[libx264 @ 0x55d8d4929fc0] profile High, level 1.3
+[libx264 @ 0x55d8d4929fc0] 264 - core 152 r2854 e9a5903 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/out/00167.mp4':
   Metadata:
     major_brand     : isom
     minor_version   : 512
@@ -264,25 +479,30 @@ Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/out/00117.mp4
     Metadata:
       handler_name    : SoundHandler
       encoder         : Lavc57.107.100 aac
-frame=   34 fps=0.0 q=29.0 Lsize=      22kB time=00:00:01.15 bitrate= 158.0kbits/s speed=7.56x    
-video:1kB audio:19kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 10.493347%
-[libx264 @ 0x55a1a82ed920] frame I:1     Avg QP:10.00  size:    61
-[libx264 @ 0x55a1a82ed920] frame P:9     Avg QP:10.89  size:    21
-[libx264 @ 0x55a1a82ed920] frame B:24    Avg QP:13.67  size:    14
-[libx264 @ 0x55a1a82ed920] consecutive B-frames:  5.9%  0.0%  0.0% 94.1%
-[libx264 @ 0x55a1a82ed920] mb I  I16..4: 100.0%  0.0%  0.0%
-[libx264 @ 0x55a1a82ed920] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
-[libx264 @ 0x55a1a82ed920] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct: 0.0%  skip:100.0%
-[libx264 @ 0x55a1a82ed920] 8x8 transform intra:0.0%
-[libx264 @ 0x55a1a82ed920] coded y,uvDC,uvAC intra: 0.0% 0.0% 0.0% inter: 0.0% 0.0% 0.0%
-[libx264 @ 0x55a1a82ed920] i16 v,h,dc,p: 94%  0%  6%  0%
-[libx264 @ 0x55a1a82ed920] i8c dc,h,v,p: 100%  0%  0%  0%
-[libx264 @ 0x55a1a82ed920] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x55a1a82ed920] kb/s:4.09
-[aac @ 0x55a1a831afc0] Qavg: 1135.182
-ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
-  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
-  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+frame=  143 fps=0.0 q=29.0 size=       0kB time=00:00:04.60 bitrate=   0.1kbits/s speed= 9.2x    frame=  206 fps=0.0 q=29.0 Lsize=     141kB time=00:00:06.84 bitrate= 168.3kbits/s speed=6.93x    
+video:30kB audio:106kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 3.881920%
+[libx264 @ 0x55d8d4929fc0] frame I:1     Avg QP:10.00  size:    61
+[libx264 @ 0x55d8d4929fc0] frame P:58    Avg QP:17.54  size:   310
+[libx264 @ 0x55d8d4929fc0] frame B:147   Avg QP:19.93  size:    81
+[libx264 @ 0x55d8d4929fc0] consecutive B-frames:  4.4%  1.0%  1.5% 93.2%
+[libx264 @ 0x55d8d4929fc0] mb I  I16..4: 100.0%  0.0%  0.0%
+[libx264 @ 0x55d8d4929fc0] mb P  I16..4:  0.0%  0.1%  0.4%  P16..4:  3.8%  1.5%  1.1%  0.0%  0.0%    skip:93.1%
+[libx264 @ 0x55d8d4929fc0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  3.9%  0.6%  0.2%  direct: 1.0%  skip:94.3%  L0:23.6% L1:71.8% BI: 4.6%
+[libx264 @ 0x55d8d4929fc0] 8x8 transform intra:4.4% inter:54.1%
+[libx264 @ 0x55d8d4929fc0] coded y,uvDC,uvAC intra: 19.3% 0.0% 0.0% inter: 1.7% 0.0% 0.0%
+[libx264 @ 0x55d8d4929fc0] i16 v,h,dc,p: 94%  0%  6%  0%
+[libx264 @ 0x55d8d4929fc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13%  2% 63%  8%  2%  5%  2%  3%  2%
+[libx264 @ 0x55d8d4929fc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 28% 26%  5%  3%  7%  4%  6%  4%
+[libx264 @ 0x55d8d4929fc0] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 0x55d8d4929fc0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x55d8d4929fc0] ref P L0: 80.5%  7.5%  9.1%  3.0%
+[libx264 @ 0x55d8d4929fc0] ref B L0: 95.8%  3.4%  0.8%
+[libx264 @ 0x55d8d4929fc0] ref B L1: 94.7%  5.3%
+[libx264 @ 0x55d8d4929fc0] kb/s:34.93
+[aac @ 0x55d8d492f7a0] Qavg: 1707.135
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
   libavutil      55. 78.100 / 55. 78.100
   libavcodec     57.107.100 / 57.107.100
   libavformat    57. 83.100 / 57. 83.100
@@ -292,25 +512,25 @@ ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg develop
   libswscale      4.  8.100 /  4.  8.100
   libswresample   2.  9.100 /  2.  9.100
   libpostproc    54.  7.100 / 54.  7.100
-Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/00117.mp4':
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/00167.mp4':
   Metadata:
     major_brand     : isom
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf57.83.100
     comment         : Made with Video Export for Processing - https://git.io/vAXLk
-  Duration: 00:00:01.22, start: 0.000000, bitrate: 149 kb/s
-    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 250x250, 8 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+  Duration: 00:00:06.91, start: 0.000000, bitrate: 166 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 250x250, 35 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
     Metadata:
       handler_name    : VideoHandler
-    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 127 kb/s (default)
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 125 kb/s (default)
     Metadata:
       handler_name    : SoundHandler
 Stream mapping:
   Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
 Press [q] to stop, [?] for help
-[swscaler @ 0x561bd1206ea0] deprecated pixel format used, make sure you did set range correctly
-Output #0, image2, to '/var/www/html/media/placeholder/00117.jpg':
+[swscaler @ 0x5576a46348e0] deprecated pixel format used, make sure you did set range correctly
+Output #0, image2, to '/var/www/html/media/placeholder/00167.jpg':
   Metadata:
     major_brand     : isom
     minor_version   : 512
@@ -323,7 +543,3913 @@ Output #0, image2, to '/var/www/html/media/placeholder/00117.jpg':
       encoder         : Lavc57.107.100 mjpeg
     Side data:
       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
-frame=    0 fps=0.0 q=0.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
-video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
-Output file is empty, nothing was encoded (check -ss / -t / -frames parameters if used)
+frame=    1 fps=0.0 q=1.6 Lsize=N/A time=00:00:00.03 bitrate=N/A speed=0.734x    
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Processing ******** '_00168.wav'
+4067:5067 TRUTH
+8133:9133 SUBJECT EMPHATIC
+12200:13200 TRUTH
+16267:17267 SUBJECT MANIPULATING VOICE
+36567:37567 TRUTH
+44700:45700 TRUTH
+48733:49733 LIE
+57067:58067 INACCURACY
+113400:114400 LIE
+135300:136300 INACCURACY
+140367:141367 LIE
+143433:144433 INACCURACY
+147500:148500 LIE
+151567:152567 INACCURACY
+159667:160667 LIE
+168000:169000 INACCURACY
+186433:187433 INACCURACY
+203667:204667 INACCURACY
+207700:208700 SUBJECT EMPHATIC
+211767:212767 LIE
+220100:221100 INACCURACY
+224167:225167 SUBJECT EMPHATIC
+232267:233267 LIE
+236333:237333 INACCURACY
+240400:241400 SUBJECT MANIPULATING VOICE
+244467:245467 LIE
+260700:261700 SUBJECT MANIPULATING VOICE
+264767:265767 INACCURACY
+281067:282067 SUBJECT ATTEMPTING OUTSMART
+291000:292000 AVOIDANCE
+303200:304200 SUBJECT EMPHATIC
+307233:308233 LIE
+319433:320433 SUBJECT MANIPULATING VOICE
+352133:353133 SUBJECT EMPHATIC
+372433:373433 SUBJECT ATTEMPTING OUTSMART
+376500:377500 SUBJECT MANIPULATING VOICE
+406667:407667 LIE
+411367:412367 SUBJECT EMPHATIC
+458633:459633 SUBJECT EMPHATIC
+507567:508567 SUBJECT ATTEMPTING OUTSMART
+515667:516667 SUBJECT MANIPULATING VOICE
+564600:565600 SUBJECT EMPHATIC
+581067:582067 SUBJECT ATTEMPTING OUTSMART
+585100:586100 SUBJECT MANIPULATING VOICE
+601367:602367 SUBJECT EMPHATIC
+617600:618600 SUBJECT MANIPULATING VOICE
+619067:620067 INACCURACY
+619600:620600 SUBJECT MANIPULATING VOICE
+644167:645167 SUBJECT EMPHATIC
+648233:649233 LIE
+652300:653300 INACCURACY
+660400:661400 SUBJECT EMPHATIC
+668533:669533 LIE
+676467:677467 SUBJECT ATTEMPTING OUTSMART
+740200:741200 SUBJECT MANIPULATING VOICE
+756433:757433 SUBJECT EMPHATIC
+793200:794200 INACCURACY
+797267:798267 LIE
+801300:802300 INACCURACY
+813500:814500 LIE
+834000:835000 INACCURACY
+838067:839067 LIE
+857067:858067 INACCURACY
+866500:867500 TRUTH
+874600:875600 INACCURACY
+878667:879667 TRUTH
+903233:904233 SUBJECT IS NOT SURE
+907300:908300 TRUTH
+915433:916433 TRUTH
+923533:924533 TRUTH
+927600:928600 SUBJECT IS NOT SURE
+931667:932667 LIE
+935733:936733 INACCURACY
+941133:942133 AVOIDANCE
+957367:958367 SUBJECT EMPHATIC
+973633:974633 SUBJECT IS NOT SURE
+981733:982733 INACCURACY
+994133:995133 LIE
+998200:999200 TRUTH
+1002233:1003233 LIE
+1006300:1007300 TRUTH
+1026600:1027600 SUBJECT EMPHATIC
+1043067:1044067 INACCURACY
+1047133:1048133 TRUTH
+1055267:1056267 INACCURACY
+1059300:1060300 LIE
+1063367:1064367 TRUTH
+1067433:1068433 LIE
+1075567:1076567 INACCURACY
+1083667:1084667 TRUTH
+1092000:1093000 LIE
+1115067:1116067 SUBJECT ATTEMPTING OUTSMART
+1133100:1134100 TRUTH
+1137167:1138167 LIE
+1141200:1142200 TRUTH
+1149333:1150333 TRUTH
+1155400:1156400 LIE
+1158300:1159300 TRUTH
+1166433:1167433 LIE
+1170167:1171167 TRUTH
+1198500:1199500 TRUTH
+1234000:1235000 SUBJECT EMPHATIC
+1247067:1248067 LIE
+1258267:1259267 INACCURACY
+1258733:1259733 TRUTH
+1263000:1264000 LIE
+1267067:1268067 INACCURACY
+1275167:1276167 LIE
+1279233:1280233 INACCURACY
+1283300:1284300 TRUTH
+1290600:1291600 LIE
+1305400:1306400 TRUTH
+1314067:1315067 TRUTH
+1318133:1319133 LIE
+1326267:1327267 TRUTH
+1330333:1331333 LIE
+1346567:1347567 INACCURACY
+1350633:1351633 TRUTH
+1358733:1359733 INACCURACY
+1359600:1360600 LIE
+1359700:1360700 TRUTH
+1363767:1364767 INACCURACY
+1368033:1369033 LIE
+1385300:1386300 SUBJECT ATTEMPTING OUTSMART
+1389367:1390367 SUBJECT MANIPULATING VOICE
+1397500:1398500 SUBJECT ATTEMPTING OUTSMART
+1405600:1406600 SUBJECT MANIPULATING VOICE
+1409667:1410667 SUBJECT ATTEMPTING OUTSMART
+1412300:1413300 LIE
+1414300:1415300 SUBJECT MANIPULATING VOICE
+1429767:1430767 SUBJECT ATTEMPTING OUTSMART
+1435467:1436467 * END OF FILE *
+132 rows
+FFT started (please wait) ...
+513 bands
+FFT done.
+/var/www/app/songwork-app/data/in.wav
+13931
+0 : 0 --> 13931
+33 : 0 --> 13931
+66 : 192 --> 13931
+100 : 192 --> 13931
+133 : 192 --> 13931
+166 : 192 --> 13931
+200 : 192 --> 13931
+233 : 576 --> 13931
+266 : 576 --> 13931
+300 : 576 --> 13931
+333 : 576 --> 13931
+366 : 576 --> 13931
+400 : 576 --> 13931
+433 : 576 --> 13931
+466 : 576 --> 13931
+500 : 576 --> 13931
+533 : 576 --> 13931
+566 : 576 --> 13931
+600 : 576 --> 13931
+633 : 1408 --> 13931
+666 : 1408 --> 13931
+700 : 1408 --> 13931
+733 : 1408 --> 13931
+766 : 1408 --> 13931
+800 : 1408 --> 13931
+833 : 1408 --> 13931
+866 : 1408 --> 13931
+900 : 1408 --> 13931
+933 : 1408 --> 13931
+966 : 1408 --> 13931
+1000 : 1408 --> 13931
+1033 : 1408 --> 13931
+1066 : 1408 --> 13931
+1100 : 1408 --> 13931
+1133 : 1408 --> 13931
+1166 : 1408 --> 13931
+1200 : 1408 --> 13931
+1233 : 1408 --> 13931
+1266 : 1408 --> 13931
+1300 : 1408 --> 13931
+1333 : 1408 --> 13931
+1366 : 1408 --> 13931
+1400 : 1408 --> 13931
+1433 : 1408 --> 13931
+1466 : 3072 --> 13931
+1500 : 3072 --> 13931
+1533 : 3072 --> 13931
+1566 : 3072 --> 13931
+1600 : 3072 --> 13931
+1633 : 3072 --> 13931
+1666 : 3072 --> 13931
+1700 : 3072 --> 13931
+1733 : 3072 --> 13931
+1766 : 3072 --> 13931
+1800 : 3072 --> 13931
+1833 : 3072 --> 13931
+1866 : 3072 --> 13931
+1900 : 3072 --> 13931
+1933 : 3072 --> 13931
+1966 : 3072 --> 13931
+2000 : 3072 --> 13931
+2033 : 3072 --> 13931
+2066 : 3072 --> 13931
+2100 : 3072 --> 13931
+2133 : 3072 --> 13931
+2166 : 3072 --> 13931
+2200 : 3072 --> 13931
+2233 : 3072 --> 13931
+2266 : 3072 --> 13931
+2300 : 3072 --> 13931
+2333 : 3072 --> 13931
+2366 : 3072 --> 13931
+2400 : 3072 --> 13931
+2433 : 3072 --> 13931
+2466 : 3072 --> 13931
+2500 : 3072 --> 13931
+2533 : 3072 --> 13931
+2566 : 3072 --> 13931
+2600 : 3072 --> 13931
+2633 : 3072 --> 13931
+2666 : 3072 --> 13931
+2700 : 3072 --> 13931
+2733 : 3072 --> 13931
+2766 : 3072 --> 13931
+2800 : 3072 --> 13931
+2833 : 3072 --> 13931
+2866 : 3072 --> 13931
+2900 : 3072 --> 13931
+2933 : 3072 --> 13931
+2966 : 3072 --> 13931
+3000 : 3072 --> 13931
+3033 : 3072 --> 13931
+3066 : 3072 --> 13931
+3100 : 3072 --> 13931
+3133 : 6336 --> 13931
+3166 : 6336 --> 13931
+3200 : 6336 --> 13931
+3233 : 6336 --> 13931
+3266 : 6336 --> 13931
+3300 : 6336 --> 13931
+3333 : 6336 --> 13931
+3366 : 6336 --> 13931
+3400 : 6336 --> 13931
+3433 : 6336 --> 13931
+3466 : 6336 --> 13931
+3500 : 6336 --> 13931
+3533 : 6336 --> 13931
+3566 : 6336 --> 13931
+3600 : 6336 --> 13931
+3633 : 6336 --> 13931
+3666 : 6336 --> 13931
+3700 : 6336 --> 13931
+3733 : 6336 --> 13931
+3766 : 6336 --> 13931
+3800 : 6336 --> 13931
+3833 : 6336 --> 13931
+3866 : 6336 --> 13931
+3900 : 6336 --> 13931
+3933 : 6336 --> 13931
+3966 : 6336 --> 13931
+4000 : 6336 --> 13931
+4033 : 6336 --> 13931
+4066 : 6336 --> 13931
+4100 : 6336 --> 13931
+4133 : 6336 --> 13931
+4166 : 6336 --> 13931
+4200 : 6336 --> 13931
+4233 : 6336 --> 13931
+4266 : 6336 --> 13931
+4300 : 6336 --> 13931
+4333 : 6336 --> 13931
+4366 : 6336 --> 13931
+4400 : 6336 --> 13931
+4433 : 6336 --> 13931
+4466 : 6336 --> 13931
+4500 : 6336 --> 13931
+4533 : 6336 --> 13931
+4566 : 6336 --> 13931
+4600 : 6336 --> 13931
+4633 : 6336 --> 13931
+4666 : 6336 --> 13931
+4700 : 6336 --> 13931
+4733 : 6336 --> 13931
+4766 : 6336 --> 13931
+4800 : 6336 --> 13931
+4833 : 6336 --> 13931
+4866 : 6336 --> 13931
+4900 : 6336 --> 13931
+4933 : 6336 --> 13931
+4966 : 6336 --> 13931
+5000 : 6336 --> 13931
+5033 : 6336 --> 13931
+5066 : 6336 --> 13931
+5100 : 6336 --> 13931
+5133 : 6336 --> 13931
+5166 : 6336 --> 13931
+5200 : 6336 --> 13931
+5233 : 6336 --> 13931
+5266 : 6336 --> 13931
+5300 : 6336 --> 13931
+5333 : 6336 --> 13931
+5366 : 6336 --> 13931
+5400 : 6336 --> 13931
+5433 : 6336 --> 13931
+5466 : 6336 --> 13931
+5500 : 6336 --> 13931
+5533 : 6336 --> 13931
+5566 : 6336 --> 13931
+5600 : 6336 --> 13931
+5633 : 6336 --> 13931
+5666 : 6336 --> 13931
+5700 : 6336 --> 13931
+5733 : 6336 --> 13931
+5766 : 6336 --> 13931
+5800 : 6336 --> 13931
+5833 : 6336 --> 13931
+5866 : 6336 --> 13931
+5900 : 6336 --> 13931
+5933 : 6336 --> 13931
+5966 : 6336 --> 13931
+6000 : 6336 --> 13931
+6033 : 6336 --> 13931
+6066 : 6336 --> 13931
+6100 : 6336 --> 13931
+6133 : 6336 --> 13931
+6166 : 6336 --> 13931
+6200 : 6336 --> 13931
+6233 : 6336 --> 13931
+6266 : 6336 --> 13931
+6300 : 6336 --> 13931
+6333 : 6336 --> 13931
+6366 : 6336 --> 13931
+6400 : 12672 --> 13931
+6433 : 12672 --> 13931
+6466 : 12672 --> 13931
+6500 : 12672 --> 13931
+6533 : 12672 --> 13931
+6566 : 12672 --> 13931
+6600 : 12672 --> 13931
+6633 : 12672 --> 13931
+6666 : 12672 --> 13931
+6700 : 12672 --> 13931
+6733 : 12672 --> 13931
+6766 : 12672 --> 13931
+6800 : 12672 --> 13931
+6833 : 12672 --> 13931
+6866 : 12672 --> 13931
+End of audio, stopping video export.
+/var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4 saved.
+java.lang.NullPointerException
+	at com.hamoid.VideoExport.saveFrame(Unknown Source)
+	at spectrogram.draw(spectrogram.java:195)
+	at processing.core.PApplet.handleDraw(PApplet.java:2475)
+	at processing.awt.PSurfaceAWT$12.callDraw(PSurfaceAWT.java:1547)
+	at processing.core.PSurfaceNone$AnimationThread.run(PSurfaceNone.java:313)
+
+VideoExport error: Ffmpeg failed. Study /var/www/app/songwork-app/_make/../spectrogram/ffmpeg.txt for more details.
+
+Finished.
+Could not run the sketch (Target VM failed to initialize).
+For more information, read revisions.txt and Help ? Troubleshooting.
+Could not run the sketch.
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.83.100
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+  Duration: 00:00:06.91, start: 0.000000, bitrate: 292 kb/s
+    Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 120 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 166 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:0 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0x562ccbabcfc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+[libx264 @ 0x562ccbabcfc0] profile High, level 1.3
+[libx264 @ 0x562ccbabcfc0] 264 - core 152 r2854 e9a5903 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/out/00168.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: h264 (libx264) (avc1 / 0x31637661), yuv420p, 250x250, q=-1--1, 30 fps, 15360 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc57.107.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      encoder         : Lavc57.107.100 aac
+frame=  141 fps=0.0 q=29.0 size=       0kB time=00:00:04.54 bitrate=   0.1kbits/s speed=9.02x    frame=  206 fps=201 q=29.0 Lsize=     141kB time=00:00:06.84 bitrate= 168.3kbits/s speed=6.68x    
+video:30kB audio:106kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 3.881920%
+[libx264 @ 0x562ccbabcfc0] frame I:1     Avg QP:10.00  size:    61
+[libx264 @ 0x562ccbabcfc0] frame P:58    Avg QP:17.54  size:   310
+[libx264 @ 0x562ccbabcfc0] frame B:147   Avg QP:19.93  size:    81
+[libx264 @ 0x562ccbabcfc0] consecutive B-frames:  4.4%  1.0%  1.5% 93.2%
+[libx264 @ 0x562ccbabcfc0] mb I  I16..4: 100.0%  0.0%  0.0%
+[libx264 @ 0x562ccbabcfc0] mb P  I16..4:  0.0%  0.1%  0.4%  P16..4:  3.8%  1.5%  1.1%  0.0%  0.0%    skip:93.1%
+[libx264 @ 0x562ccbabcfc0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  3.9%  0.6%  0.2%  direct: 1.0%  skip:94.3%  L0:23.6% L1:71.8% BI: 4.6%
+[libx264 @ 0x562ccbabcfc0] 8x8 transform intra:4.4% inter:54.1%
+[libx264 @ 0x562ccbabcfc0] coded y,uvDC,uvAC intra: 19.3% 0.0% 0.0% inter: 1.7% 0.0% 0.0%
+[libx264 @ 0x562ccbabcfc0] i16 v,h,dc,p: 94%  0%  6%  0%
+[libx264 @ 0x562ccbabcfc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13%  2% 63%  8%  2%  5%  2%  3%  2%
+[libx264 @ 0x562ccbabcfc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 28% 26%  5%  3%  7%  4%  6%  4%
+[libx264 @ 0x562ccbabcfc0] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 0x562ccbabcfc0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x562ccbabcfc0] ref P L0: 80.5%  7.5%  9.1%  3.0%
+[libx264 @ 0x562ccbabcfc0] ref B L0: 95.8%  3.4%  0.8%
+[libx264 @ 0x562ccbabcfc0] ref B L1: 94.7%  5.3%
+[libx264 @ 0x562ccbabcfc0] kb/s:34.93
+[aac @ 0x562ccbac27a0] Qavg: 1707.135
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/00168.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.83.100
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+  Duration: 00:00:06.91, start: 0.000000, bitrate: 166 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 250x250, 35 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 125 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+[swscaler @ 0x558b11fc48e0] deprecated pixel format used, make sure you did set range correctly
+Output #0, image2, to '/var/www/html/media/placeholder/00168.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: mjpeg, yuvj420p(pc), 250x250, q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc57.107.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
+frame=    1 fps=0.0 q=1.6 Lsize=N/A time=00:00:00.03 bitrate=N/A speed=0.737x    
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+done.
+00169.wav
+__make.sh
+debug.log
+error
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Guessed Channel Layout for Input Stream #0.0 : stereo
+Input #0, wav, from '00169.wav':
+  Duration: 00:01:34.31, bitrate: 2304 kb/s
+    Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '_00169.wav':
+  Metadata:
+    ISFT            : Lavf57.83.100
+    Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, stereo, s16, 512 kb/s
+    Metadata:
+      encoder         : Lavc57.107.100 pcm_s16le
+size=    5894kB time=00:01:34.30 bitrate= 512.0kbits/s speed= 231x    
+video:0kB audio:5894kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.001292%
+Processing ******** '_00169.wav'
+4067:5067 TRUTH
+8133:9133 SUBJECT EMPHATIC
+12200:13200 TRUTH
+16267:17267 SUBJECT MANIPULATING VOICE
+36567:37567 TRUTH
+44700:45700 TRUTH
+48733:49733 LIE
+57067:58067 INACCURACY
+113400:114400 LIE
+135300:136300 INACCURACY
+140367:141367 LIE
+143433:144433 INACCURACY
+147500:148500 LIE
+151567:152567 INACCURACY
+159667:160667 LIE
+168000:169000 INACCURACY
+186433:187433 INACCURACY
+203667:204667 INACCURACY
+207700:208700 SUBJECT EMPHATIC
+211767:212767 LIE
+220100:221100 INACCURACY
+224167:225167 SUBJECT EMPHATIC
+232267:233267 LIE
+236333:237333 INACCURACY
+240400:241400 SUBJECT MANIPULATING VOICE
+244467:245467 LIE
+260700:261700 SUBJECT MANIPULATING VOICE
+264767:265767 INACCURACY
+281067:282067 SUBJECT ATTEMPTING OUTSMART
+291000:292000 AVOIDANCE
+303200:304200 SUBJECT EMPHATIC
+307233:308233 LIE
+319433:320433 SUBJECT MANIPULATING VOICE
+352133:353133 SUBJECT EMPHATIC
+372433:373433 SUBJECT ATTEMPTING OUTSMART
+376500:377500 SUBJECT MANIPULATING VOICE
+406667:407667 LIE
+411367:412367 SUBJECT EMPHATIC
+458633:459633 SUBJECT EMPHATIC
+507567:508567 SUBJECT ATTEMPTING OUTSMART
+515667:516667 SUBJECT MANIPULATING VOICE
+564600:565600 SUBJECT EMPHATIC
+581067:582067 SUBJECT ATTEMPTING OUTSMART
+585100:586100 SUBJECT MANIPULATING VOICE
+601367:602367 SUBJECT EMPHATIC
+617600:618600 SUBJECT MANIPULATING VOICE
+619067:620067 INACCURACY
+619600:620600 SUBJECT MANIPULATING VOICE
+644167:645167 SUBJECT EMPHATIC
+648233:649233 LIE
+652300:653300 INACCURACY
+660400:661400 SUBJECT EMPHATIC
+668533:669533 LIE
+676467:677467 SUBJECT ATTEMPTING OUTSMART
+740200:741200 SUBJECT MANIPULATING VOICE
+756433:757433 SUBJECT EMPHATIC
+793200:794200 INACCURACY
+797267:798267 LIE
+801300:802300 INACCURACY
+813500:814500 LIE
+834000:835000 INACCURACY
+838067:839067 LIE
+857067:858067 INACCURACY
+866500:867500 TRUTH
+874600:875600 INACCURACY
+878667:879667 TRUTH
+903233:904233 SUBJECT IS NOT SURE
+907300:908300 TRUTH
+915433:916433 TRUTH
+923533:924533 TRUTH
+927600:928600 SUBJECT IS NOT SURE
+931667:932667 LIE
+935733:936733 INACCURACY
+941133:942133 AVOIDANCE
+957367:958367 SUBJECT EMPHATIC
+973633:974633 SUBJECT IS NOT SURE
+981733:982733 INACCURACY
+994133:995133 LIE
+998200:999200 TRUTH
+1002233:1003233 LIE
+1006300:1007300 TRUTH
+1026600:1027600 SUBJECT EMPHATIC
+1043067:1044067 INACCURACY
+1047133:1048133 TRUTH
+1055267:1056267 INACCURACY
+1059300:1060300 LIE
+1063367:1064367 TRUTH
+1067433:1068433 LIE
+1075567:1076567 INACCURACY
+1083667:1084667 TRUTH
+1092000:1093000 LIE
+1115067:1116067 SUBJECT ATTEMPTING OUTSMART
+1133100:1134100 TRUTH
+1137167:1138167 LIE
+1141200:1142200 TRUTH
+1149333:1150333 TRUTH
+1155400:1156400 LIE
+1158300:1159300 TRUTH
+1166433:1167433 LIE
+1170167:1171167 TRUTH
+1198500:1199500 TRUTH
+1234000:1235000 SUBJECT EMPHATIC
+1247067:1248067 LIE
+1258267:1259267 INACCURACY
+1258733:1259733 TRUTH
+1263000:1264000 LIE
+1267067:1268067 INACCURACY
+1275167:1276167 LIE
+1279233:1280233 INACCURACY
+1283300:1284300 TRUTH
+1290600:1291600 LIE
+1305400:1306400 TRUTH
+1314067:1315067 TRUTH
+1318133:1319133 LIE
+1326267:1327267 TRUTH
+1330333:1331333 LIE
+1346567:1347567 INACCURACY
+1350633:1351633 TRUTH
+1358733:1359733 INACCURACY
+1359600:1360600 LIE
+1359700:1360700 TRUTH
+1363767:1364767 INACCURACY
+1368033:1369033 LIE
+1385300:1386300 SUBJECT ATTEMPTING OUTSMART
+1389367:1390367 SUBJECT MANIPULATING VOICE
+1397500:1398500 SUBJECT ATTEMPTING OUTSMART
+1405600:1406600 SUBJECT MANIPULATING VOICE
+1409667:1410667 SUBJECT ATTEMPTING OUTSMART
+1412300:1413300 LIE
+1414300:1415300 SUBJECT MANIPULATING VOICE
+1429767:1430767 SUBJECT ATTEMPTING OUTSMART
+1435467:1436467 * END OF FILE *
+132 rows
+FFT started (please wait) ...
+513 bands
+FFT done.
+/var/www/app/songwork-app/data/in.wav
+94309
+0 : 0 --> 94309
+33 : 0 --> 94309
+66 : 192 --> 94309
+100 : 192 --> 94309
+133 : 192 --> 94309
+166 : 192 --> 94309
+200 : 192 --> 94309
+233 : 576 --> 94309
+266 : 576 --> 94309
+300 : 576 --> 94309
+333 : 576 --> 94309
+366 : 576 --> 94309
+400 : 576 --> 94309
+433 : 576 --> 94309
+466 : 576 --> 94309
+500 : 576 --> 94309
+533 : 576 --> 94309
+566 : 576 --> 94309
+600 : 576 --> 94309
+633 : 1408 --> 94309
+666 : 1408 --> 94309
+700 : 1408 --> 94309
+733 : 1408 --> 94309
+766 : 1408 --> 94309
+800 : 1408 --> 94309
+833 : 1408 --> 94309
+866 : 1408 --> 94309
+900 : 1408 --> 94309
+933 : 1408 --> 94309
+966 : 1408 --> 94309
+1000 : 1408 --> 94309
+1033 : 1408 --> 94309
+1066 : 1408 --> 94309
+1100 : 1408 --> 94309
+1133 : 1408 --> 94309
+1166 : 1408 --> 94309
+1200 : 1408 --> 94309
+1233 : 1408 --> 94309
+1266 : 1408 --> 94309
+1300 : 1408 --> 94309
+1333 : 1408 --> 94309
+1366 : 1408 --> 94309
+1400 : 1408 --> 94309
+1433 : 1408 --> 94309
+1466 : 3072 --> 94309
+1500 : 3072 --> 94309
+1533 : 3072 --> 94309
+1566 : 3072 --> 94309
+1600 : 3072 --> 94309
+1633 : 3072 --> 94309
+1666 : 3072 --> 94309
+1700 : 3072 --> 94309
+1733 : 3072 --> 94309
+1766 : 3072 --> 94309
+1800 : 3072 --> 94309
+1833 : 3072 --> 94309
+1866 : 3072 --> 94309
+1900 : 3072 --> 94309
+1933 : 3072 --> 94309
+1966 : 3072 --> 94309
+2000 : 3072 --> 94309
+2033 : 3072 --> 94309
+2066 : 3072 --> 94309
+2100 : 3072 --> 94309
+2133 : 3072 --> 94309
+2166 : 3072 --> 94309
+2200 : 3072 --> 94309
+2233 : 3072 --> 94309
+2266 : 3072 --> 94309
+2300 : 3072 --> 94309
+2333 : 3072 --> 94309
+2366 : 3072 --> 94309
+2400 : 3072 --> 94309
+2433 : 3072 --> 94309
+2466 : 3072 --> 94309
+2500 : 3072 --> 94309
+2533 : 3072 --> 94309
+2566 : 3072 --> 94309
+2600 : 3072 --> 94309
+2633 : 3072 --> 94309
+2666 : 3072 --> 94309
+2700 : 3072 --> 94309
+2733 : 3072 --> 94309
+2766 : 3072 --> 94309
+2800 : 3072 --> 94309
+2833 : 3072 --> 94309
+2866 : 3072 --> 94309
+2900 : 3072 --> 94309
+2933 : 3072 --> 94309
+2966 : 3072 --> 94309
+3000 : 3072 --> 94309
+3033 : 3072 --> 94309
+3066 : 3072 --> 94309
+3100 : 3072 --> 94309
+3133 : 6336 --> 94309
+3166 : 6336 --> 94309
+3200 : 6336 --> 94309
+3233 : 6336 --> 94309
+3266 : 6336 --> 94309
+3300 : 6336 --> 94309
+3333 : 6336 --> 94309
+3366 : 6336 --> 94309
+3400 : 6336 --> 94309
+3433 : 6336 --> 94309
+3466 : 6336 --> 94309
+3500 : 6336 --> 94309
+3533 : 6336 --> 94309
+3566 : 6336 --> 94309
+3600 : 6336 --> 94309
+3633 : 6336 --> 94309
+3666 : 6336 --> 94309
+3700 : 6336 --> 94309
+3733 : 6336 --> 94309
+3766 : 6336 --> 94309
+3800 : 6336 --> 94309
+3833 : 6336 --> 94309
+3866 : 6336 --> 94309
+3900 : 6336 --> 94309
+3933 : 6336 --> 94309
+3966 : 6336 --> 94309
+4000 : 6336 --> 94309
+4033 : 6336 --> 94309
+4066 : 6336 --> 94309
+4100 : 6336 --> 94309
+4133 : 6336 --> 94309
+4166 : 6336 --> 94309
+4200 : 6336 --> 94309
+4233 : 6336 --> 94309
+4266 : 6336 --> 94309
+4300 : 6336 --> 94309
+4333 : 6336 --> 94309
+4366 : 6336 --> 94309
+4400 : 6336 --> 94309
+4433 : 6336 --> 94309
+4466 : 6336 --> 94309
+4500 : 6336 --> 94309
+4533 : 6336 --> 94309
+4566 : 6336 --> 94309
+4600 : 6336 --> 94309
+4633 : 6336 --> 94309
+4666 : 6336 --> 94309
+4700 : 6336 --> 94309
+4733 : 6336 --> 94309
+4766 : 6336 --> 94309
+4800 : 6336 --> 94309
+4833 : 6336 --> 94309
+4866 : 6336 --> 94309
+4900 : 6336 --> 94309
+4933 : 6336 --> 94309
+4966 : 6336 --> 94309
+5000 : 6336 --> 94309
+5033 : 6336 --> 94309
+5066 : 6336 --> 94309
+5100 : 6336 --> 94309
+5133 : 6336 --> 94309
+5166 : 6336 --> 94309
+5200 : 6336 --> 94309
+5233 : 6336 --> 94309
+5266 : 6336 --> 94309
+5300 : 6336 --> 94309
+5333 : 6336 --> 94309
+5366 : 6336 --> 94309
+5400 : 6336 --> 94309
+5433 : 6336 --> 94309
+5466 : 6336 --> 94309
+5500 : 6336 --> 94309
+5533 : 6336 --> 94309
+5566 : 6336 --> 94309
+5600 : 6336 --> 94309
+5633 : 6336 --> 94309
+5666 : 6336 --> 94309
+5700 : 6336 --> 94309
+5733 : 6336 --> 94309
+5766 : 6336 --> 94309
+5800 : 6336 --> 94309
+5833 : 6336 --> 94309
+5866 : 6336 --> 94309
+5900 : 6336 --> 94309
+5933 : 6336 --> 94309
+5966 : 6336 --> 94309
+6000 : 6336 --> 94309
+6033 : 6336 --> 94309
+6066 : 6336 --> 94309
+6100 : 6336 --> 94309
+6133 : 6336 --> 94309
+6166 : 6336 --> 94309
+6200 : 6336 --> 94309
+6233 : 6336 --> 94309
+6266 : 6336 --> 94309
+6300 : 6336 --> 94309
+6333 : 6336 --> 94309
+6366 : 6336 --> 94309
+6400 : 12672 --> 94309
+6433 : 12672 --> 94309
+6466 : 12672 --> 94309
+6500 : 12672 --> 94309
+6533 : 12672 --> 94309
+6566 : 12672 --> 94309
+6600 : 12672 --> 94309
+6633 : 12672 --> 94309
+6666 : 12672 --> 94309
+6700 : 12672 --> 94309
+6733 : 12672 --> 94309
+6766 : 12672 --> 94309
+6800 : 12672 --> 94309
+6833 : 12672 --> 94309
+6866 : 12672 --> 94309
+6900 : 12672 --> 94309
+6933 : 12672 --> 94309
+6966 : 12672 --> 94309
+7000 : 12672 --> 94309
+7033 : 12672 --> 94309
+7066 : 12672 --> 94309
+7100 : 12672 --> 94309
+7133 : 12672 --> 94309
+7166 : 12672 --> 94309
+7200 : 12672 --> 94309
+7233 : 12672 --> 94309
+7266 : 12672 --> 94309
+7300 : 12672 --> 94309
+7333 : 12672 --> 94309
+7366 : 12672 --> 94309
+7400 : 12672 --> 94309
+7433 : 12672 --> 94309
+7466 : 12672 --> 94309
+7500 : 12672 --> 94309
+7533 : 12672 --> 94309
+7566 : 12672 --> 94309
+7600 : 12672 --> 94309
+7633 : 12672 --> 94309
+7666 : 12672 --> 94309
+7700 : 12672 --> 94309
+7733 : 12672 --> 94309
+7766 : 12672 --> 94309
+7800 : 12672 --> 94309
+7833 : 12672 --> 94309
+7866 : 12672 --> 94309
+7900 : 12672 --> 94309
+7933 : 12672 --> 94309
+7966 : 12672 --> 94309
+8000 : 12672 --> 94309
+8033 : 12672 --> 94309
+8066 : 12672 --> 94309
+8100 : 12672 --> 94309
+8133 : 12672 --> 94309
+8166 : 12672 --> 94309
+8200 : 12672 --> 94309
+8233 : 12672 --> 94309
+8266 : 12672 --> 94309
+8300 : 12672 --> 94309
+8333 : 12672 --> 94309
+8366 : 12672 --> 94309
+8400 : 12672 --> 94309
+8433 : 12672 --> 94309
+8466 : 12672 --> 94309
+8500 : 12672 --> 94309
+8533 : 12672 --> 94309
+8566 : 12672 --> 94309
+8600 : 12672 --> 94309
+8633 : 12672 --> 94309
+8666 : 12672 --> 94309
+8700 : 12672 --> 94309
+8733 : 12672 --> 94309
+8766 : 12672 --> 94309
+8800 : 12672 --> 94309
+8833 : 12672 --> 94309
+8866 : 12672 --> 94309
+8900 : 12672 --> 94309
+8933 : 12672 --> 94309
+8966 : 12672 --> 94309
+9000 : 12672 --> 94309
+9033 : 12672 --> 94309
+9066 : 12672 --> 94309
+9100 : 12672 --> 94309
+9133 : 12672 --> 94309
+9166 : 12672 --> 94309
+9200 : 12672 --> 94309
+9233 : 12672 --> 94309
+9266 : 12672 --> 94309
+9300 : 12672 --> 94309
+9333 : 12672 --> 94309
+9366 : 12672 --> 94309
+9400 : 12672 --> 94309
+9433 : 12672 --> 94309
+9466 : 12672 --> 94309
+9500 : 12672 --> 94309
+9533 : 12672 --> 94309
+9566 : 12672 --> 94309
+9600 : 12672 --> 94309
+9633 : 12672 --> 94309
+9666 : 12672 --> 94309
+9700 : 12672 --> 94309
+9733 : 12672 --> 94309
+9766 : 12672 --> 94309
+9800 : 12672 --> 94309
+9833 : 12672 --> 94309
+9866 : 12672 --> 94309
+9900 : 12672 --> 94309
+9933 : 12672 --> 94309
+9966 : 12672 --> 94309
+10000 : 12672 --> 94309
+10033 : 12672 --> 94309
+10066 : 12672 --> 94309
+10100 : 12672 --> 94309
+10133 : 12672 --> 94309
+10166 : 12672 --> 94309
+10200 : 12672 --> 94309
+10233 : 12672 --> 94309
+10266 : 12672 --> 94309
+10300 : 12672 --> 94309
+10333 : 12672 --> 94309
+10366 : 12672 --> 94309
+10400 : 12672 --> 94309
+10433 : 12672 --> 94309
+10466 : 12672 --> 94309
+10500 : 12672 --> 94309
+10533 : 12672 --> 94309
+10566 : 12672 --> 94309
+10600 : 12672 --> 94309
+10633 : 12672 --> 94309
+10666 : 12672 --> 94309
+10700 : 12672 --> 94309
+10733 : 12672 --> 94309
+10766 : 12672 --> 94309
+10800 : 12672 --> 94309
+10833 : 12672 --> 94309
+10866 : 12672 --> 94309
+10900 : 12672 --> 94309
+10933 : 12672 --> 94309
+10966 : 12672 --> 94309
+11000 : 12672 --> 94309
+11033 : 12672 --> 94309
+11066 : 12672 --> 94309
+11100 : 12672 --> 94309
+11133 : 12672 --> 94309
+11166 : 12672 --> 94309
+11200 : 12672 --> 94309
+11233 : 12672 --> 94309
+11266 : 12672 --> 94309
+11300 : 12672 --> 94309
+11333 : 12672 --> 94309
+11366 : 12672 --> 94309
+11400 : 12672 --> 94309
+11433 : 12672 --> 94309
+11466 : 12672 --> 94309
+11500 : 12672 --> 94309
+11533 : 12672 --> 94309
+11566 : 12672 --> 94309
+11600 : 12672 --> 94309
+11633 : 12672 --> 94309
+11666 : 12672 --> 94309
+11700 : 12672 --> 94309
+11733 : 12672 --> 94309
+11766 : 12672 --> 94309
+11800 : 12672 --> 94309
+11833 : 12672 --> 94309
+11866 : 12672 --> 94309
+11900 : 12672 --> 94309
+11933 : 12672 --> 94309
+11966 : 12672 --> 94309
+12000 : 12672 --> 94309
+12033 : 12672 --> 94309
+12066 : 12672 --> 94309
+12100 : 12672 --> 94309
+12133 : 12672 --> 94309
+12166 : 12672 --> 94309
+12200 : 12672 --> 94309
+12233 : 12672 --> 94309
+12266 : 12672 --> 94309
+12300 : 12672 --> 94309
+12333 : 12672 --> 94309
+12366 : 12672 --> 94309
+12400 : 12672 --> 94309
+12433 : 12672 --> 94309
+12466 : 12672 --> 94309
+12500 : 12672 --> 94309
+12533 : 12672 --> 94309
+12566 : 12672 --> 94309
+12600 : 12672 --> 94309
+12633 : 12672 --> 94309
+12666 : 12672 --> 94309
+12700 : 12672 --> 94309
+12733 : 24896 --> 94309
+12766 : 24896 --> 94309
+12800 : 24896 --> 94309
+12833 : 24896 --> 94309
+12866 : 24896 --> 94309
+12900 : 24896 --> 94309
+12933 : 24896 --> 94309
+12966 : 24896 --> 94309
+13000 : 24896 --> 94309
+13033 : 24896 --> 94309
+13066 : 24896 --> 94309
+13100 : 24896 --> 94309
+13133 : 24896 --> 94309
+13166 : 24896 --> 94309
+13200 : 24896 --> 94309
+13233 : 24896 --> 94309
+13266 : 24896 --> 94309
+13300 : 24896 --> 94309
+13333 : 24896 --> 94309
+13366 : 24896 --> 94309
+13400 : 24896 --> 94309
+13433 : 24896 --> 94309
+13466 : 24896 --> 94309
+13500 : 24896 --> 94309
+13533 : 24896 --> 94309
+13566 : 24896 --> 94309
+13600 : 24896 --> 94309
+13633 : 24896 --> 94309
+13666 : 24896 --> 94309
+13700 : 24896 --> 94309
+13733 : 24896 --> 94309
+13766 : 24896 --> 94309
+13800 : 24896 --> 94309
+13833 : 24896 --> 94309
+13866 : 24896 --> 94309
+13900 : 24896 --> 94309
+13933 : 24896 --> 94309
+13966 : 24896 --> 94309
+14000 : 24896 --> 94309
+14033 : 24896 --> 94309
+14066 : 24896 --> 94309
+14100 : 24896 --> 94309
+14133 : 24896 --> 94309
+14166 : 24896 --> 94309
+14200 : 24896 --> 94309
+14233 : 24896 --> 94309
+14266 : 24896 --> 94309
+14300 : 24896 --> 94309
+14333 : 24896 --> 94309
+14366 : 24896 --> 94309
+14400 : 24896 --> 94309
+14433 : 24896 --> 94309
+14466 : 24896 --> 94309
+14500 : 24896 --> 94309
+14533 : 24896 --> 94309
+14566 : 24896 --> 94309
+14600 : 24896 --> 94309
+14633 : 24896 --> 94309
+14666 : 24896 --> 94309
+14700 : 24896 --> 94309
+14733 : 24896 --> 94309
+14766 : 24896 --> 94309
+14800 : 24896 --> 94309
+14833 : 24896 --> 94309
+14866 : 24896 --> 94309
+14900 : 24896 --> 94309
+14933 : 24896 --> 94309
+14966 : 24896 --> 94309
+15000 : 24896 --> 94309
+15033 : 24896 --> 94309
+15066 : 24896 --> 94309
+15100 : 24896 --> 94309
+15133 : 24896 --> 94309
+15166 : 24896 --> 94309
+15200 : 24896 --> 94309
+15233 : 24896 --> 94309
+15266 : 24896 --> 94309
+15300 : 24896 --> 94309
+15333 : 24896 --> 94309
+15366 : 24896 --> 94309
+15400 : 24896 --> 94309
+15433 : 24896 --> 94309
+15466 : 24896 --> 94309
+15500 : 24896 --> 94309
+15533 : 24896 --> 94309
+15566 : 24896 --> 94309
+15600 : 24896 --> 94309
+15633 : 24896 --> 94309
+15666 : 24896 --> 94309
+15700 : 24896 --> 94309
+15733 : 24896 --> 94309
+15766 : 24896 --> 94309
+15800 : 24896 --> 94309
+15833 : 24896 --> 94309
+15866 : 24896 --> 94309
+15900 : 24896 --> 94309
+15933 : 24896 --> 94309
+15966 : 24896 --> 94309
+16000 : 24896 --> 94309
+16033 : 24896 --> 94309
+16066 : 24896 --> 94309
+16100 : 24896 --> 94309
+16133 : 24896 --> 94309
+16166 : 24896 --> 94309
+16200 : 24896 --> 94309
+16233 : 24896 --> 94309
+16266 : 24896 --> 94309
+16299 : 24896 --> 94309
+16333 : 24896 --> 94309
+16366 : 24896 --> 94309
+16400 : 24896 --> 94309
+16433 : 24896 --> 94309
+16466 : 24896 --> 94309
+16500 : 24896 --> 94309
+16533 : 24896 --> 94309
+16566 : 24896 --> 94309
+16600 : 24896 --> 94309
+16633 : 24896 --> 94309
+16666 : 24896 --> 94309
+16700 : 24896 --> 94309
+16733 : 24896 --> 94309
+16766 : 24896 --> 94309
+16800 : 24896 --> 94309
+16833 : 24896 --> 94309
+16866 : 24896 --> 94309
+16900 : 24896 --> 94309
+16933 : 24896 --> 94309
+16966 : 24896 --> 94309
+17000 : 24896 --> 94309
+17033 : 24896 --> 94309
+17066 : 24896 --> 94309
+17100 : 24896 --> 94309
+17133 : 24896 --> 94309
+17166 : 24896 --> 94309
+17200 : 24896 --> 94309
+17233 : 24896 --> 94309
+17266 : 24896 --> 94309
+17300 : 24896 --> 94309
+17333 : 24896 --> 94309
+17366 : 24896 --> 94309
+17400 : 24896 --> 94309
+17433 : 24896 --> 94309
+17466 : 24896 --> 94309
+17500 : 24896 --> 94309
+17533 : 24896 --> 94309
+17566 : 24896 --> 94309
+17600 : 24896 --> 94309
+17633 : 24896 --> 94309
+17666 : 24896 --> 94309
+17700 : 24896 --> 94309
+17733 : 24896 --> 94309
+17766 : 24896 --> 94309
+17800 : 24896 --> 94309
+17833 : 24896 --> 94309
+17866 : 24896 --> 94309
+17900 : 24896 --> 94309
+17933 : 24896 --> 94309
+17966 : 24896 --> 94309
+18000 : 24896 --> 94309
+18033 : 24896 --> 94309
+18066 : 24896 --> 94309
+18100 : 24896 --> 94309
+18133 : 24896 --> 94309
+18166 : 24896 --> 94309
+18200 : 24896 --> 94309
+18233 : 24896 --> 94309
+18266 : 24896 --> 94309
+18300 : 24896 --> 94309
+18333 : 24896 --> 94309
+18366 : 24896 --> 94309
+18400 : 24896 --> 94309
+18433 : 24896 --> 94309
+18466 : 24896 --> 94309
+18500 : 24896 --> 94309
+18533 : 24896 --> 94309
+18566 : 24896 --> 94309
+18600 : 24896 --> 94309
+18633 : 24896 --> 94309
+18666 : 24896 --> 94309
+18700 : 24896 --> 94309
+18733 : 24896 --> 94309
+18766 : 24896 --> 94309
+18800 : 24896 --> 94309
+18833 : 24896 --> 94309
+18866 : 24896 --> 94309
+18900 : 24896 --> 94309
+18933 : 24896 --> 94309
+18966 : 24896 --> 94309
+19000 : 24896 --> 94309
+19033 : 24896 --> 94309
+19066 : 24896 --> 94309
+19100 : 24896 --> 94309
+19133 : 24896 --> 94309
+19166 : 24896 --> 94309
+19200 : 24896 --> 94309
+19233 : 24896 --> 94309
+19266 : 24896 --> 94309
+19300 : 24896 --> 94309
+19333 : 24896 --> 94309
+19366 : 24896 --> 94309
+19400 : 24896 --> 94309
+19433 : 24896 --> 94309
+19466 : 24896 --> 94309
+19500 : 24896 --> 94309
+19533 : 24896 --> 94309
+19566 : 24896 --> 94309
+19600 : 24896 --> 94309
+19633 : 24896 --> 94309
+19666 : 24896 --> 94309
+19700 : 24896 --> 94309
+19733 : 24896 --> 94309
+19766 : 24896 --> 94309
+19800 : 24896 --> 94309
+19833 : 24896 --> 94309
+19866 : 24896 --> 94309
+19900 : 24896 --> 94309
+19933 : 24896 --> 94309
+19966 : 24896 --> 94309
+20000 : 24896 --> 94309
+20033 : 24896 --> 94309
+20066 : 24896 --> 94309
+20100 : 24896 --> 94309
+20133 : 24896 --> 94309
+20166 : 24896 --> 94309
+20200 : 24896 --> 94309
+20233 : 24896 --> 94309
+20266 : 24896 --> 94309
+20300 : 24896 --> 94309
+20333 : 24896 --> 94309
+20366 : 24896 --> 94309
+20400 : 24896 --> 94309
+20433 : 24896 --> 94309
+20466 : 24896 --> 94309
+20500 : 24896 --> 94309
+20533 : 24896 --> 94309
+20566 : 24896 --> 94309
+20600 : 24896 --> 94309
+20633 : 24896 --> 94309
+20666 : 24896 --> 94309
+20700 : 24896 --> 94309
+20733 : 24896 --> 94309
+20766 : 24896 --> 94309
+20800 : 24896 --> 94309
+20833 : 24896 --> 94309
+20866 : 24896 --> 94309
+20900 : 24896 --> 94309
+20933 : 24896 --> 94309
+20966 : 24896 --> 94309
+21000 : 24896 --> 94309
+21033 : 24896 --> 94309
+21066 : 24896 --> 94309
+21100 : 24896 --> 94309
+21133 : 24896 --> 94309
+21166 : 24896 --> 94309
+21200 : 24896 --> 94309
+21233 : 24896 --> 94309
+21266 : 24896 --> 94309
+21300 : 24896 --> 94309
+21333 : 24896 --> 94309
+21366 : 24896 --> 94309
+21400 : 24896 --> 94309
+21433 : 24896 --> 94309
+21466 : 24896 --> 94309
+21500 : 24896 --> 94309
+21533 : 24896 --> 94309
+21566 : 24896 --> 94309
+21600 : 24896 --> 94309
+21633 : 24896 --> 94309
+21666 : 24896 --> 94309
+21700 : 24896 --> 94309
+21733 : 24896 --> 94309
+21766 : 24896 --> 94309
+21800 : 24896 --> 94309
+21833 : 24896 --> 94309
+21866 : 24896 --> 94309
+21900 : 24896 --> 94309
+21933 : 24896 --> 94309
+21966 : 24896 --> 94309
+22000 : 24896 --> 94309
+22033 : 24896 --> 94309
+22066 : 24896 --> 94309
+22100 : 24896 --> 94309
+22133 : 24896 --> 94309
+22166 : 24896 --> 94309
+22200 : 24896 --> 94309
+22233 : 24896 --> 94309
+22266 : 24896 --> 94309
+22300 : 24896 --> 94309
+22333 : 24896 --> 94309
+22366 : 24896 --> 94309
+22400 : 24896 --> 94309
+22433 : 24896 --> 94309
+22466 : 24896 --> 94309
+22500 : 24896 --> 94309
+22533 : 24896 --> 94309
+22566 : 24896 --> 94309
+22600 : 24896 --> 94309
+22633 : 24896 --> 94309
+22666 : 24896 --> 94309
+22700 : 24896 --> 94309
+22733 : 24896 --> 94309
+22766 : 24896 --> 94309
+22800 : 24896 --> 94309
+22833 : 24896 --> 94309
+22866 : 24896 --> 94309
+22900 : 24896 --> 94309
+22933 : 24896 --> 94309
+22966 : 24896 --> 94309
+23000 : 24896 --> 94309
+23033 : 24896 --> 94309
+23066 : 24896 --> 94309
+23100 : 24896 --> 94309
+23133 : 24896 --> 94309
+23166 : 24896 --> 94309
+23200 : 24896 --> 94309
+23233 : 24896 --> 94309
+23266 : 24896 --> 94309
+23300 : 24896 --> 94309
+23333 : 24896 --> 94309
+23366 : 24896 --> 94309
+23400 : 24896 --> 94309
+23433 : 24896 --> 94309
+23466 : 24896 --> 94309
+23500 : 24896 --> 94309
+23533 : 24896 --> 94309
+23566 : 24896 --> 94309
+23600 : 24896 --> 94309
+23633 : 24896 --> 94309
+23666 : 24896 --> 94309
+23700 : 24896 --> 94309
+23733 : 24896 --> 94309
+23766 : 24896 --> 94309
+23800 : 24896 --> 94309
+23833 : 24896 --> 94309
+23866 : 24896 --> 94309
+23900 : 24896 --> 94309
+23933 : 24896 --> 94309
+23966 : 24896 --> 94309
+24000 : 24896 --> 94309
+24033 : 24896 --> 94309
+24066 : 24896 --> 94309
+24100 : 24896 --> 94309
+24133 : 24896 --> 94309
+24166 : 24896 --> 94309
+24200 : 24896 --> 94309
+24233 : 24896 --> 94309
+24266 : 24896 --> 94309
+24300 : 24896 --> 94309
+24333 : 24896 --> 94309
+24366 : 24896 --> 94309
+24400 : 24896 --> 94309
+24433 : 24896 --> 94309
+24466 : 24896 --> 94309
+24500 : 24896 --> 94309
+24533 : 24896 --> 94309
+24566 : 24896 --> 94309
+24600 : 24896 --> 94309
+24633 : 24896 --> 94309
+24666 : 24896 --> 94309
+24700 : 24896 --> 94309
+24733 : 24896 --> 94309
+24766 : 24896 --> 94309
+24800 : 24896 --> 94309
+24833 : 24896 --> 94309
+24866 : 24896 --> 94309
+24900 : 24896 --> 94309
+24933 : 48384 --> 94309
+24966 : 48384 --> 94309
+25000 : 48384 --> 94309
+25033 : 48384 --> 94309
+25066 : 48384 --> 94309
+25100 : 48384 --> 94309
+25133 : 48384 --> 94309
+25166 : 48384 --> 94309
+25200 : 48384 --> 94309
+25233 : 48384 --> 94309
+25266 : 48384 --> 94309
+25300 : 48384 --> 94309
+25333 : 48384 --> 94309
+25366 : 48384 --> 94309
+25400 : 48384 --> 94309
+25433 : 48384 --> 94309
+25466 : 48384 --> 94309
+25500 : 48384 --> 94309
+25533 : 48384 --> 94309
+25566 : 48384 --> 94309
+25600 : 48384 --> 94309
+25633 : 48384 --> 94309
+25666 : 48384 --> 94309
+25700 : 48384 --> 94309
+25733 : 48384 --> 94309
+25766 : 48384 --> 94309
+25800 : 48384 --> 94309
+25833 : 48384 --> 94309
+25866 : 48384 --> 94309
+25900 : 48384 --> 94309
+25933 : 48384 --> 94309
+25966 : 48384 --> 94309
+26000 : 48384 --> 94309
+26033 : 48384 --> 94309
+26066 : 48384 --> 94309
+26100 : 48384 --> 94309
+26133 : 48384 --> 94309
+26166 : 48384 --> 94309
+26200 : 48384 --> 94309
+26233 : 48384 --> 94309
+26266 : 48384 --> 94309
+26300 : 48384 --> 94309
+26333 : 48384 --> 94309
+26366 : 48384 --> 94309
+26400 : 48384 --> 94309
+26433 : 48384 --> 94309
+26466 : 48384 --> 94309
+26500 : 48384 --> 94309
+26533 : 48384 --> 94309
+26566 : 48384 --> 94309
+26600 : 48384 --> 94309
+26633 : 48384 --> 94309
+26666 : 48384 --> 94309
+26700 : 48384 --> 94309
+26733 : 48384 --> 94309
+26766 : 48384 --> 94309
+26800 : 48384 --> 94309
+26833 : 48384 --> 94309
+26866 : 48384 --> 94309
+26900 : 48384 --> 94309
+26933 : 48384 --> 94309
+26966 : 48384 --> 94309
+27000 : 48384 --> 94309
+27033 : 48384 --> 94309
+27066 : 48384 --> 94309
+27100 : 48384 --> 94309
+27133 : 48384 --> 94309
+27166 : 48384 --> 94309
+27200 : 48384 --> 94309
+27233 : 48384 --> 94309
+27266 : 48384 --> 94309
+27300 : 48384 --> 94309
+27333 : 48384 --> 94309
+27366 : 48384 --> 94309
+27400 : 48384 --> 94309
+27433 : 48384 --> 94309
+27466 : 48384 --> 94309
+27500 : 48384 --> 94309
+27533 : 48384 --> 94309
+27566 : 48384 --> 94309
+27600 : 48384 --> 94309
+27633 : 48384 --> 94309
+27666 : 48384 --> 94309
+27700 : 48384 --> 94309
+27733 : 48384 --> 94309
+27766 : 48384 --> 94309
+27800 : 48384 --> 94309
+27833 : 48384 --> 94309
+27866 : 48384 --> 94309
+27900 : 48384 --> 94309
+27933 : 48384 --> 94309
+27966 : 48384 --> 94309
+28000 : 48384 --> 94309
+28033 : 48384 --> 94309
+28066 : 48384 --> 94309
+28100 : 48384 --> 94309
+28133 : 48384 --> 94309
+28166 : 48384 --> 94309
+28200 : 48384 --> 94309
+28233 : 48384 --> 94309
+28266 : 48384 --> 94309
+28300 : 48384 --> 94309
+28333 : 48384 --> 94309
+28366 : 48384 --> 94309
+28400 : 48384 --> 94309
+28433 : 48384 --> 94309
+28466 : 48384 --> 94309
+28500 : 48384 --> 94309
+28533 : 48384 --> 94309
+28566 : 48384 --> 94309
+28600 : 48384 --> 94309
+28633 : 48384 --> 94309
+28666 : 48384 --> 94309
+28700 : 48384 --> 94309
+28733 : 48384 --> 94309
+28766 : 48384 --> 94309
+28800 : 48384 --> 94309
+28833 : 48384 --> 94309
+28866 : 48384 --> 94309
+28900 : 48384 --> 94309
+28933 : 48384 --> 94309
+28966 : 48384 --> 94309
+29000 : 48384 --> 94309
+29033 : 48384 --> 94309
+29066 : 48384 --> 94309
+29100 : 48384 --> 94309
+29133 : 48384 --> 94309
+29166 : 48384 --> 94309
+29200 : 48384 --> 94309
+29233 : 48384 --> 94309
+29266 : 48384 --> 94309
+29300 : 48384 --> 94309
+29333 : 48384 --> 94309
+29366 : 48384 --> 94309
+29400 : 48384 --> 94309
+29433 : 48384 --> 94309
+29466 : 48384 --> 94309
+29500 : 48384 --> 94309
+29533 : 48384 --> 94309
+29566 : 48384 --> 94309
+29600 : 48384 --> 94309
+29633 : 48384 --> 94309
+29666 : 48384 --> 94309
+29700 : 48384 --> 94309
+29733 : 48384 --> 94309
+29766 : 48384 --> 94309
+29800 : 48384 --> 94309
+29833 : 48384 --> 94309
+29866 : 48384 --> 94309
+29900 : 48384 --> 94309
+29933 : 48384 --> 94309
+29966 : 48384 --> 94309
+30000 : 48384 --> 94309
+30033 : 48384 --> 94309
+30066 : 48384 --> 94309
+30100 : 48384 --> 94309
+30133 : 48384 --> 94309
+30166 : 48384 --> 94309
+30200 : 48384 --> 94309
+30233 : 48384 --> 94309
+30266 : 48384 --> 94309
+30300 : 48384 --> 94309
+30333 : 48384 --> 94309
+30366 : 48384 --> 94309
+30400 : 48384 --> 94309
+30433 : 48384 --> 94309
+30466 : 48384 --> 94309
+30500 : 48384 --> 94309
+30533 : 48384 --> 94309
+30566 : 48384 --> 94309
+30600 : 48384 --> 94309
+30633 : 48384 --> 94309
+30666 : 48384 --> 94309
+30700 : 48384 --> 94309
+30733 : 48384 --> 94309
+30766 : 48384 --> 94309
+30800 : 48384 --> 94309
+30833 : 48384 --> 94309
+30866 : 48384 --> 94309
+30900 : 48384 --> 94309
+30933 : 48384 --> 94309
+30966 : 48384 --> 94309
+31000 : 48384 --> 94309
+31033 : 48384 --> 94309
+31066 : 48384 --> 94309
+31100 : 48384 --> 94309
+31133 : 48384 --> 94309
+31166 : 48384 --> 94309
+31200 : 48384 --> 94309
+31233 : 48384 --> 94309
+31266 : 48384 --> 94309
+31300 : 48384 --> 94309
+31333 : 48384 --> 94309
+31366 : 48384 --> 94309
+31400 : 48384 --> 94309
+31433 : 48384 --> 94309
+31466 : 48384 --> 94309
+31500 : 48384 --> 94309
+31533 : 48384 --> 94309
+31566 : 48384 --> 94309
+31600 : 48384 --> 94309
+31633 : 48384 --> 94309
+31666 : 48384 --> 94309
+31700 : 48384 --> 94309
+31733 : 48384 --> 94309
+31766 : 48384 --> 94309
+31800 : 48384 --> 94309
+31833 : 48384 --> 94309
+31866 : 48384 --> 94309
+31900 : 48384 --> 94309
+31933 : 48384 --> 94309
+31966 : 48384 --> 94309
+32000 : 48384 --> 94309
+32033 : 48384 --> 94309
+32066 : 48384 --> 94309
+32099 : 48384 --> 94309
+32133 : 48384 --> 94309
+32166 : 48384 --> 94309
+32200 : 48384 --> 94309
+32233 : 48384 --> 94309
+32266 : 48384 --> 94309
+32300 : 48384 --> 94309
+32333 : 48384 --> 94309
+32366 : 48384 --> 94309
+32400 : 48384 --> 94309
+32433 : 48384 --> 94309
+32466 : 48384 --> 94309
+32500 : 48384 --> 94309
+32533 : 48384 --> 94309
+32566 : 48384 --> 94309
+32599 : 48384 --> 94309
+32633 : 48384 --> 94309
+32666 : 48384 --> 94309
+32700 : 48384 --> 94309
+32733 : 48384 --> 94309
+32766 : 48384 --> 94309
+32800 : 48384 --> 94309
+32833 : 48384 --> 94309
+32866 : 48384 --> 94309
+32900 : 48384 --> 94309
+32933 : 48384 --> 94309
+32966 : 48384 --> 94309
+33000 : 48384 --> 94309
+33033 : 48384 --> 94309
+33066 : 48384 --> 94309
+33100 : 48384 --> 94309
+33133 : 48384 --> 94309
+33166 : 48384 --> 94309
+33200 : 48384 --> 94309
+33233 : 48384 --> 94309
+33266 : 48384 --> 94309
+33300 : 48384 --> 94309
+33333 : 48384 --> 94309
+33366 : 48384 --> 94309
+33400 : 48384 --> 94309
+33433 : 48384 --> 94309
+33466 : 48384 --> 94309
+33500 : 48384 --> 94309
+33533 : 48384 --> 94309
+33566 : 48384 --> 94309
+33600 : 48384 --> 94309
+33633 : 48384 --> 94309
+33666 : 48384 --> 94309
+33700 : 48384 --> 94309
+33733 : 48384 --> 94309
+33766 : 48384 --> 94309
+33800 : 48384 --> 94309
+33833 : 48384 --> 94309
+33866 : 48384 --> 94309
+33900 : 48384 --> 94309
+33933 : 48384 --> 94309
+33966 : 48384 --> 94309
+34000 : 48384 --> 94309
+34033 : 48384 --> 94309
+34066 : 48384 --> 94309
+34100 : 48384 --> 94309
+34133 : 48384 --> 94309
+34166 : 48384 --> 94309
+34200 : 48384 --> 94309
+34233 : 48384 --> 94309
+34266 : 48384 --> 94309
+34300 : 48384 --> 94309
+34333 : 48384 --> 94309
+34366 : 48384 --> 94309
+34400 : 48384 --> 94309
+34433 : 48384 --> 94309
+34466 : 48384 --> 94309
+34500 : 48384 --> 94309
+34533 : 48384 --> 94309
+34566 : 48384 --> 94309
+34600 : 48384 --> 94309
+34633 : 48384 --> 94309
+34666 : 48384 --> 94309
+34700 : 48384 --> 94309
+34733 : 48384 --> 94309
+34766 : 48384 --> 94309
+34800 : 48384 --> 94309
+34833 : 48384 --> 94309
+34866 : 48384 --> 94309
+34900 : 48384 --> 94309
+34933 : 48384 --> 94309
+34966 : 48384 --> 94309
+35000 : 48384 --> 94309
+35033 : 48384 --> 94309
+35066 : 48384 --> 94309
+35100 : 48384 --> 94309
+35133 : 48384 --> 94309
+35166 : 48384 --> 94309
+35200 : 48384 --> 94309
+35233 : 48384 --> 94309
+35266 : 48384 --> 94309
+35300 : 48384 --> 94309
+35333 : 48384 --> 94309
+35366 : 48384 --> 94309
+35400 : 48384 --> 94309
+35433 : 48384 --> 94309
+35466 : 48384 --> 94309
+35500 : 48384 --> 94309
+35533 : 48384 --> 94309
+35566 : 48384 --> 94309
+35600 : 48384 --> 94309
+35633 : 48384 --> 94309
+35666 : 48384 --> 94309
+35700 : 48384 --> 94309
+35733 : 48384 --> 94309
+35766 : 48384 --> 94309
+35800 : 48384 --> 94309
+35833 : 48384 --> 94309
+35866 : 48384 --> 94309
+35900 : 48384 --> 94309
+35933 : 48384 --> 94309
+35966 : 48384 --> 94309
+36000 : 48384 --> 94309
+36033 : 48384 --> 94309
+36066 : 48384 --> 94309
+36100 : 48384 --> 94309
+36133 : 48384 --> 94309
+36166 : 48384 --> 94309
+36200 : 48384 --> 94309
+36233 : 48384 --> 94309
+36266 : 48384 --> 94309
+36300 : 48384 --> 94309
+36333 : 48384 --> 94309
+36366 : 48384 --> 94309
+36400 : 48384 --> 94309
+36433 : 48384 --> 94309
+36466 : 48384 --> 94309
+36500 : 48384 --> 94309
+36533 : 48384 --> 94309
+36566 : 48384 --> 94309
+36600 : 48384 --> 94309
+36633 : 48384 --> 94309
+36666 : 48384 --> 94309
+36700 : 48384 --> 94309
+36733 : 48384 --> 94309
+36766 : 48384 --> 94309
+36800 : 48384 --> 94309
+36833 : 48384 --> 94309
+36866 : 48384 --> 94309
+36900 : 48384 --> 94309
+36933 : 48384 --> 94309
+36966 : 48384 --> 94309
+37000 : 48384 --> 94309
+37033 : 48384 --> 94309
+37066 : 48384 --> 94309
+37100 : 48384 --> 94309
+37133 : 48384 --> 94309
+37166 : 48384 --> 94309
+37200 : 48384 --> 94309
+37233 : 48384 --> 94309
+37266 : 48384 --> 94309
+37300 : 48384 --> 94309
+37333 : 48384 --> 94309
+37366 : 48384 --> 94309
+37400 : 48384 --> 94309
+37433 : 48384 --> 94309
+37466 : 48384 --> 94309
+37500 : 48384 --> 94309
+37533 : 48384 --> 94309
+37566 : 48384 --> 94309
+37600 : 48384 --> 94309
+37633 : 48384 --> 94309
+37666 : 48384 --> 94309
+37700 : 48384 --> 94309
+37733 : 48384 --> 94309
+37766 : 48384 --> 94309
+37800 : 48384 --> 94309
+37833 : 48384 --> 94309
+37866 : 48384 --> 94309
+37900 : 48384 --> 94309
+37933 : 48384 --> 94309
+37966 : 48384 --> 94309
+38000 : 48384 --> 94309
+38033 : 48384 --> 94309
+38066 : 48384 --> 94309
+38100 : 48384 --> 94309
+38133 : 48384 --> 94309
+38166 : 48384 --> 94309
+38200 : 48384 --> 94309
+38233 : 48384 --> 94309
+38266 : 48384 --> 94309
+38300 : 48384 --> 94309
+38333 : 48384 --> 94309
+38366 : 48384 --> 94309
+38400 : 48384 --> 94309
+38433 : 48384 --> 94309
+38466 : 48384 --> 94309
+38500 : 48384 --> 94309
+38533 : 48384 --> 94309
+38566 : 48384 --> 94309
+38600 : 48384 --> 94309
+38633 : 48384 --> 94309
+38666 : 48384 --> 94309
+38700 : 48384 --> 94309
+38733 : 48384 --> 94309
+38766 : 48384 --> 94309
+38800 : 48384 --> 94309
+38833 : 48384 --> 94309
+38866 : 48384 --> 94309
+38900 : 48384 --> 94309
+38933 : 48384 --> 94309
+38966 : 48384 --> 94309
+39000 : 48384 --> 94309
+39033 : 48384 --> 94309
+39066 : 48384 --> 94309
+39100 : 48384 --> 94309
+39133 : 48384 --> 94309
+39166 : 48384 --> 94309
+39200 : 48384 --> 94309
+39233 : 48384 --> 94309
+39266 : 48384 --> 94309
+39300 : 48384 --> 94309
+39333 : 48384 --> 94309
+39366 : 48384 --> 94309
+39400 : 48384 --> 94309
+39433 : 48384 --> 94309
+39466 : 48384 --> 94309
+39500 : 48384 --> 94309
+39533 : 48384 --> 94309
+39566 : 48384 --> 94309
+39600 : 48384 --> 94309
+39633 : 48384 --> 94309
+39666 : 48384 --> 94309
+39700 : 48384 --> 94309
+39733 : 48384 --> 94309
+39766 : 48384 --> 94309
+39800 : 48384 --> 94309
+39833 : 48384 --> 94309
+39866 : 48384 --> 94309
+39900 : 48384 --> 94309
+39933 : 48384 --> 94309
+39966 : 48384 --> 94309
+40000 : 48384 --> 94309
+40033 : 48384 --> 94309
+40066 : 48384 --> 94309
+40100 : 48384 --> 94309
+40133 : 48384 --> 94309
+40166 : 48384 --> 94309
+40200 : 48384 --> 94309
+40233 : 48384 --> 94309
+40266 : 48384 --> 94309
+40300 : 48384 --> 94309
+40333 : 48384 --> 94309
+40366 : 48384 --> 94309
+40400 : 48384 --> 94309
+40433 : 48384 --> 94309
+40466 : 48384 --> 94309
+40500 : 48384 --> 94309
+40533 : 48384 --> 94309
+40566 : 48384 --> 94309
+40600 : 48384 --> 94309
+40633 : 48384 --> 94309
+40666 : 48384 --> 94309
+40700 : 48384 --> 94309
+40733 : 48384 --> 94309
+40766 : 48384 --> 94309
+40800 : 48384 --> 94309
+40833 : 48384 --> 94309
+40866 : 48384 --> 94309
+40900 : 48384 --> 94309
+40933 : 48384 --> 94309
+40966 : 48384 --> 94309
+41000 : 48384 --> 94309
+41033 : 48384 --> 94309
+41066 : 48384 --> 94309
+41100 : 48384 --> 94309
+41133 : 48384 --> 94309
+41166 : 48384 --> 94309
+41200 : 48384 --> 94309
+41233 : 48384 --> 94309
+41266 : 48384 --> 94309
+41300 : 48384 --> 94309
+41333 : 48384 --> 94309
+41366 : 48384 --> 94309
+41400 : 48384 --> 94309
+41433 : 48384 --> 94309
+41466 : 48384 --> 94309
+41500 : 48384 --> 94309
+41533 : 48384 --> 94309
+41566 : 48384 --> 94309
+41600 : 48384 --> 94309
+41633 : 48384 --> 94309
+41666 : 48384 --> 94309
+41700 : 48384 --> 94309
+41733 : 48384 --> 94309
+41766 : 48384 --> 94309
+41800 : 48384 --> 94309
+41833 : 48384 --> 94309
+41866 : 48384 --> 94309
+41900 : 48384 --> 94309
+41933 : 48384 --> 94309
+41966 : 48384 --> 94309
+42000 : 48384 --> 94309
+42033 : 48384 --> 94309
+42066 : 48384 --> 94309
+42100 : 48384 --> 94309
+42133 : 48384 --> 94309
+42166 : 48384 --> 94309
+42200 : 48384 --> 94309
+42233 : 48384 --> 94309
+42266 : 48384 --> 94309
+42300 : 48384 --> 94309
+42333 : 48384 --> 94309
+42366 : 48384 --> 94309
+42400 : 48384 --> 94309
+42433 : 48384 --> 94309
+42466 : 48384 --> 94309
+42500 : 48384 --> 94309
+42533 : 48384 --> 94309
+42566 : 48384 --> 94309
+42600 : 48384 --> 94309
+42633 : 48384 --> 94309
+42666 : 48384 --> 94309
+42700 : 48384 --> 94309
+42733 : 48384 --> 94309
+42766 : 48384 --> 94309
+42800 : 48384 --> 94309
+42833 : 48384 --> 94309
+42866 : 48384 --> 94309
+42900 : 48384 --> 94309
+42933 : 48384 --> 94309
+42966 : 48384 --> 94309
+43000 : 48384 --> 94309
+43033 : 48384 --> 94309
+43066 : 48384 --> 94309
+43100 : 48384 --> 94309
+43133 : 48384 --> 94309
+43166 : 48384 --> 94309
+43200 : 48384 --> 94309
+43233 : 48384 --> 94309
+43266 : 48384 --> 94309
+43300 : 48384 --> 94309
+43333 : 48384 --> 94309
+43366 : 48384 --> 94309
+43400 : 48384 --> 94309
+43433 : 48384 --> 94309
+43466 : 48384 --> 94309
+43500 : 48384 --> 94309
+43533 : 48384 --> 94309
+43566 : 48384 --> 94309
+43600 : 48384 --> 94309
+43633 : 48384 --> 94309
+43666 : 48384 --> 94309
+43700 : 48384 --> 94309
+43733 : 48384 --> 94309
+43766 : 48384 --> 94309
+43800 : 48384 --> 94309
+43833 : 48384 --> 94309
+43866 : 48384 --> 94309
+43900 : 48384 --> 94309
+43933 : 48384 --> 94309
+43966 : 48384 --> 94309
+44000 : 48384 --> 94309
+44033 : 48384 --> 94309
+44066 : 48384 --> 94309
+44100 : 48384 --> 94309
+44133 : 48384 --> 94309
+44166 : 48384 --> 94309
+44200 : 48384 --> 94309
+44233 : 48384 --> 94309
+44266 : 48384 --> 94309
+44300 : 48384 --> 94309
+44333 : 48384 --> 94309
+44366 : 48384 --> 94309
+44400 : 48384 --> 94309
+44433 : 48384 --> 94309
+44466 : 48384 --> 94309
+44500 : 48384 --> 94309
+44533 : 48384 --> 94309
+44566 : 48384 --> 94309
+44600 : 48384 --> 94309
+44633 : 48384 --> 94309
+44666 : 48384 --> 94309
+44700 : 48384 --> 94309
+44733 : 48384 --> 94309
+44766 : 48384 --> 94309
+44800 : 48384 --> 94309
+44833 : 48384 --> 94309
+44866 : 48384 --> 94309
+44900 : 48384 --> 94309
+44933 : 48384 --> 94309
+44966 : 48384 --> 94309
+45000 : 48384 --> 94309
+45033 : 48384 --> 94309
+45066 : 48384 --> 94309
+45100 : 48384 --> 94309
+45133 : 48384 --> 94309
+45166 : 48384 --> 94309
+45200 : 48384 --> 94309
+45233 : 48384 --> 94309
+45266 : 48384 --> 94309
+45300 : 48384 --> 94309
+45333 : 48384 --> 94309
+45366 : 48384 --> 94309
+45400 : 48384 --> 94309
+45433 : 48384 --> 94309
+45466 : 48384 --> 94309
+45500 : 48384 --> 94309
+45533 : 48384 --> 94309
+45566 : 48384 --> 94309
+45600 : 48384 --> 94309
+45633 : 48384 --> 94309
+45666 : 48384 --> 94309
+45700 : 48384 --> 94309
+45733 : 48384 --> 94309
+45766 : 48384 --> 94309
+45800 : 48384 --> 94309
+45833 : 48384 --> 94309
+45866 : 48384 --> 94309
+45900 : 48384 --> 94309
+45933 : 48384 --> 94309
+45966 : 48384 --> 94309
+46000 : 48384 --> 94309
+46033 : 48384 --> 94309
+46066 : 48384 --> 94309
+46100 : 48384 --> 94309
+46133 : 48384 --> 94309
+46166 : 48384 --> 94309
+46200 : 48384 --> 94309
+46233 : 48384 --> 94309
+46266 : 48384 --> 94309
+46300 : 48384 --> 94309
+46333 : 48384 --> 94309
+46366 : 48384 --> 94309
+46400 : 48384 --> 94309
+46433 : 48384 --> 94309
+46466 : 48384 --> 94309
+46500 : 48384 --> 94309
+46533 : 48384 --> 94309
+46566 : 48384 --> 94309
+46600 : 48384 --> 94309
+46633 : 48384 --> 94309
+46666 : 48384 --> 94309
+46700 : 48384 --> 94309
+46733 : 48384 --> 94309
+46766 : 48384 --> 94309
+46800 : 48384 --> 94309
+46833 : 48384 --> 94309
+46866 : 48384 --> 94309
+46900 : 48384 --> 94309
+46933 : 48384 --> 94309
+46966 : 48384 --> 94309
+47000 : 48384 --> 94309
+47033 : 48384 --> 94309
+47066 : 48384 --> 94309
+End of audio, stopping video export.
+/var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4 saved.
+java.lang.NullPointerException
+	at com.hamoid.VideoExport.saveFrame(Unknown Source)
+	at spectrogram.draw(spectrogram.java:195)
+	at processing.core.PApplet.handleDraw(PApplet.java:2475)
+	at processing.awt.PSurfaceAWT$12.callDraw(PSurfaceAWT.java:1547)
+	at processing.core.PSurfaceNone$AnimationThread.run(PSurfaceNone.java:313)
+
+VideoExport error: Ffmpeg failed. Study /var/www/app/songwork-app/_make/../spectrogram/ffmpeg.txt for more details.
+
+Finished.
+Could not run the sketch (Target VM failed to initialize).
+For more information, read revisions.txt and Help ? Troubleshooting.
+Could not run the sketch.
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.83.100
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+  Duration: 00:00:47.10, start: 0.000000, bitrate: 406 kb/s
+    Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 125 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 276 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:0 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0x556aa8101a80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+[libx264 @ 0x556aa8101a80] profile High, level 1.3
+[libx264 @ 0x556aa8101a80] 264 - core 152 r2854 e9a5903 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/out/00169.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: h264 (libx264) (avc1 / 0x31637661), yuv420p, 250x250, q=-1--1, 30 fps, 15360 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc57.107.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      encoder         : Lavc57.107.100 aac
+frame=  111 fps=0.0 q=29.0 size=       0kB time=00:00:03.58 bitrate=   0.1kbits/s speed=7.13x    frame=  201 fps=200 q=29.0 size=       0kB time=00:00:06.59 bitrate=   0.1kbits/s speed=6.57x    frame=  279 fps=185 q=29.0 size=       0kB time=00:00:09.21 bitrate=   0.0kbits/s speed=6.12x    frame=  371 fps=185 q=29.0 size=       0kB time=00:00:12.22 bitrate=   0.0kbits/s speed=6.08x    frame=  452 fps=180 q=29.0 size=     256kB time=00:00:14.91 bitrate= 140.7kbits/s speed=5.94x    frame=  538 fps=178 q=29.0 size=     256kB time=00:00:17.85 bitrate= 117.5kbits/s speed=5.92x    frame=  630 fps=179 q=29.0 size=     256kB time=00:00:20.92 bitrate= 100.2kbits/s speed=5.95x    frame=  717 fps=178 q=29.0 size=     512kB time=00:00:23.74 bitrate= 176.7kbits/s speed= 5.9x    frame=  801 fps=177 q=29.0 size=     512kB time=00:00:26.56 bitrate= 157.9kbits/s speed=5.87x    frame=  886 fps=176 q=29.0 size=     512kB time=00:00:29.44 bitrate= 142.5kbits/s speed=5.86x    frame=  978 fps=177 q=29.0 size=     768kB time=00:00:32.44 bitrate= 193.9kbits/s speed=5.87x    frame= 1064 fps=177 q=29.0 size=     768kB time=00:00:35.32 bitrate= 178.1kbits/s speed=5.86x    frame= 1158 fps=177 q=29.0 size=     768kB time=00:00:38.46 bitrate= 163.6kbits/s speed=5.89x    frame= 1247 fps=177 q=29.0 size=    1024kB time=00:00:41.47 bitrate= 202.3kbits/s speed= 5.9x    frame= 1339 fps=178 q=29.0 size=    1024kB time=00:00:44.54 bitrate= 188.3kbits/s speed=5.91x    frame= 1412 fps=176 q=29.0 Lsize=    1275kB time=00:00:47.04 bitrate= 222.1kbits/s speed=5.85x    
+video:524kB audio:724kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.236583%
+[libx264 @ 0x556aa8101a80] frame I:6     Avg QP:15.58  size: 19276
+[libx264 @ 0x556aa8101a80] frame P:378   Avg QP:21.52  size:   703
+[libx264 @ 0x556aa8101a80] frame B:1028  Avg QP:27.41  size:   150
+[libx264 @ 0x556aa8101a80] consecutive B-frames:  2.2%  2.0%  0.6% 95.2%
+[libx264 @ 0x556aa8101a80] mb I  I16..4: 17.1% 32.3% 50.7%
+[libx264 @ 0x556aa8101a80] mb P  I16..4:  0.0%  0.1%  0.8%  P16..4: 14.0%  2.5%  2.2%  0.0%  0.0%    skip:80.5%
+[libx264 @ 0x556aa8101a80] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  5.3%  1.0%  0.3%  direct: 1.8%  skip:91.6%  L0:22.1% L1:73.0% BI: 4.9%
+[libx264 @ 0x556aa8101a80] 8x8 transform intra:24.4% inter:56.1%
+[libx264 @ 0x556aa8101a80] coded y,uvDC,uvAC intra: 83.9% 0.0% 0.0% inter: 3.6% 0.0% 0.0%
+[libx264 @ 0x556aa8101a80] i16 v,h,dc,p: 89%  1%  9%  0%
+[libx264 @ 0x556aa8101a80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23%  5% 41%  7%  4%  5%  3%  8%  4%
+[libx264 @ 0x556aa8101a80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 16% 17%  7%  5%  9%  4%  9%  5%
+[libx264 @ 0x556aa8101a80] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 0x556aa8101a80] Weighted P-Frames: Y:0.8% UV:0.0%
+[libx264 @ 0x556aa8101a80] ref P L0: 88.0%  4.3%  5.2%  2.5%  0.0%
+[libx264 @ 0x556aa8101a80] ref B L0: 94.6%  3.6%  1.7%
+[libx264 @ 0x556aa8101a80] ref B L1: 91.2%  8.8%
+[libx264 @ 0x556aa8101a80] kb/s:91.04
+[aac @ 0x556aa80e9460] Qavg: 16478.209
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/00169.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.83.100
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+  Duration: 00:00:47.10, start: 0.000000, bitrate: 221 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 250x250, 91 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 125 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+[swscaler @ 0x564a2abeb7c0] deprecated pixel format used, make sure you did set range correctly
+Output #0, image2, to '/var/www/html/media/placeholder/00169.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: mjpeg, yuvj420p(pc), 250x250, q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc57.107.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
+frame=    1 fps=0.0 q=1.6 Lsize=N/A time=00:00:00.03 bitrate=N/A speed=0.812x    
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+done.
+00170.wav
+__make.sh
+debug.log
+error
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Guessed Channel Layout for Input Stream #0.0 : stereo
+Input #0, wav, from '00170.wav':
+  Duration: 00:01:34.31, bitrate: 2304 kb/s
+    Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '_00170.wav':
+  Metadata:
+    ISFT            : Lavf57.83.100
+    Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, stereo, s16, 512 kb/s
+    Metadata:
+      encoder         : Lavc57.107.100 pcm_s16le
+size=    5894kB time=00:01:34.30 bitrate= 512.0kbits/s speed= 305x    
+video:0kB audio:5894kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.001292%
+Processing ******** '_00170.wav'
+4067:5067 TRUTH
+8133:9133 SUBJECT EMPHATIC
+12200:13200 TRUTH
+16267:17267 SUBJECT MANIPULATING VOICE
+36567:37567 TRUTH
+44700:45700 TRUTH
+48733:49733 LIE
+57067:58067 INACCURACY
+113400:114400 LIE
+135300:136300 INACCURACY
+140367:141367 LIE
+143433:144433 INACCURACY
+147500:148500 LIE
+151567:152567 INACCURACY
+159667:160667 LIE
+168000:169000 INACCURACY
+186433:187433 INACCURACY
+203667:204667 INACCURACY
+207700:208700 SUBJECT EMPHATIC
+211767:212767 LIE
+220100:221100 INACCURACY
+224167:225167 SUBJECT EMPHATIC
+232267:233267 LIE
+236333:237333 INACCURACY
+240400:241400 SUBJECT MANIPULATING VOICE
+244467:245467 LIE
+260700:261700 SUBJECT MANIPULATING VOICE
+264767:265767 INACCURACY
+281067:282067 SUBJECT ATTEMPTING OUTSMART
+291000:292000 AVOIDANCE
+303200:304200 SUBJECT EMPHATIC
+307233:308233 LIE
+319433:320433 SUBJECT MANIPULATING VOICE
+352133:353133 SUBJECT EMPHATIC
+372433:373433 SUBJECT ATTEMPTING OUTSMART
+376500:377500 SUBJECT MANIPULATING VOICE
+406667:407667 LIE
+411367:412367 SUBJECT EMPHATIC
+458633:459633 SUBJECT EMPHATIC
+507567:508567 SUBJECT ATTEMPTING OUTSMART
+515667:516667 SUBJECT MANIPULATING VOICE
+564600:565600 SUBJECT EMPHATIC
+581067:582067 SUBJECT ATTEMPTING OUTSMART
+585100:586100 SUBJECT MANIPULATING VOICE
+601367:602367 SUBJECT EMPHATIC
+617600:618600 SUBJECT MANIPULATING VOICE
+619067:620067 INACCURACY
+619600:620600 SUBJECT MANIPULATING VOICE
+644167:645167 SUBJECT EMPHATIC
+648233:649233 LIE
+652300:653300 INACCURACY
+660400:661400 SUBJECT EMPHATIC
+668533:669533 LIE
+676467:677467 SUBJECT ATTEMPTING OUTSMART
+740200:741200 SUBJECT MANIPULATING VOICE
+756433:757433 SUBJECT EMPHATIC
+793200:794200 INACCURACY
+797267:798267 LIE
+801300:802300 INACCURACY
+813500:814500 LIE
+834000:835000 INACCURACY
+838067:839067 LIE
+857067:858067 INACCURACY
+866500:867500 TRUTH
+874600:875600 INACCURACY
+878667:879667 TRUTH
+903233:904233 SUBJECT IS NOT SURE
+907300:908300 TRUTH
+915433:916433 TRUTH
+923533:924533 TRUTH
+927600:928600 SUBJECT IS NOT SURE
+931667:932667 LIE
+935733:936733 INACCURACY
+941133:942133 AVOIDANCE
+957367:958367 SUBJECT EMPHATIC
+973633:974633 SUBJECT IS NOT SURE
+981733:982733 INACCURACY
+994133:995133 LIE
+998200:999200 TRUTH
+1002233:1003233 LIE
+1006300:1007300 TRUTH
+1026600:1027600 SUBJECT EMPHATIC
+1043067:1044067 INACCURACY
+1047133:1048133 TRUTH
+1055267:1056267 INACCURACY
+1059300:1060300 LIE
+1063367:1064367 TRUTH
+1067433:1068433 LIE
+1075567:1076567 INACCURACY
+1083667:1084667 TRUTH
+1092000:1093000 LIE
+1115067:1116067 SUBJECT ATTEMPTING OUTSMART
+1133100:1134100 TRUTH
+1137167:1138167 LIE
+1141200:1142200 TRUTH
+1149333:1150333 TRUTH
+1155400:1156400 LIE
+1158300:1159300 TRUTH
+1166433:1167433 LIE
+1170167:1171167 TRUTH
+1198500:1199500 TRUTH
+1234000:1235000 SUBJECT EMPHATIC
+1247067:1248067 LIE
+1258267:1259267 INACCURACY
+1258733:1259733 TRUTH
+1263000:1264000 LIE
+1267067:1268067 INACCURACY
+1275167:1276167 LIE
+1279233:1280233 INACCURACY
+1283300:1284300 TRUTH
+1290600:1291600 LIE
+1305400:1306400 TRUTH
+1314067:1315067 TRUTH
+1318133:1319133 LIE
+1326267:1327267 TRUTH
+1330333:1331333 LIE
+1346567:1347567 INACCURACY
+1350633:1351633 TRUTH
+1358733:1359733 INACCURACY
+1359600:1360600 LIE
+1359700:1360700 TRUTH
+1363767:1364767 INACCURACY
+1368033:1369033 LIE
+1385300:1386300 SUBJECT ATTEMPTING OUTSMART
+1389367:1390367 SUBJECT MANIPULATING VOICE
+1397500:1398500 SUBJECT ATTEMPTING OUTSMART
+1405600:1406600 SUBJECT MANIPULATING VOICE
+1409667:1410667 SUBJECT ATTEMPTING OUTSMART
+1412300:1413300 LIE
+1414300:1415300 SUBJECT MANIPULATING VOICE
+1429767:1430767 SUBJECT ATTEMPTING OUTSMART
+1435467:1436467 * END OF FILE *
+132 rows
+FFT started (please wait) ...
+513 bands
+FFT done.
+/var/www/app/songwork-app/data/in.wav
+94309
+0 : 0 --> 94309
+33 : 0 --> 94309
+66 : 192 --> 94309
+100 : 192 --> 94309
+133 : 192 --> 94309
+166 : 192 --> 94309
+200 : 192 --> 94309
+233 : 576 --> 94309
+266 : 576 --> 94309
+300 : 576 --> 94309
+333 : 576 --> 94309
+366 : 576 --> 94309
+400 : 576 --> 94309
+433 : 576 --> 94309
+466 : 576 --> 94309
+500 : 576 --> 94309
+533 : 576 --> 94309
+566 : 576 --> 94309
+600 : 576 --> 94309
+633 : 1408 --> 94309
+666 : 1408 --> 94309
+700 : 1408 --> 94309
+733 : 1408 --> 94309
+766 : 1408 --> 94309
+800 : 1408 --> 94309
+833 : 1408 --> 94309
+866 : 1408 --> 94309
+900 : 1408 --> 94309
+933 : 1408 --> 94309
+966 : 1408 --> 94309
+1000 : 1408 --> 94309
+1033 : 1408 --> 94309
+1066 : 1408 --> 94309
+1100 : 1408 --> 94309
+1133 : 1408 --> 94309
+1166 : 1408 --> 94309
+1200 : 1408 --> 94309
+1233 : 1408 --> 94309
+1266 : 1408 --> 94309
+1300 : 1408 --> 94309
+1333 : 1408 --> 94309
+1366 : 1408 --> 94309
+1400 : 1408 --> 94309
+1433 : 1408 --> 94309
+1466 : 3072 --> 94309
+1500 : 3072 --> 94309
+1533 : 3072 --> 94309
+1566 : 3072 --> 94309
+1600 : 3072 --> 94309
+1633 : 3072 --> 94309
+1666 : 3072 --> 94309
+1700 : 3072 --> 94309
+1733 : 3072 --> 94309
+1766 : 3072 --> 94309
+1800 : 3072 --> 94309
+1833 : 3072 --> 94309
+1866 : 3072 --> 94309
+1900 : 3072 --> 94309
+1933 : 3072 --> 94309
+1966 : 3072 --> 94309
+2000 : 3072 --> 94309
+2033 : 3072 --> 94309
+2066 : 3072 --> 94309
+2100 : 3072 --> 94309
+2133 : 3072 --> 94309
+2166 : 3072 --> 94309
+2200 : 3072 --> 94309
+2233 : 3072 --> 94309
+2266 : 3072 --> 94309
+2300 : 3072 --> 94309
+2333 : 3072 --> 94309
+2366 : 3072 --> 94309
+2400 : 3072 --> 94309
+2433 : 3072 --> 94309
+2466 : 3072 --> 94309
+2500 : 3072 --> 94309
+2533 : 3072 --> 94309
+2566 : 3072 --> 94309
+2600 : 3072 --> 94309
+2633 : 3072 --> 94309
+2666 : 3072 --> 94309
+2700 : 3072 --> 94309
+2733 : 3072 --> 94309
+2766 : 3072 --> 94309
+2800 : 3072 --> 94309
+2833 : 3072 --> 94309
+2866 : 3072 --> 94309
+2900 : 3072 --> 94309
+2933 : 3072 --> 94309
+2966 : 3072 --> 94309
+3000 : 3072 --> 94309
+3033 : 3072 --> 94309
+3066 : 3072 --> 94309
+3100 : 3072 --> 94309
+3133 : 6336 --> 94309
+3166 : 6336 --> 94309
+3200 : 6336 --> 94309
+3233 : 6336 --> 94309
+3266 : 6336 --> 94309
+3300 : 6336 --> 94309
+3333 : 6336 --> 94309
+3366 : 6336 --> 94309
+3400 : 6336 --> 94309
+3433 : 6336 --> 94309
+3466 : 6336 --> 94309
+3500 : 6336 --> 94309
+3533 : 6336 --> 94309
+3566 : 6336 --> 94309
+3600 : 6336 --> 94309
+3633 : 6336 --> 94309
+3666 : 6336 --> 94309
+3700 : 6336 --> 94309
+3733 : 6336 --> 94309
+3766 : 6336 --> 94309
+3800 : 6336 --> 94309
+3833 : 6336 --> 94309
+3866 : 6336 --> 94309
+3900 : 6336 --> 94309
+3933 : 6336 --> 94309
+3966 : 6336 --> 94309
+4000 : 6336 --> 94309
+4033 : 6336 --> 94309
+4066 : 6336 --> 94309
+4100 : 6336 --> 94309
+4133 : 6336 --> 94309
+4166 : 6336 --> 94309
+4200 : 6336 --> 94309
+4233 : 6336 --> 94309
+4266 : 6336 --> 94309
+4300 : 6336 --> 94309
+4333 : 6336 --> 94309
+4366 : 6336 --> 94309
+4400 : 6336 --> 94309
+4433 : 6336 --> 94309
+4466 : 6336 --> 94309
+4500 : 6336 --> 94309
+4533 : 6336 --> 94309
+4566 : 6336 --> 94309
+4600 : 6336 --> 94309
+4633 : 6336 --> 94309
+4666 : 6336 --> 94309
+4700 : 6336 --> 94309
+4733 : 6336 --> 94309
+4766 : 6336 --> 94309
+4800 : 6336 --> 94309
+4833 : 6336 --> 94309
+4866 : 6336 --> 94309
+4900 : 6336 --> 94309
+4933 : 6336 --> 94309
+4966 : 6336 --> 94309
+5000 : 6336 --> 94309
+5033 : 6336 --> 94309
+5066 : 6336 --> 94309
+5100 : 6336 --> 94309
+5133 : 6336 --> 94309
+5166 : 6336 --> 94309
+5200 : 6336 --> 94309
+5233 : 6336 --> 94309
+5266 : 6336 --> 94309
+5300 : 6336 --> 94309
+5333 : 6336 --> 94309
+5366 : 6336 --> 94309
+5400 : 6336 --> 94309
+5433 : 6336 --> 94309
+5466 : 6336 --> 94309
+5500 : 6336 --> 94309
+5533 : 6336 --> 94309
+5566 : 6336 --> 94309
+5600 : 6336 --> 94309
+5633 : 6336 --> 94309
+5666 : 6336 --> 94309
+5700 : 6336 --> 94309
+5733 : 6336 --> 94309
+5766 : 6336 --> 94309
+5800 : 6336 --> 94309
+5833 : 6336 --> 94309
+5866 : 6336 --> 94309
+5900 : 6336 --> 94309
+5933 : 6336 --> 94309
+5966 : 6336 --> 94309
+6000 : 6336 --> 94309
+6033 : 6336 --> 94309
+6066 : 6336 --> 94309
+6100 : 6336 --> 94309
+6133 : 6336 --> 94309
+6166 : 6336 --> 94309
+6200 : 6336 --> 94309
+6233 : 6336 --> 94309
+6266 : 6336 --> 94309
+6300 : 6336 --> 94309
+6333 : 6336 --> 94309
+6366 : 6336 --> 94309
+6400 : 12672 --> 94309
+6433 : 12672 --> 94309
+6466 : 12672 --> 94309
+6500 : 12672 --> 94309
+6533 : 12672 --> 94309
+6566 : 12672 --> 94309
+6600 : 12672 --> 94309
+6633 : 12672 --> 94309
+6666 : 12672 --> 94309
+6700 : 12672 --> 94309
+6733 : 12672 --> 94309
+6766 : 12672 --> 94309
+6800 : 12672 --> 94309
+6833 : 12672 --> 94309
+6866 : 12672 --> 94309
+6900 : 12672 --> 94309
+6933 : 12672 --> 94309
+6966 : 12672 --> 94309
+7000 : 12672 --> 94309
+7033 : 12672 --> 94309
+7066 : 12672 --> 94309
+7100 : 12672 --> 94309
+7133 : 12672 --> 94309
+7166 : 12672 --> 94309
+7200 : 12672 --> 94309
+7233 : 12672 --> 94309
+7266 : 12672 --> 94309
+7300 : 12672 --> 94309
+7333 : 12672 --> 94309
+7366 : 12672 --> 94309
+7400 : 12672 --> 94309
+7433 : 12672 --> 94309
+7466 : 12672 --> 94309
+7500 : 12672 --> 94309
+7533 : 12672 --> 94309
+7566 : 12672 --> 94309
+7600 : 12672 --> 94309
+7633 : 12672 --> 94309
+7666 : 12672 --> 94309
+7700 : 12672 --> 94309
+7733 : 12672 --> 94309
+7766 : 12672 --> 94309
+7800 : 12672 --> 94309
+7833 : 12672 --> 94309
+7866 : 12672 --> 94309
+7900 : 12672 --> 94309
+7933 : 12672 --> 94309
+7966 : 12672 --> 94309
+8000 : 12672 --> 94309
+8033 : 12672 --> 94309
+8066 : 12672 --> 94309
+8100 : 12672 --> 94309
+8133 : 12672 --> 94309
+8166 : 12672 --> 94309
+8200 : 12672 --> 94309
+8233 : 12672 --> 94309
+8266 : 12672 --> 94309
+8300 : 12672 --> 94309
+8333 : 12672 --> 94309
+8366 : 12672 --> 94309
+8400 : 12672 --> 94309
+8433 : 12672 --> 94309
+8466 : 12672 --> 94309
+8500 : 12672 --> 94309
+8533 : 12672 --> 94309
+8566 : 12672 --> 94309
+8600 : 12672 --> 94309
+8633 : 12672 --> 94309
+8666 : 12672 --> 94309
+8700 : 12672 --> 94309
+8733 : 12672 --> 94309
+8766 : 12672 --> 94309
+8800 : 12672 --> 94309
+8833 : 12672 --> 94309
+8866 : 12672 --> 94309
+8900 : 12672 --> 94309
+8933 : 12672 --> 94309
+8966 : 12672 --> 94309
+9000 : 12672 --> 94309
+9033 : 12672 --> 94309
+9066 : 12672 --> 94309
+9100 : 12672 --> 94309
+9133 : 12672 --> 94309
+9166 : 12672 --> 94309
+9200 : 12672 --> 94309
+9233 : 12672 --> 94309
+9266 : 12672 --> 94309
+9300 : 12672 --> 94309
+9333 : 12672 --> 94309
+9366 : 12672 --> 94309
+9400 : 12672 --> 94309
+9433 : 12672 --> 94309
+9466 : 12672 --> 94309
+9500 : 12672 --> 94309
+9533 : 12672 --> 94309
+9566 : 12672 --> 94309
+9600 : 12672 --> 94309
+9633 : 12672 --> 94309
+9666 : 12672 --> 94309
+9700 : 12672 --> 94309
+9733 : 12672 --> 94309
+9766 : 12672 --> 94309
+9800 : 12672 --> 94309
+9833 : 12672 --> 94309
+9866 : 12672 --> 94309
+9900 : 12672 --> 94309
+9933 : 12672 --> 94309
+9966 : 12672 --> 94309
+10000 : 12672 --> 94309
+10033 : 12672 --> 94309
+10066 : 12672 --> 94309
+10100 : 12672 --> 94309
+10133 : 12672 --> 94309
+10166 : 12672 --> 94309
+10200 : 12672 --> 94309
+10233 : 12672 --> 94309
+10266 : 12672 --> 94309
+10300 : 12672 --> 94309
+10333 : 12672 --> 94309
+10366 : 12672 --> 94309
+10400 : 12672 --> 94309
+10433 : 12672 --> 94309
+10466 : 12672 --> 94309
+10500 : 12672 --> 94309
+10533 : 12672 --> 94309
+10566 : 12672 --> 94309
+10600 : 12672 --> 94309
+10633 : 12672 --> 94309
+10666 : 12672 --> 94309
+10700 : 12672 --> 94309
+10733 : 12672 --> 94309
+10766 : 12672 --> 94309
+10800 : 12672 --> 94309
+10833 : 12672 --> 94309
+10866 : 12672 --> 94309
+10900 : 12672 --> 94309
+10933 : 12672 --> 94309
+10966 : 12672 --> 94309
+11000 : 12672 --> 94309
+11033 : 12672 --> 94309
+11066 : 12672 --> 94309
+11100 : 12672 --> 94309
+11133 : 12672 --> 94309
+11166 : 12672 --> 94309
+11200 : 12672 --> 94309
+11233 : 12672 --> 94309
+11266 : 12672 --> 94309
+11300 : 12672 --> 94309
+11333 : 12672 --> 94309
+11366 : 12672 --> 94309
+11400 : 12672 --> 94309
+11433 : 12672 --> 94309
+11466 : 12672 --> 94309
+11500 : 12672 --> 94309
+11533 : 12672 --> 94309
+11566 : 12672 --> 94309
+11600 : 12672 --> 94309
+11633 : 12672 --> 94309
+11666 : 12672 --> 94309
+11700 : 12672 --> 94309
+11733 : 12672 --> 94309
+11766 : 12672 --> 94309
+11800 : 12672 --> 94309
+11833 : 12672 --> 94309
+11866 : 12672 --> 94309
+11900 : 12672 --> 94309
+11933 : 12672 --> 94309
+11966 : 12672 --> 94309
+12000 : 12672 --> 94309
+12033 : 12672 --> 94309
+12066 : 12672 --> 94309
+12100 : 12672 --> 94309
+12133 : 12672 --> 94309
+12166 : 12672 --> 94309
+12200 : 12672 --> 94309
+12233 : 12672 --> 94309
+12266 : 12672 --> 94309
+12300 : 12672 --> 94309
+12333 : 12672 --> 94309
+12366 : 12672 --> 94309
+12400 : 12672 --> 94309
+12433 : 12672 --> 94309
+12466 : 12672 --> 94309
+12500 : 12672 --> 94309
+12533 : 12672 --> 94309
+12566 : 12672 --> 94309
+12600 : 12672 --> 94309
+12633 : 12672 --> 94309
+12666 : 12672 --> 94309
+12700 : 12672 --> 94309
+12733 : 24896 --> 94309
+12766 : 24896 --> 94309
+12800 : 24896 --> 94309
+12833 : 24896 --> 94309
+12866 : 24896 --> 94309
+12900 : 24896 --> 94309
+12933 : 24896 --> 94309
+12966 : 24896 --> 94309
+13000 : 24896 --> 94309
+13033 : 24896 --> 94309
+13066 : 24896 --> 94309
+13100 : 24896 --> 94309
+13133 : 24896 --> 94309
+13166 : 24896 --> 94309
+13200 : 24896 --> 94309
+13233 : 24896 --> 94309
+13266 : 24896 --> 94309
+13300 : 24896 --> 94309
+13333 : 24896 --> 94309
+13366 : 24896 --> 94309
+13400 : 24896 --> 94309
+13433 : 24896 --> 94309
+13466 : 24896 --> 94309
+13500 : 24896 --> 94309
+13533 : 24896 --> 94309
+13566 : 24896 --> 94309
+13600 : 24896 --> 94309
+13633 : 24896 --> 94309
+13666 : 24896 --> 94309
+13700 : 24896 --> 94309
+13733 : 24896 --> 94309
+13766 : 24896 --> 94309
+13800 : 24896 --> 94309
+13833 : 24896 --> 94309
+13866 : 24896 --> 94309
+13900 : 24896 --> 94309
+13933 : 24896 --> 94309
+13966 : 24896 --> 94309
+14000 : 24896 --> 94309
+14033 : 24896 --> 94309
+14066 : 24896 --> 94309
+14100 : 24896 --> 94309
+14133 : 24896 --> 94309
+14166 : 24896 --> 94309
+14200 : 24896 --> 94309
+14233 : 24896 --> 94309
+14266 : 24896 --> 94309
+14300 : 24896 --> 94309
+14333 : 24896 --> 94309
+14366 : 24896 --> 94309
+14400 : 24896 --> 94309
+14433 : 24896 --> 94309
+14466 : 24896 --> 94309
+14500 : 24896 --> 94309
+14533 : 24896 --> 94309
+14566 : 24896 --> 94309
+14600 : 24896 --> 94309
+14633 : 24896 --> 94309
+14666 : 24896 --> 94309
+14700 : 24896 --> 94309
+14733 : 24896 --> 94309
+14766 : 24896 --> 94309
+14800 : 24896 --> 94309
+14833 : 24896 --> 94309
+14866 : 24896 --> 94309
+14900 : 24896 --> 94309
+14933 : 24896 --> 94309
+14966 : 24896 --> 94309
+15000 : 24896 --> 94309
+15033 : 24896 --> 94309
+15066 : 24896 --> 94309
+15100 : 24896 --> 94309
+15133 : 24896 --> 94309
+15166 : 24896 --> 94309
+15200 : 24896 --> 94309
+15233 : 24896 --> 94309
+15266 : 24896 --> 94309
+15300 : 24896 --> 94309
+15333 : 24896 --> 94309
+15366 : 24896 --> 94309
+15400 : 24896 --> 94309
+15433 : 24896 --> 94309
+15466 : 24896 --> 94309
+15500 : 24896 --> 94309
+15533 : 24896 --> 94309
+15566 : 24896 --> 94309
+15600 : 24896 --> 94309
+15633 : 24896 --> 94309
+15666 : 24896 --> 94309
+15700 : 24896 --> 94309
+15733 : 24896 --> 94309
+15766 : 24896 --> 94309
+15800 : 24896 --> 94309
+15833 : 24896 --> 94309
+15866 : 24896 --> 94309
+15900 : 24896 --> 94309
+15933 : 24896 --> 94309
+15966 : 24896 --> 94309
+16000 : 24896 --> 94309
+16033 : 24896 --> 94309
+16066 : 24896 --> 94309
+16100 : 24896 --> 94309
+16133 : 24896 --> 94309
+16166 : 24896 --> 94309
+16200 : 24896 --> 94309
+16233 : 24896 --> 94309
+16266 : 24896 --> 94309
+16299 : 24896 --> 94309
+16333 : 24896 --> 94309
+16366 : 24896 --> 94309
+16400 : 24896 --> 94309
+16433 : 24896 --> 94309
+16466 : 24896 --> 94309
+16500 : 24896 --> 94309
+16533 : 24896 --> 94309
+16566 : 24896 --> 94309
+16600 : 24896 --> 94309
+16633 : 24896 --> 94309
+16666 : 24896 --> 94309
+16700 : 24896 --> 94309
+16733 : 24896 --> 94309
+16766 : 24896 --> 94309
+16800 : 24896 --> 94309
+16833 : 24896 --> 94309
+16866 : 24896 --> 94309
+16900 : 24896 --> 94309
+16933 : 24896 --> 94309
+16966 : 24896 --> 94309
+17000 : 24896 --> 94309
+17033 : 24896 --> 94309
+17066 : 24896 --> 94309
+17100 : 24896 --> 94309
+17133 : 24896 --> 94309
+17166 : 24896 --> 94309
+17200 : 24896 --> 94309
+17233 : 24896 --> 94309
+17266 : 24896 --> 94309
+17300 : 24896 --> 94309
+17333 : 24896 --> 94309
+17366 : 24896 --> 94309
+17400 : 24896 --> 94309
+17433 : 24896 --> 94309
+17466 : 24896 --> 94309
+17500 : 24896 --> 94309
+17533 : 24896 --> 94309
+17566 : 24896 --> 94309
+17600 : 24896 --> 94309
+17633 : 24896 --> 94309
+17666 : 24896 --> 94309
+17700 : 24896 --> 94309
+17733 : 24896 --> 94309
+17766 : 24896 --> 94309
+17800 : 24896 --> 94309
+17833 : 24896 --> 94309
+17866 : 24896 --> 94309
+17900 : 24896 --> 94309
+17933 : 24896 --> 94309
+17966 : 24896 --> 94309
+18000 : 24896 --> 94309
+18033 : 24896 --> 94309
+18066 : 24896 --> 94309
+18100 : 24896 --> 94309
+18133 : 24896 --> 94309
+18166 : 24896 --> 94309
+18200 : 24896 --> 94309
+18233 : 24896 --> 94309
+18266 : 24896 --> 94309
+18300 : 24896 --> 94309
+18333 : 24896 --> 94309
+18366 : 24896 --> 94309
+18400 : 24896 --> 94309
+18433 : 24896 --> 94309
+18466 : 24896 --> 94309
+18500 : 24896 --> 94309
+18533 : 24896 --> 94309
+18566 : 24896 --> 94309
+18600 : 24896 --> 94309
+18633 : 24896 --> 94309
+18666 : 24896 --> 94309
+18700 : 24896 --> 94309
+18733 : 24896 --> 94309
+18766 : 24896 --> 94309
+18800 : 24896 --> 94309
+18833 : 24896 --> 94309
+18866 : 24896 --> 94309
+18900 : 24896 --> 94309
+18933 : 24896 --> 94309
+18966 : 24896 --> 94309
+19000 : 24896 --> 94309
+19033 : 24896 --> 94309
+19066 : 24896 --> 94309
+19100 : 24896 --> 94309
+19133 : 24896 --> 94309
+19166 : 24896 --> 94309
+19200 : 24896 --> 94309
+19233 : 24896 --> 94309
+19266 : 24896 --> 94309
+19300 : 24896 --> 94309
+19333 : 24896 --> 94309
+19366 : 24896 --> 94309
+19400 : 24896 --> 94309
+19433 : 24896 --> 94309
+19466 : 24896 --> 94309
+19500 : 24896 --> 94309
+19533 : 24896 --> 94309
+19566 : 24896 --> 94309
+19600 : 24896 --> 94309
+19633 : 24896 --> 94309
+19666 : 24896 --> 94309
+19700 : 24896 --> 94309
+19733 : 24896 --> 94309
+19766 : 24896 --> 94309
+19800 : 24896 --> 94309
+19833 : 24896 --> 94309
+19866 : 24896 --> 94309
+19900 : 24896 --> 94309
+19933 : 24896 --> 94309
+19966 : 24896 --> 94309
+20000 : 24896 --> 94309
+20033 : 24896 --> 94309
+20066 : 24896 --> 94309
+20100 : 24896 --> 94309
+20133 : 24896 --> 94309
+20166 : 24896 --> 94309
+20200 : 24896 --> 94309
+20233 : 24896 --> 94309
+20266 : 24896 --> 94309
+20300 : 24896 --> 94309
+20333 : 24896 --> 94309
+20366 : 24896 --> 94309
+20400 : 24896 --> 94309
+20433 : 24896 --> 94309
+20466 : 24896 --> 94309
+20500 : 24896 --> 94309
+20533 : 24896 --> 94309
+20566 : 24896 --> 94309
+20600 : 24896 --> 94309
+20633 : 24896 --> 94309
+20666 : 24896 --> 94309
+20700 : 24896 --> 94309
+20733 : 24896 --> 94309
+20766 : 24896 --> 94309
+20800 : 24896 --> 94309
+20833 : 24896 --> 94309
+20866 : 24896 --> 94309
+20900 : 24896 --> 94309
+20933 : 24896 --> 94309
+20966 : 24896 --> 94309
+21000 : 24896 --> 94309
+21033 : 24896 --> 94309
+21066 : 24896 --> 94309
+21100 : 24896 --> 94309
+21133 : 24896 --> 94309
+21166 : 24896 --> 94309
+21200 : 24896 --> 94309
+21233 : 24896 --> 94309
+21266 : 24896 --> 94309
+21300 : 24896 --> 94309
+21333 : 24896 --> 94309
+21366 : 24896 --> 94309
+21400 : 24896 --> 94309
+21433 : 24896 --> 94309
+21466 : 24896 --> 94309
+21500 : 24896 --> 94309
+21533 : 24896 --> 94309
+21566 : 24896 --> 94309
+21600 : 24896 --> 94309
+21633 : 24896 --> 94309
+21666 : 24896 --> 94309
+21700 : 24896 --> 94309
+21733 : 24896 --> 94309
+21766 : 24896 --> 94309
+21800 : 24896 --> 94309
+21833 : 24896 --> 94309
+21866 : 24896 --> 94309
+21900 : 24896 --> 94309
+21933 : 24896 --> 94309
+21966 : 24896 --> 94309
+22000 : 24896 --> 94309
+22033 : 24896 --> 94309
+22066 : 24896 --> 94309
+22100 : 24896 --> 94309
+22133 : 24896 --> 94309
+22166 : 24896 --> 94309
+22200 : 24896 --> 94309
+22233 : 24896 --> 94309
+22266 : 24896 --> 94309
+22300 : 24896 --> 94309
+22333 : 24896 --> 94309
+22366 : 24896 --> 94309
+22400 : 24896 --> 94309
+22433 : 24896 --> 94309
+22466 : 24896 --> 94309
+22500 : 24896 --> 94309
+22533 : 24896 --> 94309
+22566 : 24896 --> 94309
+22600 : 24896 --> 94309
+22633 : 24896 --> 94309
+22666 : 24896 --> 94309
+22700 : 24896 --> 94309
+22733 : 24896 --> 94309
+22766 : 24896 --> 94309
+22800 : 24896 --> 94309
+22833 : 24896 --> 94309
+22866 : 24896 --> 94309
+22900 : 24896 --> 94309
+22933 : 24896 --> 94309
+22966 : 24896 --> 94309
+23000 : 24896 --> 94309
+23033 : 24896 --> 94309
+23066 : 24896 --> 94309
+23100 : 24896 --> 94309
+23133 : 24896 --> 94309
+23166 : 24896 --> 94309
+23200 : 24896 --> 94309
+23233 : 24896 --> 94309
+23266 : 24896 --> 94309
+23300 : 24896 --> 94309
+23333 : 24896 --> 94309
+23366 : 24896 --> 94309
+23400 : 24896 --> 94309
+23433 : 24896 --> 94309
+23466 : 24896 --> 94309
+23500 : 24896 --> 94309
+23533 : 24896 --> 94309
+23566 : 24896 --> 94309
+23600 : 24896 --> 94309
+23633 : 24896 --> 94309
+23666 : 24896 --> 94309
+23700 : 24896 --> 94309
+23733 : 24896 --> 94309
+23766 : 24896 --> 94309
+23800 : 24896 --> 94309
+23833 : 24896 --> 94309
+23866 : 24896 --> 94309
+23900 : 24896 --> 94309
+23933 : 24896 --> 94309
+23966 : 24896 --> 94309
+24000 : 24896 --> 94309
+24033 : 24896 --> 94309
+24066 : 24896 --> 94309
+24100 : 24896 --> 94309
+24133 : 24896 --> 94309
+24166 : 24896 --> 94309
+24200 : 24896 --> 94309
+24233 : 24896 --> 94309
+24266 : 24896 --> 94309
+24300 : 24896 --> 94309
+24333 : 24896 --> 94309
+24366 : 24896 --> 94309
+24400 : 24896 --> 94309
+24433 : 24896 --> 94309
+24466 : 24896 --> 94309
+24500 : 24896 --> 94309
+24533 : 24896 --> 94309
+24566 : 24896 --> 94309
+24600 : 24896 --> 94309
+24633 : 24896 --> 94309
+24666 : 24896 --> 94309
+24700 : 24896 --> 94309
+24733 : 24896 --> 94309
+24766 : 24896 --> 94309
+24800 : 24896 --> 94309
+24833 : 24896 --> 94309
+24866 : 24896 --> 94309
+24900 : 24896 --> 94309
+24933 : 48384 --> 94309
+24966 : 48384 --> 94309
+25000 : 48384 --> 94309
+25033 : 48384 --> 94309
+25066 : 48384 --> 94309
+25100 : 48384 --> 94309
+25133 : 48384 --> 94309
+25166 : 48384 --> 94309
+25200 : 48384 --> 94309
+25233 : 48384 --> 94309
+25266 : 48384 --> 94309
+25300 : 48384 --> 94309
+25333 : 48384 --> 94309
+25366 : 48384 --> 94309
+25400 : 48384 --> 94309
+25433 : 48384 --> 94309
+25466 : 48384 --> 94309
+25500 : 48384 --> 94309
+25533 : 48384 --> 94309
+25566 : 48384 --> 94309
+25600 : 48384 --> 94309
+25633 : 48384 --> 94309
+25666 : 48384 --> 94309
+25700 : 48384 --> 94309
+25733 : 48384 --> 94309
+25766 : 48384 --> 94309
+25800 : 48384 --> 94309
+25833 : 48384 --> 94309
+25866 : 48384 --> 94309
+25900 : 48384 --> 94309
+25933 : 48384 --> 94309
+25966 : 48384 --> 94309
+26000 : 48384 --> 94309
+26033 : 48384 --> 94309
+26066 : 48384 --> 94309
+26100 : 48384 --> 94309
+26133 : 48384 --> 94309
+26166 : 48384 --> 94309
+26200 : 48384 --> 94309
+26233 : 48384 --> 94309
+26266 : 48384 --> 94309
+26300 : 48384 --> 94309
+26333 : 48384 --> 94309
+26366 : 48384 --> 94309
+26400 : 48384 --> 94309
+26433 : 48384 --> 94309
+26466 : 48384 --> 94309
+26500 : 48384 --> 94309
+26533 : 48384 --> 94309
+26566 : 48384 --> 94309
+26600 : 48384 --> 94309
+26633 : 48384 --> 94309
+26666 : 48384 --> 94309
+26700 : 48384 --> 94309
+26733 : 48384 --> 94309
+26766 : 48384 --> 94309
+26800 : 48384 --> 94309
+26833 : 48384 --> 94309
+26866 : 48384 --> 94309
+26900 : 48384 --> 94309
+26933 : 48384 --> 94309
+26966 : 48384 --> 94309
+27000 : 48384 --> 94309
+27033 : 48384 --> 94309
+27066 : 48384 --> 94309
+27100 : 48384 --> 94309
+27133 : 48384 --> 94309
+27166 : 48384 --> 94309
+27200 : 48384 --> 94309
+27233 : 48384 --> 94309
+27266 : 48384 --> 94309
+27300 : 48384 --> 94309
+27333 : 48384 --> 94309
+27366 : 48384 --> 94309
+27400 : 48384 --> 94309
+27433 : 48384 --> 94309
+27466 : 48384 --> 94309
+27500 : 48384 --> 94309
+27533 : 48384 --> 94309
+27566 : 48384 --> 94309
+27600 : 48384 --> 94309
+27633 : 48384 --> 94309
+27666 : 48384 --> 94309
+27700 : 48384 --> 94309
+27733 : 48384 --> 94309
+27766 : 48384 --> 94309
+27800 : 48384 --> 94309
+27833 : 48384 --> 94309
+27866 : 48384 --> 94309
+27900 : 48384 --> 94309
+27933 : 48384 --> 94309
+27966 : 48384 --> 94309
+28000 : 48384 --> 94309
+28033 : 48384 --> 94309
+28066 : 48384 --> 94309
+28100 : 48384 --> 94309
+28133 : 48384 --> 94309
+28166 : 48384 --> 94309
+28200 : 48384 --> 94309
+28233 : 48384 --> 94309
+28266 : 48384 --> 94309
+28300 : 48384 --> 94309
+28333 : 48384 --> 94309
+28366 : 48384 --> 94309
+28400 : 48384 --> 94309
+28433 : 48384 --> 94309
+28466 : 48384 --> 94309
+28500 : 48384 --> 94309
+28533 : 48384 --> 94309
+28566 : 48384 --> 94309
+28600 : 48384 --> 94309
+28633 : 48384 --> 94309
+28666 : 48384 --> 94309
+28700 : 48384 --> 94309
+28733 : 48384 --> 94309
+28766 : 48384 --> 94309
+28800 : 48384 --> 94309
+28833 : 48384 --> 94309
+28866 : 48384 --> 94309
+28900 : 48384 --> 94309
+28933 : 48384 --> 94309
+28966 : 48384 --> 94309
+29000 : 48384 --> 94309
+29033 : 48384 --> 94309
+29066 : 48384 --> 94309
+29100 : 48384 --> 94309
+29133 : 48384 --> 94309
+29166 : 48384 --> 94309
+29200 : 48384 --> 94309
+29233 : 48384 --> 94309
+29266 : 48384 --> 94309
+29300 : 48384 --> 94309
+29333 : 48384 --> 94309
+29366 : 48384 --> 94309
+29400 : 48384 --> 94309
+29433 : 48384 --> 94309
+29466 : 48384 --> 94309
+29500 : 48384 --> 94309
+29533 : 48384 --> 94309
+29566 : 48384 --> 94309
+29600 : 48384 --> 94309
+29633 : 48384 --> 94309
+29666 : 48384 --> 94309
+29700 : 48384 --> 94309
+29733 : 48384 --> 94309
+29766 : 48384 --> 94309
+29800 : 48384 --> 94309
+29833 : 48384 --> 94309
+29866 : 48384 --> 94309
+29900 : 48384 --> 94309
+29933 : 48384 --> 94309
+29966 : 48384 --> 94309
+30000 : 48384 --> 94309
+30033 : 48384 --> 94309
+30066 : 48384 --> 94309
+30100 : 48384 --> 94309
+30133 : 48384 --> 94309
+30166 : 48384 --> 94309
+30200 : 48384 --> 94309
+30233 : 48384 --> 94309
+30266 : 48384 --> 94309
+30300 : 48384 --> 94309
+30333 : 48384 --> 94309
+30366 : 48384 --> 94309
+30400 : 48384 --> 94309
+30433 : 48384 --> 94309
+30466 : 48384 --> 94309
+30500 : 48384 --> 94309
+30533 : 48384 --> 94309
+30566 : 48384 --> 94309
+30600 : 48384 --> 94309
+30633 : 48384 --> 94309
+30666 : 48384 --> 94309
+30700 : 48384 --> 94309
+30733 : 48384 --> 94309
+30766 : 48384 --> 94309
+30800 : 48384 --> 94309
+30833 : 48384 --> 94309
+30866 : 48384 --> 94309
+30900 : 48384 --> 94309
+30933 : 48384 --> 94309
+30966 : 48384 --> 94309
+31000 : 48384 --> 94309
+31033 : 48384 --> 94309
+31066 : 48384 --> 94309
+31100 : 48384 --> 94309
+31133 : 48384 --> 94309
+31166 : 48384 --> 94309
+31200 : 48384 --> 94309
+31233 : 48384 --> 94309
+31266 : 48384 --> 94309
+31300 : 48384 --> 94309
+31333 : 48384 --> 94309
+31366 : 48384 --> 94309
+31400 : 48384 --> 94309
+31433 : 48384 --> 94309
+31466 : 48384 --> 94309
+31500 : 48384 --> 94309
+31533 : 48384 --> 94309
+31566 : 48384 --> 94309
+31600 : 48384 --> 94309
+31633 : 48384 --> 94309
+31666 : 48384 --> 94309
+31700 : 48384 --> 94309
+31733 : 48384 --> 94309
+31766 : 48384 --> 94309
+31800 : 48384 --> 94309
+31833 : 48384 --> 94309
+31866 : 48384 --> 94309
+31900 : 48384 --> 94309
+31933 : 48384 --> 94309
+31966 : 48384 --> 94309
+32000 : 48384 --> 94309
+32033 : 48384 --> 94309
+32066 : 48384 --> 94309
+32099 : 48384 --> 94309
+32133 : 48384 --> 94309
+32166 : 48384 --> 94309
+32200 : 48384 --> 94309
+32233 : 48384 --> 94309
+32266 : 48384 --> 94309
+32300 : 48384 --> 94309
+32333 : 48384 --> 94309
+32366 : 48384 --> 94309
+32400 : 48384 --> 94309
+32433 : 48384 --> 94309
+32466 : 48384 --> 94309
+32500 : 48384 --> 94309
+32533 : 48384 --> 94309
+32566 : 48384 --> 94309
+32599 : 48384 --> 94309
+32633 : 48384 --> 94309
+32666 : 48384 --> 94309
+32700 : 48384 --> 94309
+32733 : 48384 --> 94309
+32766 : 48384 --> 94309
+32800 : 48384 --> 94309
+32833 : 48384 --> 94309
+32866 : 48384 --> 94309
+32900 : 48384 --> 94309
+32933 : 48384 --> 94309
+32966 : 48384 --> 94309
+33000 : 48384 --> 94309
+33033 : 48384 --> 94309
+33066 : 48384 --> 94309
+33100 : 48384 --> 94309
+33133 : 48384 --> 94309
+33166 : 48384 --> 94309
+33200 : 48384 --> 94309
+33233 : 48384 --> 94309
+33266 : 48384 --> 94309
+33300 : 48384 --> 94309
+33333 : 48384 --> 94309
+33366 : 48384 --> 94309
+33400 : 48384 --> 94309
+33433 : 48384 --> 94309
+33466 : 48384 --> 94309
+33500 : 48384 --> 94309
+33533 : 48384 --> 94309
+33566 : 48384 --> 94309
+33600 : 48384 --> 94309
+33633 : 48384 --> 94309
+33666 : 48384 --> 94309
+33700 : 48384 --> 94309
+33733 : 48384 --> 94309
+33766 : 48384 --> 94309
+33800 : 48384 --> 94309
+33833 : 48384 --> 94309
+33866 : 48384 --> 94309
+33900 : 48384 --> 94309
+33933 : 48384 --> 94309
+33966 : 48384 --> 94309
+34000 : 48384 --> 94309
+34033 : 48384 --> 94309
+34066 : 48384 --> 94309
+34100 : 48384 --> 94309
+34133 : 48384 --> 94309
+34166 : 48384 --> 94309
+34200 : 48384 --> 94309
+34233 : 48384 --> 94309
+34266 : 48384 --> 94309
+34300 : 48384 --> 94309
+34333 : 48384 --> 94309
+34366 : 48384 --> 94309
+34400 : 48384 --> 94309
+34433 : 48384 --> 94309
+34466 : 48384 --> 94309
+34500 : 48384 --> 94309
+34533 : 48384 --> 94309
+34566 : 48384 --> 94309
+34600 : 48384 --> 94309
+34633 : 48384 --> 94309
+34666 : 48384 --> 94309
+34700 : 48384 --> 94309
+34733 : 48384 --> 94309
+34766 : 48384 --> 94309
+34800 : 48384 --> 94309
+34833 : 48384 --> 94309
+34866 : 48384 --> 94309
+34900 : 48384 --> 94309
+34933 : 48384 --> 94309
+34966 : 48384 --> 94309
+35000 : 48384 --> 94309
+35033 : 48384 --> 94309
+35066 : 48384 --> 94309
+35100 : 48384 --> 94309
+35133 : 48384 --> 94309
+35166 : 48384 --> 94309
+35200 : 48384 --> 94309
+35233 : 48384 --> 94309
+35266 : 48384 --> 94309
+35300 : 48384 --> 94309
+35333 : 48384 --> 94309
+35366 : 48384 --> 94309
+35400 : 48384 --> 94309
+35433 : 48384 --> 94309
+35466 : 48384 --> 94309
+35500 : 48384 --> 94309
+35533 : 48384 --> 94309
+35566 : 48384 --> 94309
+35600 : 48384 --> 94309
+35633 : 48384 --> 94309
+35666 : 48384 --> 94309
+35700 : 48384 --> 94309
+35733 : 48384 --> 94309
+35766 : 48384 --> 94309
+35800 : 48384 --> 94309
+35833 : 48384 --> 94309
+35866 : 48384 --> 94309
+35900 : 48384 --> 94309
+35933 : 48384 --> 94309
+35966 : 48384 --> 94309
+36000 : 48384 --> 94309
+36033 : 48384 --> 94309
+36066 : 48384 --> 94309
+36100 : 48384 --> 94309
+36133 : 48384 --> 94309
+36166 : 48384 --> 94309
+36200 : 48384 --> 94309
+36233 : 48384 --> 94309
+36266 : 48384 --> 94309
+36300 : 48384 --> 94309
+36333 : 48384 --> 94309
+36366 : 48384 --> 94309
+36400 : 48384 --> 94309
+36433 : 48384 --> 94309
+36466 : 48384 --> 94309
+36500 : 48384 --> 94309
+36533 : 48384 --> 94309
+36566 : 48384 --> 94309
+36600 : 48384 --> 94309
+36633 : 48384 --> 94309
+36666 : 48384 --> 94309
+36700 : 48384 --> 94309
+36733 : 48384 --> 94309
+36766 : 48384 --> 94309
+36800 : 48384 --> 94309
+36833 : 48384 --> 94309
+36866 : 48384 --> 94309
+36900 : 48384 --> 94309
+36933 : 48384 --> 94309
+36966 : 48384 --> 94309
+37000 : 48384 --> 94309
+37033 : 48384 --> 94309
+37066 : 48384 --> 94309
+37100 : 48384 --> 94309
+37133 : 48384 --> 94309
+37166 : 48384 --> 94309
+37200 : 48384 --> 94309
+37233 : 48384 --> 94309
+37266 : 48384 --> 94309
+37300 : 48384 --> 94309
+37333 : 48384 --> 94309
+37366 : 48384 --> 94309
+37400 : 48384 --> 94309
+37433 : 48384 --> 94309
+37466 : 48384 --> 94309
+37500 : 48384 --> 94309
+37533 : 48384 --> 94309
+37566 : 48384 --> 94309
+37600 : 48384 --> 94309
+37633 : 48384 --> 94309
+37666 : 48384 --> 94309
+37700 : 48384 --> 94309
+37733 : 48384 --> 94309
+37766 : 48384 --> 94309
+37800 : 48384 --> 94309
+37833 : 48384 --> 94309
+37866 : 48384 --> 94309
+37900 : 48384 --> 94309
+37933 : 48384 --> 94309
+37966 : 48384 --> 94309
+38000 : 48384 --> 94309
+38033 : 48384 --> 94309
+38066 : 48384 --> 94309
+38100 : 48384 --> 94309
+38133 : 48384 --> 94309
+38166 : 48384 --> 94309
+38200 : 48384 --> 94309
+38233 : 48384 --> 94309
+38266 : 48384 --> 94309
+38300 : 48384 --> 94309
+38333 : 48384 --> 94309
+38366 : 48384 --> 94309
+38400 : 48384 --> 94309
+38433 : 48384 --> 94309
+38466 : 48384 --> 94309
+38500 : 48384 --> 94309
+38533 : 48384 --> 94309
+38566 : 48384 --> 94309
+38600 : 48384 --> 94309
+38633 : 48384 --> 94309
+38666 : 48384 --> 94309
+38700 : 48384 --> 94309
+38733 : 48384 --> 94309
+38766 : 48384 --> 94309
+38800 : 48384 --> 94309
+38833 : 48384 --> 94309
+38866 : 48384 --> 94309
+38900 : 48384 --> 94309
+38933 : 48384 --> 94309
+38966 : 48384 --> 94309
+39000 : 48384 --> 94309
+39033 : 48384 --> 94309
+39066 : 48384 --> 94309
+39100 : 48384 --> 94309
+39133 : 48384 --> 94309
+39166 : 48384 --> 94309
+39200 : 48384 --> 94309
+39233 : 48384 --> 94309
+39266 : 48384 --> 94309
+39300 : 48384 --> 94309
+39333 : 48384 --> 94309
+39366 : 48384 --> 94309
+39400 : 48384 --> 94309
+39433 : 48384 --> 94309
+39466 : 48384 --> 94309
+39500 : 48384 --> 94309
+39533 : 48384 --> 94309
+39566 : 48384 --> 94309
+39600 : 48384 --> 94309
+39633 : 48384 --> 94309
+39666 : 48384 --> 94309
+39700 : 48384 --> 94309
+39733 : 48384 --> 94309
+39766 : 48384 --> 94309
+39800 : 48384 --> 94309
+39833 : 48384 --> 94309
+39866 : 48384 --> 94309
+39900 : 48384 --> 94309
+39933 : 48384 --> 94309
+39966 : 48384 --> 94309
+40000 : 48384 --> 94309
+40033 : 48384 --> 94309
+40066 : 48384 --> 94309
+40100 : 48384 --> 94309
+40133 : 48384 --> 94309
+40166 : 48384 --> 94309
+40200 : 48384 --> 94309
+40233 : 48384 --> 94309
+40266 : 48384 --> 94309
+40300 : 48384 --> 94309
+40333 : 48384 --> 94309
+40366 : 48384 --> 94309
+40400 : 48384 --> 94309
+40433 : 48384 --> 94309
+40466 : 48384 --> 94309
+40500 : 48384 --> 94309
+40533 : 48384 --> 94309
+40566 : 48384 --> 94309
+40600 : 48384 --> 94309
+40633 : 48384 --> 94309
+40666 : 48384 --> 94309
+40700 : 48384 --> 94309
+40733 : 48384 --> 94309
+40766 : 48384 --> 94309
+40800 : 48384 --> 94309
+40833 : 48384 --> 94309
+40866 : 48384 --> 94309
+40900 : 48384 --> 94309
+40933 : 48384 --> 94309
+40966 : 48384 --> 94309
+41000 : 48384 --> 94309
+41033 : 48384 --> 94309
+41066 : 48384 --> 94309
+41100 : 48384 --> 94309
+41133 : 48384 --> 94309
+41166 : 48384 --> 94309
+41200 : 48384 --> 94309
+41233 : 48384 --> 94309
+41266 : 48384 --> 94309
+41300 : 48384 --> 94309
+41333 : 48384 --> 94309
+41366 : 48384 --> 94309
+41400 : 48384 --> 94309
+41433 : 48384 --> 94309
+41466 : 48384 --> 94309
+41500 : 48384 --> 94309
+41533 : 48384 --> 94309
+41566 : 48384 --> 94309
+41600 : 48384 --> 94309
+41633 : 48384 --> 94309
+41666 : 48384 --> 94309
+41700 : 48384 --> 94309
+41733 : 48384 --> 94309
+41766 : 48384 --> 94309
+41800 : 48384 --> 94309
+41833 : 48384 --> 94309
+41866 : 48384 --> 94309
+41900 : 48384 --> 94309
+41933 : 48384 --> 94309
+41966 : 48384 --> 94309
+42000 : 48384 --> 94309
+42033 : 48384 --> 94309
+42066 : 48384 --> 94309
+42100 : 48384 --> 94309
+42133 : 48384 --> 94309
+42166 : 48384 --> 94309
+42200 : 48384 --> 94309
+42233 : 48384 --> 94309
+42266 : 48384 --> 94309
+42300 : 48384 --> 94309
+42333 : 48384 --> 94309
+42366 : 48384 --> 94309
+42400 : 48384 --> 94309
+42433 : 48384 --> 94309
+42466 : 48384 --> 94309
+42500 : 48384 --> 94309
+42533 : 48384 --> 94309
+42566 : 48384 --> 94309
+42600 : 48384 --> 94309
+42633 : 48384 --> 94309
+42666 : 48384 --> 94309
+42700 : 48384 --> 94309
+42733 : 48384 --> 94309
+42766 : 48384 --> 94309
+42800 : 48384 --> 94309
+42833 : 48384 --> 94309
+42866 : 48384 --> 94309
+42900 : 48384 --> 94309
+42933 : 48384 --> 94309
+42966 : 48384 --> 94309
+43000 : 48384 --> 94309
+43033 : 48384 --> 94309
+43066 : 48384 --> 94309
+43100 : 48384 --> 94309
+43133 : 48384 --> 94309
+43166 : 48384 --> 94309
+43200 : 48384 --> 94309
+43233 : 48384 --> 94309
+43266 : 48384 --> 94309
+43300 : 48384 --> 94309
+43333 : 48384 --> 94309
+43366 : 48384 --> 94309
+43400 : 48384 --> 94309
+43433 : 48384 --> 94309
+43466 : 48384 --> 94309
+43500 : 48384 --> 94309
+43533 : 48384 --> 94309
+43566 : 48384 --> 94309
+43600 : 48384 --> 94309
+43633 : 48384 --> 94309
+43666 : 48384 --> 94309
+43700 : 48384 --> 94309
+43733 : 48384 --> 94309
+43766 : 48384 --> 94309
+43800 : 48384 --> 94309
+43833 : 48384 --> 94309
+43866 : 48384 --> 94309
+43900 : 48384 --> 94309
+43933 : 48384 --> 94309
+43966 : 48384 --> 94309
+44000 : 48384 --> 94309
+44033 : 48384 --> 94309
+44066 : 48384 --> 94309
+44100 : 48384 --> 94309
+44133 : 48384 --> 94309
+44166 : 48384 --> 94309
+44200 : 48384 --> 94309
+44233 : 48384 --> 94309
+44266 : 48384 --> 94309
+44300 : 48384 --> 94309
+44333 : 48384 --> 94309
+44366 : 48384 --> 94309
+44400 : 48384 --> 94309
+44433 : 48384 --> 94309
+44466 : 48384 --> 94309
+44500 : 48384 --> 94309
+44533 : 48384 --> 94309
+44566 : 48384 --> 94309
+44600 : 48384 --> 94309
+44633 : 48384 --> 94309
+44666 : 48384 --> 94309
+44700 : 48384 --> 94309
+44733 : 48384 --> 94309
+44766 : 48384 --> 94309
+44800 : 48384 --> 94309
+44833 : 48384 --> 94309
+44866 : 48384 --> 94309
+44900 : 48384 --> 94309
+44933 : 48384 --> 94309
+44966 : 48384 --> 94309
+45000 : 48384 --> 94309
+45033 : 48384 --> 94309
+45066 : 48384 --> 94309
+45100 : 48384 --> 94309
+45133 : 48384 --> 94309
+45166 : 48384 --> 94309
+45200 : 48384 --> 94309
+45233 : 48384 --> 94309
+45266 : 48384 --> 94309
+45300 : 48384 --> 94309
+45333 : 48384 --> 94309
+45366 : 48384 --> 94309
+45400 : 48384 --> 94309
+45433 : 48384 --> 94309
+45466 : 48384 --> 94309
+45500 : 48384 --> 94309
+45533 : 48384 --> 94309
+45566 : 48384 --> 94309
+45600 : 48384 --> 94309
+45633 : 48384 --> 94309
+45666 : 48384 --> 94309
+45700 : 48384 --> 94309
+45733 : 48384 --> 94309
+45766 : 48384 --> 94309
+45800 : 48384 --> 94309
+45833 : 48384 --> 94309
+45866 : 48384 --> 94309
+45900 : 48384 --> 94309
+45933 : 48384 --> 94309
+45966 : 48384 --> 94309
+46000 : 48384 --> 94309
+46033 : 48384 --> 94309
+46066 : 48384 --> 94309
+46100 : 48384 --> 94309
+46133 : 48384 --> 94309
+46166 : 48384 --> 94309
+46200 : 48384 --> 94309
+46233 : 48384 --> 94309
+46266 : 48384 --> 94309
+46300 : 48384 --> 94309
+46333 : 48384 --> 94309
+46366 : 48384 --> 94309
+46400 : 48384 --> 94309
+46433 : 48384 --> 94309
+46466 : 48384 --> 94309
+46500 : 48384 --> 94309
+46533 : 48384 --> 94309
+46566 : 48384 --> 94309
+46600 : 48384 --> 94309
+46633 : 48384 --> 94309
+46666 : 48384 --> 94309
+46700 : 48384 --> 94309
+46733 : 48384 --> 94309
+46766 : 48384 --> 94309
+46800 : 48384 --> 94309
+46833 : 48384 --> 94309
+46866 : 48384 --> 94309
+46900 : 48384 --> 94309
+46933 : 48384 --> 94309
+46966 : 48384 --> 94309
+47000 : 48384 --> 94309
+47033 : 48384 --> 94309
+47066 : 48384 --> 94309
+End of audio, stopping video export.
+/var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4 saved.
+java.lang.NullPointerException
+	at com.hamoid.VideoExport.saveFrame(Unknown Source)
+	at spectrogram.draw(spectrogram.java:195)
+	at processing.core.PApplet.handleDraw(PApplet.java:2475)
+	at processing.awt.PSurfaceAWT$12.callDraw(PSurfaceAWT.java:1547)
+	at processing.core.PSurfaceNone$AnimationThread.run(PSurfaceNone.java:313)
+
+VideoExport error: Ffmpeg failed. Study /var/www/app/songwork-app/_make/../spectrogram/ffmpeg.txt for more details.
+
+Finished.
+Could not run the sketch (Target VM failed to initialize).
+For more information, read revisions.txt and Help ? Troubleshooting.
+Could not run the sketch.
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/in-spectrogram.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.83.100
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+  Duration: 00:00:47.10, start: 0.000000, bitrate: 406 kb/s
+    Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 125 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 276 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:0 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0x5570f2309a80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+[libx264 @ 0x5570f2309a80] profile High, level 1.3
+[libx264 @ 0x5570f2309a80] 264 - core 152 r2854 e9a5903 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/out/00170.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: h264 (libx264) (avc1 / 0x31637661), yuv420p, 250x250, q=-1--1, 30 fps, 15360 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc57.107.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      encoder         : Lavc57.107.100 aac
+frame=   97 fps=0.0 q=29.0 size=       0kB time=00:00:03.13 bitrate=   0.1kbits/s speed=6.23x    frame=  175 fps=174 q=29.0 size=       0kB time=00:00:05.69 bitrate=   0.1kbits/s speed=5.68x    frame=  236 fps=157 q=29.0 size=       0kB time=00:00:07.74 bitrate=   0.0kbits/s speed=5.14x    frame=  294 fps=146 q=29.0 size=       0kB time=00:00:09.66 bitrate=   0.0kbits/s speed= 4.8x    frame=  361 fps=143 q=29.0 size=       0kB time=00:00:11.96 bitrate=   0.0kbits/s speed=4.76x    frame=  423 fps=140 q=29.0 size=     256kB time=00:00:13.95 bitrate= 150.3kbits/s speed=4.62x    frame=  481 fps=137 q=29.0 size=     256kB time=00:00:15.93 bitrate= 131.6kbits/s speed=4.53x    frame=  542 fps=134 q=26.0 size=     256kB time=00:00:17.98 bitrate= 116.6kbits/s speed=4.46x    frame=  611 fps=134 q=29.0 size=     256kB time=00:00:20.28 bitrate= 103.4kbits/s speed=4.47x    frame=  684 fps=136 q=29.0 size=     512kB time=00:00:22.65 bitrate= 185.1kbits/s speed=4.49x    frame=  747 fps=135 q=29.0 size=     512kB time=00:00:24.83 bitrate= 168.9kbits/s speed=4.48x    frame=  809 fps=134 q=29.0 size=     512kB time=00:00:26.88 bitrate= 156.1kbits/s speed=4.44x    frame=  882 fps=135 q=29.0 size=     512kB time=00:00:29.31 bitrate= 143.1kbits/s speed=4.47x    frame=  953 fps=135 q=29.0 size=     768kB time=00:00:31.61 bitrate= 199.0kbits/s speed=4.48x    frame= 1020 fps=135 q=29.0 size=     768kB time=00:00:33.85 bitrate= 185.8kbits/s speed=4.48x    frame= 1085 fps=135 q=29.0 size=     768kB time=00:00:36.03 bitrate= 174.6kbits/s speed=4.47x    frame= 1172 fps=137 q=29.0 size=     768kB time=00:00:38.91 bitrate= 161.7kbits/s speed=4.54x    frame= 1248 fps=138 q=29.0 size=    1024kB time=00:00:41.53 bitrate= 202.0kbits/s speed=4.58x    frame= 1306 fps=136 q=29.0 size=    1024kB time=00:00:43.45 bitrate= 193.0kbits/s speed=4.54x    frame= 1366 fps=135 q=29.0 size=    1024kB time=00:00:45.44 bitrate= 184.6kbits/s speed=4.51x    frame= 1412 fps=134 q=29.0 Lsize=    1275kB time=00:00:47.04 bitrate= 222.1kbits/s speed=4.47x    
+video:524kB audio:724kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.236583%
+[libx264 @ 0x5570f2309a80] frame I:6     Avg QP:15.58  size: 19276
+[libx264 @ 0x5570f2309a80] frame P:378   Avg QP:21.52  size:   703
+[libx264 @ 0x5570f2309a80] frame B:1028  Avg QP:27.41  size:   150
+[libx264 @ 0x5570f2309a80] consecutive B-frames:  2.2%  2.0%  0.6% 95.2%
+[libx264 @ 0x5570f2309a80] mb I  I16..4: 17.1% 32.3% 50.7%
+[libx264 @ 0x5570f2309a80] mb P  I16..4:  0.0%  0.1%  0.8%  P16..4: 14.0%  2.5%  2.2%  0.0%  0.0%    skip:80.5%
+[libx264 @ 0x5570f2309a80] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  5.3%  1.0%  0.3%  direct: 1.8%  skip:91.6%  L0:22.1% L1:73.0% BI: 4.9%
+[libx264 @ 0x5570f2309a80] 8x8 transform intra:24.4% inter:56.1%
+[libx264 @ 0x5570f2309a80] coded y,uvDC,uvAC intra: 83.9% 0.0% 0.0% inter: 3.6% 0.0% 0.0%
+[libx264 @ 0x5570f2309a80] i16 v,h,dc,p: 89%  1%  9%  0%
+[libx264 @ 0x5570f2309a80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23%  5% 41%  7%  4%  5%  3%  8%  4%
+[libx264 @ 0x5570f2309a80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 16% 17%  7%  5%  9%  4%  9%  5%
+[libx264 @ 0x5570f2309a80] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 0x5570f2309a80] Weighted P-Frames: Y:0.8% UV:0.0%
+[libx264 @ 0x5570f2309a80] ref P L0: 88.0%  4.3%  5.2%  2.5%  0.0%
+[libx264 @ 0x5570f2309a80] ref B L0: 94.6%  3.6%  1.7%
+[libx264 @ 0x5570f2309a80] ref B L1: 91.2%  8.8%
+[libx264 @ 0x5570f2309a80] kb/s:91.04
+[aac @ 0x5570f22f1460] Qavg: 16478.209
+ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spectrogram/out/00170.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.83.100
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+  Duration: 00:00:47.10, start: 0.000000, bitrate: 221 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 250x250, 91 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 125 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+[swscaler @ 0x55fc111cb7c0] deprecated pixel format used, make sure you did set range correctly
+Output #0, image2, to '/var/www/html/media/placeholder/00170.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Made with Video Export for Processing - https://git.io/vAXLk
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: mjpeg, yuvj420p(pc), 250x250, q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc57.107.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
+frame=    1 fps=0.0 q=1.6 Lsize=N/A time=00:00:00.03 bitrate=N/A speed=0.741x    
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
 done.
