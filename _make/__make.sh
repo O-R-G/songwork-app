@@ -7,7 +7,7 @@
 # /var/www/app/songworks
 
 # convert audio to 16-bit wav
-echo ls
+ls
 
 for f in *.wav 
     do
