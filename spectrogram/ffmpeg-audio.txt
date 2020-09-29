@@ -17,15 +17,15 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/www/app/songwork-app/_make/../spec
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf57.83.100
     comment         : Made with Video Export for Processing - https://git.io/vAXLk
-  Duration: 00:00:47.07, start: 0.000000, bitrate: 279 kb/s
-    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 276 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+  Duration: 00:00:06.87, start: 0.000000, bitrate: 170 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, 166 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
     Metadata:
       handler_name    : VideoHandler
 Guessed Channel Layout for Input Stream #1.0 : stereo
 Input #1, wav, from '/var/www/app/songwork-app/data/in.wav':
   Metadata:
     encoder         : Lavf57.83.100
-  Duration: 00:01:34.31, bitrate: 512 kb/s
+  Duration: 00:00:13.93, bitrate: 512 kb/s
     Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, stereo, s16, 512 kb/s
 Stream mapping:
   Stream #1:0 (pcm_s16le) -> apad
@@ -42,9 +42,9 @@ Output #0, mp4, to '/var/www/app/songwork-app/_make/../spectrogram/temp-with-aud
     Stream #0:0: Audio: aac (LC) (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s
     Metadata:
       encoder         : Lavc57.107.100 aac
-    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, q=2-31, 276 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 540x960, q=2-31, 166 kb/s, 30 fps, 30 tbr, 15360 tbn, 15360 tbc (default)
     Metadata:
       handler_name    : VideoHandler
-frame=  208 fps=0.0 q=-1.0 size=       0kB time=00:00:06.91 bitrate=   0.1kbits/s speed=13.7x    frame=  550 fps=548 q=-1.0 size=     768kB time=00:00:18.30 bitrate= 343.7kbits/s speed=18.2x    frame= 1266 fps=841 q=-1.0 size=    2048kB time=00:00:42.17 bitrate= 397.8kbits/s speed=  28x    frame= 1412 fps=880 q=-1.0 Lsize=    2340kB time=00:00:47.04 bitrate= 407.4kbits/s speed=29.3x    
-video:1590kB audio:722kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.207719%
-[aac @ 0x557bd2bfbd60] Qavg: 15991.132
+frame=  206 fps=0.0 q=-1.0 Lsize=     247kB time=00:00:06.84 bitrate= 294.9kbits/s speed=44.2x    
+video:139kB audio:102kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.192455%
+[aac @ 0x55b613d05660] Qavg: 6113.938
