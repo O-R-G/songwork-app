@@ -2,3 +2,7 @@
 .cache
 .dubs
 .config
+data/*.txt
+data/in.wav
+spectrogram/*.txt
+_make/debug.log

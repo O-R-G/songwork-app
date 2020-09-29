@@ -35,7 +35,7 @@ for f in _*.wav
         # pjava ../spectrogram/.
         /opt/processing/processing-java --sketch=$PATH_TO/../spectrogram --run
         ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=250:250:0:250" $PATH_TO/../spectrogram/out/"$filename".mp4
-	ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 250x250 -ss 3 /var/www/html/media/placeholder/"$filename".jpg
+	ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 250x250 -ss 8 /var/www/html/media/placeholder/"$filename".jpg
 	# move example.mp4 to media/
 	mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/
 	# move example.wav to media/original-audio/
