@@ -31,7 +31,7 @@ for f in _*.wav _*.mp3
         filename="${filename%.*}"
         # remove '_' at the begining
         filename="${filename//_/$''}"
-        if[[ filename == "mp3" ]]
+        if [ filename == "mp3" ]
         then
             ffmpeg -i "$f" _"$filename".wav
             cp _"$filename".wav ../data/in.wav
