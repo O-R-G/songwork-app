@@ -9,7 +9,7 @@
 # convert audio to 16-bit wav
 ls
 
-for f in *.wav 
+for f in *.wav *.mp3
     do
         echo $f >> __list.txt
         ffmpeg -i "$f" -acodec pcm_s16le -ar 16000 _"$f"
@@ -20,7 +20,7 @@ PATH_TO=$(pwd)
 # run processing for *.wav
 # crop resulting mov
 # ? generate animated .gif ** todo **
-for f in _*.wav
+for f in _*.wav _*.mp3
     do 
         echo "Processing ******** '$f'"
 	# get file name
@@ -31,12 +31,18 @@ for f in _*.wav
         filename="${filename%.*}"
         # remove '_' at the begining
         filename="${filename//_/$''}"
-        cp "$f" ../data/in.wav
+        if[[ filename == "mp3" ]]
+        then
+            ffmpeg -i "$f" _"$filename".wav
+            cp _"$filename".wav ../data/in.wav
+        else
+            cp "$f" ../data/in.wav
+        fi
         # pjava ../spectrogram/.
         /opt/processing/processing-java --sketch=$PATH_TO/../spectrogram --run
         ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=360:360:0:280" $PATH_TO/../spectrogram/out/"$filename".mp4
         # 280 = 960 / 1.5 - 360
-	ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss 6 /var/www/html/media/placeholder/"$filename".jpg
+	ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss 6 /var/www/html/media/placeholder/"$filename".png
 	# move example.mp4 to media/
 	mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/
 	# move example.wav to media/original-audio/
