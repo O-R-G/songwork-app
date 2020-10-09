@@ -9,7 +9,7 @@
 # convert audio to 16-bit wav
 ls
 
-for f in *.wav *.mp3
+for f in 0*.wav 0*.mp3
     do
         echo $f >> __list.txt
         ffmpeg -i "$f" -acodec pcm_s16le -ar 16000 _"$f"
