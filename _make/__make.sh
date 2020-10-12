@@ -18,7 +18,7 @@ for f in 0*.wav 0*.mp3
         extension="${filename##*.}"
         # remove file extension
         filename="${filename%.*}"
-        # remove '_' at the begining
+        echo extension
 
         if [ extension == "mp3" ]
         then
