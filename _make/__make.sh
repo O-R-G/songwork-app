@@ -12,7 +12,23 @@ ls
 for f in 0*.wav 0*.mp3
     do
         echo $f >> __list.txt
-        ffmpeg -i "$f" -acodec pcm_s16le -ar 16000 _"$f"
+        # get file name
+        filename=$(basename -- "$f")
+        # keep file extension
+        extension="${filename##*.}"
+        # remove file extension
+        filename="${filename%.*}"
+        # remove '_' at the begining
+
+        if [ extension == "mp3" ]
+        then
+            echo 'converting mp3 file'
+            ffmpeg -i "$f" "$filename".wav
+            ffmpeg -i "$filename".wav -acodec pcm_s16le -ar 16000 _"$filename".wav
+        else
+            ffmpeg -i "$f" -acodec pcm_s16le -ar 16000 _"$f"
+        fi
+        
         rm $f
     done
 
@@ -21,10 +37,10 @@ PATH_TO=$(pwd)
 # run processing for *.wav
 # crop resulting mov
 # ? generate animated .gif ** todo **
-for f in _*.wav _*.mp3
+for f in _*.wav
     do 
         echo "Processing ******** '$f'"
-	# get file name
+	    # get file name
         filename=$(basename -- "$f")
         # keep file extension
         extension="${filename##*.}"
@@ -32,13 +48,8 @@ for f in _*.wav _*.mp3
         filename="${filename%.*}"
         # remove '_' at the begining
         filename="${filename//_/$''}"
-        if [ extension == "mp3" ]
-        then
-            ffmpeg -i "$f" _"$filename".wav
-            cp _"$filename".wav ../data/in.wav
-        else
-            cp "$f" ../data/in.wav
-        fi
+
+        cp "$f" ../data/in.wav
         # pjava ../spectrogram/.
         /opt/processing/processing-java --sketch=$PATH_TO/../spectrogram --run
         ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=360:360:0:280" $PATH_TO/../spectrogram/out/"$filename".mp4
