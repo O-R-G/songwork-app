@@ -8,7 +8,7 @@
 
 # convert audio to 16-bit wav
 shopt -s nullglob
-for f in 0*.wav 0*.mp3 0*.aiff
+for f in 0*.wav 0*.mp3 0*.aiff 0*.m4a
     do
         echo $f >> __list.txt
         # get file name
@@ -18,9 +18,9 @@ for f in 0*.wav 0*.mp3 0*.aiff
         # remove file extension
         filename="${filename%.*}"
 
-        if [ $extension == "mp3" ] || [ $extension == "aiff" ]
+        if [ $extension != "wav" ]
         then
-            echo 'converting mp3 file'
+            echo 'converting non wav file'
             ffmpeg -i "$f" "$filename".wav
             ffmpeg -i "$filename".wav -acodec pcm_s16le -ar 16000 _"$filename".wav
             rm "$filename".wav
