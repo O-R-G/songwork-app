@@ -8,7 +8,7 @@
 
 # convert audio to 16-bit wav
 shopt -s nullglob
-for f in 0*.wav 0*.mp3
+for f in 0*.wav 0*.mp3 0*.aiff
     do
         echo $f >> __list.txt
         # get file name
@@ -17,9 +17,8 @@ for f in 0*.wav 0*.mp3
         extension="${filename##*.}"
         # remove file extension
         filename="${filename%.*}"
-        echo $extension
 
-        if [ $extension == "mp3" ]
+        if [ $extension == "mp3" ] || [ $extension == "aiff" ]
         then
             echo 'converting mp3 file'
             ffmpeg -i "$f" "$filename".wav
