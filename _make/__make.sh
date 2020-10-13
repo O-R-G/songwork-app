@@ -62,7 +62,7 @@ for f in _*.wav
     	# rm $f
         rm ../spectrogram/out/in-spectrogram.mp4
 done
-php /var/www/html/views/upload-finish.php
+php /var/www/html/views/submit-finish.php
 # cleanup 
 rm __list.txt
 # rm _*.wav
