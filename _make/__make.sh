@@ -7,10 +7,9 @@
 # /var/www/app/songworks
 
 # convert audio to 16-bit wav
-
+shopt -s nullglob
 for f in 0*.wav 0*.mp3
     do
-        [ -f "$i" ] || break
         echo $f >> __list.txt
         # get file name
         filename=$(basename -- "$f")
@@ -20,7 +19,7 @@ for f in 0*.wav 0*.mp3
         filename="${filename%.*}"
         echo $extension
 
-        if [ extension == "mp3" ]
+        if [ $extension == "mp3" ]
         then
             echo 'converting mp3 file'
             ffmpeg -i "$f" "$filename".wav
