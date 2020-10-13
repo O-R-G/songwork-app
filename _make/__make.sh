@@ -59,7 +59,7 @@ for f in _*.wav
     	# move example.wav to media/audio/
     	mv _"$filename"."$extension" /var/www/html/media/audio/"$filename"."$extension"
     	# remove _example.wav
-    	rm $f
+    	# rm $f
         rm ../spectrogram/out/in-spectrogram.mp4
 done
 php /var/www/html/views/upload-finish.php
