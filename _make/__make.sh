@@ -9,7 +9,7 @@
 # convert audio to 16-bit wav
 ls
 
-for f in 0*.wav 0*.mp3
+for f in 0*
     do
         echo $f >> __list.txt
         # get file name
@@ -18,9 +18,9 @@ for f in 0*.wav 0*.mp3
         extension="${filename##*.}"
         # remove file extension
         filename="${filename%.*}"
-        echo extension
+        echo $extension
 
-        if [ extension == "mp3" ]
+        if [ $extension == "mp3" ]
         then
             echo 'converting mp3 file'
             ffmpeg -i "$f" "$filename".wav
