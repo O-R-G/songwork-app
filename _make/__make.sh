@@ -58,7 +58,7 @@ for f in _*.wav
     	# move example.mp4 to media/
     	mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/--"$filename".mp4
     	# move example.wav to media/audio/
-    	mv _"$filename"."$extension" /var/www/html/media/audio/
+    	mv _"$filename"."$extension" /var/www/html/media/audio/"$filename"."$extension"
     	# remove _example.wav
     	rm $f
         rm ../spectrogram/out/in-spectrogram.mp4
