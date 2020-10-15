@@ -38,7 +38,7 @@ PATH_TO=$(pwd)
 # ? generate animated .gif ** todo **
 # for f in _*.wav
 #     do 
-        echo "Processing ******** '$f'"
+        echo "Processing ******** '_$f'"
 	    # get file name
         #filename=$(basename -- "$f")
         # keep file extension
