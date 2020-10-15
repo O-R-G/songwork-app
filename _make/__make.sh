@@ -36,33 +36,32 @@ PATH_TO=$(pwd)
 # run processing for *.wav
 # crop resulting mov
 # ? generate animated .gif ** todo **
-# for f in _*.wav
-#     do 
-        echo "Processing ******** '_$f'"
+for f in _*.wav
+    do 
+        echo "Processing ******** '$f'"
 	    # get file name
-        #filename=$(basename -- "$f")
+        filename=$(basename -- "$f")
         # keep file extension
-        #extension="${filename##*.}"
+        extension="${filename##*.}"
         # remove file extension
-        #filename="${filename%.*}"
+        filename="${filename%.*}"
         # remove '_' at the begining
-        #filename="${filename//_/$''}"
+        filename="${filename//_/$''}"
 
-        cp _"$filename".wav ../data/"$filename".wav
-        # move example.wav to media/audio/
-        mv _"$filename".wav /var/www/html/media/audio/"$filename".wav
+        cp "$f" ../data/in.wav
         # pjava ../spectrogram/.
-        /opt/processing/processing-java --sketch=$PATH_TO/../spectrogram --run "$filename"
-        ffmpeg -i $PATH_TO/../spectrogram/out/"$filename"-spectrogram.mp4 -filter:v "crop=360:360:0:280" $PATH_TO/../spectrogram/out/"$filename".mp4
+        /opt/processing/processing-java --sketch=$PATH_TO/../spectrogram --run
+        ffmpeg -i $PATH_TO/../spectrogram/out/in-spectrogram.mp4 -filter:v "crop=360:360:0:280" $PATH_TO/../spectrogram/out/"$filename".mp4
         # 280 = 960 / 1.5 - 360
     	ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss 6 /var/www/html/media/placeholder/"$filename".png
     	# move example.mp4 to media/
-    	# mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/--"$filename".mp4
-    	
+    	mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/--"$filename".mp4
+    	# move example.wav to media/audio/
+    	mv _"$filename"."$extension" /var/www/html/media/audio/"$filename"."$extension"
     	# remove _example.wav
     	# rm $f
-        rm ../spectrogram/out/"$filename"-spectrogram.mp4
-# done
+        rm ../spectrogram/out/in-spectrogram.mp4
+done
 php /var/www/html/views/submit-finish.php
 # cleanup 
 rm __list.txt
