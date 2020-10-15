@@ -48,7 +48,7 @@ PATH_TO=$(pwd)
         # remove '_' at the begining
         #filename="${filename//_/$''}"
 
-        cp _"$filename".wav ../data/_"$filename".wav
+        cp _"$filename".wav ../data/"$filename".wav
         # move example.wav to media/audio/
         mv _"$filename".wav /var/www/html/media/audio/"$filename".wav
         # pjava ../spectrogram/.
