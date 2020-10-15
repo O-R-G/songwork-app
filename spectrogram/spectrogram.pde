@@ -67,6 +67,7 @@ Boolean render = true;      // render audio to txt, read txt, output video
 Boolean video = true;       // export video when rendering
 
 public void setup() {
+    file_name = args[0]+".wav";
     // size(180, 320, FX2D);    // display_scale = 0.5 (360p @2x))
     // size(360, 640, FX2D);    // display_scale = 1.0 (720p @2x))
     // FX2D is *much* faster but exits with nullpointer
