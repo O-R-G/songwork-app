@@ -104,6 +104,7 @@ public void setup() {
         minim.stop();
         String[] file_name_split = split(file_name, '.');
         String video_file_name = "out/" + file_name_split[0] + "-" + sketch_name + ".mp4";
+        println(file_name_split[0] + "-" + sketch_name + ".mp4");
         videoExport = new VideoExport(this);
         videoExport.setFrameRate(video_fps);
         videoExport.setAudioFileName(data_path + file_name);
