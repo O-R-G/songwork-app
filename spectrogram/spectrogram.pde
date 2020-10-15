@@ -42,7 +42,7 @@ int counter;                // draw loop
 float display_scale = 1.0;  // adjust to match size() [0.5,1.0,1.5]
 Boolean playing = false;
 String data_path = "/var/www/app/songwork-app/data/";
-String file_name = args[0] + ".wav";
+String file_name = "in.wav";
 String sketch_name = "spectrogram";
 
 int[][] sgram;              // all spectrogram data
@@ -67,7 +67,6 @@ Boolean render = true;      // render audio to txt, read txt, output video
 Boolean video = true;       // export video when rendering
 
 public void setup() {
-
     // size(180, 320, FX2D);    // display_scale = 0.5 (360p @2x))
     // size(360, 640, FX2D);    // display_scale = 1.0 (720p @2x))
     // FX2D is *much* faster but exits with nullpointer
@@ -103,7 +102,6 @@ public void setup() {
         minim.stop();
         String[] file_name_split = split(file_name, '.');
         String video_file_name = "out/" + file_name_split[0] + "-" + sketch_name + ".mp4";
-        println(file_name_split[0] + "-" + sketch_name + ".mp4");
         videoExport = new VideoExport(this);
         videoExport.setFrameRate(video_fps);
         videoExport.setAudioFileName(data_path + file_name);
