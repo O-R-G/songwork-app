@@ -57,11 +57,11 @@ PATH_TO=$(pwd)
         # 280 = 960 / 1.5 - 360
     	ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss 6 /var/www/html/media/placeholder/"$filename".png
     	# move example.mp4 to media/
-    	mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/--"$filename".mp4
+    	# mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/--"$filename".mp4
     	
     	# remove _example.wav
     	# rm $f
-        rm ../spectrogram/out/in-spectrogram.mp4
+        rm ../spectrogram/out/"$filename"-spectrogram.mp4
 # done
 php /var/www/html/views/submit-finish.php
 # cleanup 
