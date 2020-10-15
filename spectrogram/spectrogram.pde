@@ -43,6 +43,7 @@ float display_scale = 1.0;  // adjust to match size() [0.5,1.0,1.5]
 Boolean playing = false;
 String data_path = "/var/www/app/songwork-app/data/";
 String file_name = "_" + args[0] + ".wav";
+echo file_name;
 String sketch_name = "spectrogram";
 
 int[][] sgram;              // all spectrogram data
