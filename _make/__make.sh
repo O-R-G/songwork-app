@@ -56,7 +56,7 @@ rm ../spectrogram/out/"$filename"-spectrogram.mp4
 php /var/www/html/views/submit-finish.php
 # cleanup 
 rm __list.txt
-# rm _*.wav
+rm ../data/"$filename".wav ../data/"$filename".wav.txt
 # open -a "/System/Applications/Quicktime Player.app" ../spectrogram/out/*.mp4
 echo "done."
 
