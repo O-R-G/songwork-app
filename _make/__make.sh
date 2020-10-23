@@ -38,9 +38,11 @@ PATH_TO=$(pwd)
 # ? generate animated .gif ** todo **
 echo "Processing ******** '_$f'"
 
+audiofilename=$1
+
 cp _"$filename".wav ../data/"$filename".wav
 # move example.wav to media/audio/
-mv _"$filename".wav /var/www/html/media/audio/"$filename".wav
+mv _"$filename".wav /var/www/html/media/audio/"$audiofilename".wav
 
 /opt/processing/processing-java --sketch=$PATH_TO/../spectrogram --run "$filename"
 ffmpeg -i $PATH_TO/../spectrogram/out/"$filename"-spectrogram.mp4 -filter:v "crop=360:360:0:280" $PATH_TO/../spectrogram/out/"$filename".mp4
