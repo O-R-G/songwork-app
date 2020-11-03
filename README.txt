@@ -15,9 +15,16 @@ takes any number of .wav files in /_make/*.wav, converts to 16-bit, then runs pr
 
 + requires processing-java command line tool (included) which should be installed here: 
 
-    > cp processing-java /usr/local/bin/
-    > chmod +x /usr/local/bin/processing-java
+    > cp processing-java /opt/processing/
+    > chmod +x /opt/processing/processing-java
 
++ install processing libraries
+  1. After running a sketch once, a directory "sketchbook" will be created at a relative path "../../../sketchbook".
+  2. Download minim and VideoExport libraries:
+    http://code.compartmental.net/minim/
+    https://funprogramming.org/VideoExport-for-Processing/ (!!Don't download VideoExport on its github page)
+  3. Put them in sketchbook/libraries.
+    
 + requires ffmpeg, available via apt-get
 
     > sudo apt update
@@ -47,19 +54,39 @@ takes any number of .wav files in /_make/*.wav, converts to 16-bit, then runs pr
 
 4. change all the paths locating to songworks/ in .pde files.
 
-5. download minim and VideoExport libraries and put them in ~/sketchbook/libraries
+5. add the working user to group www-data
+
+    > useradd -g www-data $username
+
+6. change the owner/group of these files/directories to www-data:www-data
+
+    * all the .txt and .pde in songwork-app/
+    * /opt/jdk/jdk1.8.0_<version>/
+    * /opt/processing-<version>/
+    * /var/www/html/media/
+
+7. download minim and VideoExport libraries and put them in sketchbook/libraries
    ** VideoExport should be downloaded here instead of the GitHub page. **
 
     * https://funprogramming.org/VideoExport-for-Processing/ 
 
-6. cd to bash script directory
+8. envvar
+    > sudo nano /etc/apache2/envvars
+    
+    add
+      export HOME="/var/www/app/songwork-app"
+      export JAVA_HOME="/opt/jdk/jdk1.8.0_<version>"
 
-    > cd ~/sketchbook/songworks/_make
+    > sudo systemctl restart apache2
 
-7. export DISPLAY=:1
+9. cd to bash script directory
+
+    > cd /path/to/sonwork-app/_make
+
+10. export DISPLAY=:1
     (sets up a virtual display for processing output)
 
-6. run bash script
+11. run bash script
 
     > ./__make.sh
 
