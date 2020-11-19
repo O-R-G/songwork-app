@@ -44,10 +44,10 @@ cp _"$filename".wav ../data/"$filename".wav
 # move example.wav to media/audio/
 mv _"$filename".wav /var/www/html/media/audio/"$audiofilename".wav
 
-/opt/processing/processing-java --sketch=$PATH_TO/../spectrogram --run "$filename"
-ffmpeg -i $PATH_TO/../spectrogram/out/"$filename"-spectrogram.mp4 -filter:v "crop=360:360:0:280" $PATH_TO/../spectrogram/out/"$filename".mp4
+/opt/processing/processing-java --sketch="$PATH_TO"/../spectrogram --run "$filename"
+ffmpeg -i "$PATH_TO"/../spectrogram/out/"$filename"-spectrogram.mp4 -filter:v "crop=360:360:0:280" $PATH_TO/../spectrogram/out/"$filename".mp4
 # 280 = 960 / 1.5 - 360
-ffmpeg -i $PATH_TO/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss 6 /var/www/html/media/placeholder/"$filename".png
+ffmpeg -i "$PATH_TO"/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss 6 /var/www/html/media/placeholder/"$filename".png
 # move example.mp4 to media/
 mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/--"$filename".mp4
 

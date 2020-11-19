@@ -90,3 +90,12 @@ takes any number of .wav files in /_make/*.wav, converts to 16-bit, then runs pr
 
     > ./__make.sh
 
++ running java without $DISPLAY (if the DISPLAY-relevant error pops up)
+https://github.com/processing/processing/wiki/Running-without-a-Display
+(using option 2 of the tutorial above)
+
+1. sudo apt-get install xvfb libxrender1 libxtst6 libxi6
+
+2. sudo Xvfb :1 -screen 0 1024x768x24 </dev/null &
+
+3. export DISPLAY=":1"
