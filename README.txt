@@ -99,3 +99,23 @@ https://github.com/processing/processing/wiki/Running-without-a-Display
 2. sudo Xvfb :1 -screen 0 1024x768x24 </dev/null &
 
 3. export DISPLAY=":1"
+
+--
+
+upload queue workflow
+
+1. After a file is submitted, it will be moved to _make/ and __make.sh is called.
+
+2. __make.sh checks if there's a file named "__list.txt"* in make/.
+    true   ->  there's another file that is being processed now. exit.
+    false  ->  Go to 3.
+
+3. Run a while loop to check if there's audio file in make/ by the variable $audio_count.
+    true   ->  Go to 4.
+    false  ->  all the audio files are processed. rm __list.txt. exit.
+
+4. Create/edit __list.txt. Process the audio and move it out of make/. Update $audio_count. Bo back to 3.
+
+* __list.txt is for __make.sh to check if there's a process running when it is called. If __list.txt exists, that means there's already a process running thus __make.sh can leave it and exit. Else __make.sh will start a process and create a __list.txt. 
+
+--
