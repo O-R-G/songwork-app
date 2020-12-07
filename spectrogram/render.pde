@@ -89,7 +89,7 @@ int render_audio_fft_to_txt(String file_name, int buffer_size) {
         StringBuilder msg = new StringBuilder(nf(chunk_start_index/sample_rate, 0, 3).replace(',', '.'));
         if (j == total_chunks - 1) {
             // last time through loop, time stamp (value [0]) = audio_duration
-            audio_duration = int(float(msg.toString()) * 1000) / 4;
+            audio_duration = int(float(msg.toString()) * 1000);
             println(audio_duration + " duration");
         }
         for (int i = 0; i < bands; i++)

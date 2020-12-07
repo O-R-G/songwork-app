@@ -74,8 +74,8 @@ public void setup() {
     // FX2D is *much* faster but exits with nullpointer
     // as cannot seem to also kill the FX2D thread on exit
     // for now, use standard processing display
-    //size(360, 640);             // display_scale = 1.0 (720p @2x))
-    size(540, 960);
+    size(360, 640);             // display_scale = 1.0 (720p @2x))
+    // size(540, 960);
     // size(540, 960, FX2D);    // display_scale = 1.5 (1080p @2x)
     pixelDensity(1);
     background(0);
