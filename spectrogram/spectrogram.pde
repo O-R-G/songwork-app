@@ -41,7 +41,9 @@ int pointer;                // current index in verdicts[]
 int counter;                // draw loop
 float display_scale = 1.0;  // adjust to match size() [0.5,1.0,1.5]
 Boolean playing = false;
-String data_path = "/var/www/app/songwork-app/data/";
+// String data_path = "/var/www/app/songwork-app/data/";
+/* tmp */
+String data_path = "/Users/reinfurt/Library/Mobile Documents/com~apple~CloudDocs/Documents/Softwares/Processing/songwork-app/data/";
 String file_name = "in.wav";
 String sketch_name = "spectrogram";
 
@@ -58,7 +60,7 @@ int buffer_size = 1024;     // must be a power of 2 [512,1024,2048]
 int column;                 // current x position in spectrogram
 int freeze_time = 0;        // current_time when freeze started
 int video_fps = 30;
-int audio_duration;
+int audio_duration;         // if (render) then set in render.pde 
 Boolean snap_shots = true;  // show only timed stills, otherwise scrolling
 Boolean debug = false;      // display time debug
 Boolean mute = true;        // no sound
@@ -95,9 +97,7 @@ public void setup() {
         reader = createReader(data_path + file_name + ".txt");
         minim = new Minim(this);
         sample = minim.loadFile(data_path + file_name, buffer_size);
-        audio_duration = sample.length();
         println(data_path + file_name);
-        println(audio_duration);
         sample.close();
         minim.stop();
         String[] file_name_split = split(file_name, '.');
@@ -125,7 +125,6 @@ public void setup() {
 public void draw() {
 
     if (playing) {
-        update_spectrogram();
         if (render) {
             // movie will have 30 frames per second.
             // FFT analysis probably produces
@@ -146,23 +145,28 @@ public void draw() {
             // String data[] is local then these are independent 
             // pointers to current line in the file. 
 
-            if (current_time > fft_time) {
-                String data[] = read_audio_from_txt(bands, video);
-                fft_time = int(float(data[0]) * 1000);
-            }
-            current_time = int(videoExport.getCurrentTime()*1000);
-            // println(current_time + " : " + fft_time);
-            // println(current_time + " : " + audio_duration);
-            println(current_time + " : " + fft_time + " --> " + audio_duration);
-            // crashes with FX2D display lib
-            // but works if standard processing display lib
-            // if (current_time >= audio_duration) {
-            if (current_time >= audio_duration/2 - 100) {
+            // 12/7/2020
+            // update_spectrogram() only if next line ready in buffered reader
+            // previously was advancing the buffered reader line twice and so
+            // the length was off, now only calls only once
+
+            if (current_time >= audio_duration) {
                 println("End of audio, stopping video export.");
                 stop();
             }
-        } else 
+            if (current_time > fft_time) {
+                String data[] = read_audio_from_txt(bands, video);
+                fft_time = int(float(data[0]) * 1000);
+                update_spectrogram();
+            }
+            current_time = int(videoExport.getCurrentTime()*1000);
+            println(current_time + " : " + fft_time + " --> " + audio_duration);
+            // crashes with FX2D display lib
+            // but works if standard processing display lib
+        } else {
             current_time = millis() - millis_start;
+            update_spectrogram();
+        }
         freeze_fade();
         if (debug)
             show_current_time(width-100, 24);

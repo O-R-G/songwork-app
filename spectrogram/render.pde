@@ -81,12 +81,17 @@ int render_audio_fft_to_txt(String file_name, int buffer_size) {
     // manually sift through samples, one buffer at a time
     for (int j = 0; j < total_chunks; j++) {
         int chunk_start_index = j * fft_size;   
-        int chunk_size = min(samples.length - chunk_start_index, fft_size );
+        int chunk_size = min(samples.length - chunk_start_index, fft_size);
         System.arraycopy(samples, chunk_start_index, fft_samples, 0, chunk_size);      
         if (chunk_size < fft_size)
             java.util.Arrays.fill(fft_samples, chunk_size, fft_samples.length - 1, 0.0);
         fft.forward(fft_samples);
         StringBuilder msg = new StringBuilder(nf(chunk_start_index/sample_rate, 0, 3).replace(',', '.'));
+        if (j == total_chunks - 1) {
+            // last time through loop, time stamp (value [0]) = audio_duration
+            audio_duration = int(float(msg.toString()) * 1000) / 4;
+            println(audio_duration + " duration");
+        }
         for (int i = 0; i < bands; i++)
             msg.append(SEP + nf(fft.getBand(i), 0, 4).replace(',', '.'));
         output.println(msg.toString());
@@ -97,6 +102,7 @@ int render_audio_fft_to_txt(String file_name, int buffer_size) {
     output.close();
     println(bands + " bands");
     println("FFT done.");
+
     return bands;   
 }
 
