@@ -13,7 +13,7 @@
 if [ ! -f __list.txt ]
 then
     # convert audio to 16-bit wav
-    audio_count=`ls -1 *.wav *.mp3 *.aiff *.m4a 2>/dev/null | wc -l`
+    audio_count=`ls -1 0*.wav 0*.mp3 0*.aiff 0*.m4a 2>/dev/null | wc -l`
     while [ $audio_count != 0 ]
     do
         shopt -s nullglob
@@ -47,6 +47,10 @@ then
 
         # get absolute path
         PATH_TO=$(pwd)
+        # live site path
+        SITE_PATH="/var/www/html" 
+        # local site path
+        # SITE_PATH="/Library/WebServer/Documents/songwork.local"
         # run processing for *.wav
         # crop resulting mov
         # ? generate animated .gif ** todo **
@@ -56,22 +60,22 @@ then
 
         cp _"$filename".wav ../data/"$filename".wav
         # move example.wav to media/audio/
-        mv _"$filename".wav /var/www/html/media/audio/"$audiofilename".wav
+        mv _"$filename".wav "$SITE_PATH"/media/audio/"$audiofilename".wav
 
         /opt/processing/processing-java --sketch="$PATH_TO"/../spectrogram --run "$filename"
         ffmpeg -i "$PATH_TO"/../spectrogram/out/"$filename"-spectrogram.mp4 -filter:v "crop=360:360:0:280" $PATH_TO/../spectrogram/out/"$filename".mp4
         # 280 = 960 / 1.5 - 360
-        ffmpeg -i "$PATH_TO"/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss 6 /var/www/html/media/placeholder/"$filename".png
+        ffmpeg -i "$PATH_TO"/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss 6 "$SITE_PATH"/media/placeholder/"$filename".png
         # move example.mp4 to media/
-        mv $PATH_TO/../spectrogram/out/"$filename".mp4 /var/www/html/media/--"$filename".mp4
+        mv $PATH_TO/../spectrogram/out/"$filename".mp4 "$SITE_PATH"/media/--"$filename".mp4
         rm ../spectrogram/out/"$filename"-spectrogram.mp4
         # done
-        php /var/www/html/views/submit-finish.php
+        php "$SITE_PATH"/views/submit-finish.php
         # cleanup 
         rm ../data/"$filename".wav ../data/"$filename".wav.txt
         # get ready for another loop
         shopt -u nullglob
-        audio_count=`ls -1 *.wav *.mp3 *.aiff *.m4a 2>/dev/null | wc -l`
+        audio_count=`ls -1 0*.wav 0*.mp3 0*.aiff 0*.m4a 2>/dev/null | wc -l`
     done
     # open -a "/System/Applications/Quicktime Player.app" ../spectrogram/out/*.mp4
     rm __list.txt
