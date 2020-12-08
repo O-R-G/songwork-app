@@ -68,7 +68,10 @@ Boolean sync = false;       // start audio w/sync_sample()
 Boolean render = true;      // render audio to txt, read txt, output video
 Boolean video = true;       // export video when rendering
 
+Boolean isEnded = false;    // if the source is ended or not
+
 public void setup() {
+    file_name = args[0] + ".wav";
     // size(180, 320, FX2D);    // display_scale = 0.5 (360p @2x))
     // size(360, 640, FX2D);    // display_scale = 1.0 (720p @2x))
     // FX2D is *much* faster but exits with nullpointer
@@ -156,11 +159,28 @@ public void draw() {
             }
             if (current_time > fft_time) {
                 String data[] = read_audio_from_txt(bands, video);
-                fft_time = int(float(data[0]) * 1000);
-                update_spectrogram();
+                // fft_time = int(float(data[0]) * 1000);
+                // update_spectrogram();
+                if(data[0] == null){
+                    println("data[0] is null");
+                    isEnded = true;
+                }
+                else
+                {
+                    fft_time = int(float(data[0]) * 1000);
+                    update_spectrogram();
+                }
             }
-            current_time = int(videoExport.getCurrentTime()*1000);
-            println(current_time + " : " + fft_time + " --> " + audio_duration);
+            // current_time = int(videoExport.getCurrentTime()*1000);
+            // println(current_time + " : " + fft_time + " --> " + audio_duration);
+            if(!isEnded){
+                current_time = int(videoExport.getCurrentTime()*1000);
+                println(current_time + " : " + fft_time + " --> " + audio_duration);
+            }
+            else
+            {
+                println("source is ended. exiting draw()...");
+            }
             // crashes with FX2D display lib
             // but works if standard processing display lib
         } else {
