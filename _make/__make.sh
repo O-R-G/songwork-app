@@ -38,7 +38,7 @@ then
                 ffmpeg -i "$f" -acodec pcm_s16le -ar 16000 _"$f"
             fi
             
-            rm $f
+            rm "$f"
 
             # only deal with one audio file at a time 
             break
