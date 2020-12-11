@@ -187,18 +187,19 @@ public void draw() {
             current_time = millis() - millis_start;
             update_spectrogram();
         }
-        if(!isEnded)
+        if(!isEnded){
             freeze_fade();
-            
-        if (debug)
-            show_current_time(width-100, 24);
-        /*
-        if (pointer >= verdicts.length)
-            stop();
-        */
-        if (video)
-            videoExport.saveFrame();    // rm exit() in render.pde
-                                        // or leave as failsafe?
+
+            if (debug)
+                show_current_time(width-100, 24);
+            /*
+            if (pointer >= verdicts.length)
+                stop();
+            */
+            if (video)
+                videoExport.saveFrame();    // rm exit() in render.pde
+                                            // or leave as failsafe?
+        }
     }
     counter++;
 }
