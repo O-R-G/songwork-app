@@ -187,8 +187,9 @@ public void draw() {
             current_time = millis() - millis_start;
             update_spectrogram();
         }
-        if(!isEnded){
+        if(!isEnded)
             freeze_fade();
+            
         if (debug)
             show_current_time(width-100, 24);
         /*
