@@ -331,12 +331,19 @@ Boolean update_spectrogram() {
         // first value (row) is always the time for that spectrum
         // following values (rows) are frequency bands in spectrum
         // therfore row starts at 1
-        for (int row = 1; row < rows; row++) {
-            band = float(data[bands_index]);
-            sgram[row][column] = (int)Math.round(Math.max(0,2*20*Math.log10(1000*band)));
-            bands_index_as_row = int(map(bands_index, 0, bands, 1, rows));
-            if (row == bands_index_as_row)
-                bands_index++;
+        if(data[0] == null){
+            isEnded = true;
+            return false;
+        }
+        else
+        {
+            for (int row = 1; row < rows; row++) {
+                band = float(data[bands_index]);
+                sgram[row][column] = (int)Math.round(Math.max(0,2*20*Math.log10(1000*band)));
+                bands_index_as_row = int(map(bands_index, 0, bands, 1, rows));
+                if (row == bands_index_as_row)
+                    bands_index++;
+            }
         }
     } else {
         fft.forward(sample.mix);
