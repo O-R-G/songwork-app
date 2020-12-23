@@ -56,16 +56,25 @@ then
         # ? generate animated .gif ** todo **
         echo "Processing ******** '_$f'"
 
-        audiofilename=$1
+        # audiofilename=$1
 
         cp _"$filename".wav ../data/"$filename".wav
+        # get audio duration before moving it
+        audio_duration=$(ffmpeg -i _"$filename".wav 2>&1 | grep "Duration"| cut -d ' ' -f 4 | sed s/,// | sed 's@\..*@@g' | awk '{ split($1, A, ":"); split(A[3], B, "."); print 3600*A[1] + 60*A[2] + B[1] }')
         # move example.wav to media/audio/
-        mv _"$filename".wav "$SITE_PATH"/media/audio/"$audiofilename".wav
+        mv _"$filename".wav "$SITE_PATH"/media/audio/"$filename".wav
 
         /opt/processing/processing-java --sketch="$PATH_TO"/../spectrogram --run "$filename"
         ffmpeg -i "$PATH_TO"/../spectrogram/out/"$filename"-spectrogram.mp4 -filter:v "crop=360:360:0:280" $PATH_TO/../spectrogram/out/"$filename".mp4
         # 280 = 960 / 1.5 - 360
-        ffmpeg -i "$PATH_TO"/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss 6 "$SITE_PATH"/media/placeholder/"$filename".png
+
+        if [ "$audio_duration" -gt 12 ]
+        then
+            thumbnail_clip=12
+        else
+            thumbnail_clip="$audio_duration"
+        fi
+        ffmpeg -i "$PATH_TO"/../spectrogram/out/"$filename".mp4 -vframes 1 -an -s 360x360 -ss "$thumbnail_clip" "$SITE_PATH"/media/placeholder/"$filename".png
         # move example.mp4 to media/
         mv $PATH_TO/../spectrogram/out/"$filename".mp4 "$SITE_PATH"/media/--"$filename".mp4
         rm ../spectrogram/out/"$filename"-spectrogram.mp4
