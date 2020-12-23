@@ -13,11 +13,11 @@
 if [ ! -f __list.txt ]
 then
     # convert audio to 16-bit wav
-    audio_count=`ls -1 0*.wav 0*.mp3 0*.aiff 0*.m4a 2>/dev/null | wc -l`
+    audio_count=`ls -1 0* 2>/dev/null | wc -l`
     while [ $audio_count != 0 ]
     do
         shopt -s nullglob
-        for f in 0*.wav 0*.mp3 0*.aiff 0*.m4a
+        for f in 0*
         do
             echo "$f" >> __list.txt
             echo "$f"
@@ -75,7 +75,7 @@ then
         rm ../data/"$filename".wav ../data/"$filename".wav.txt
         # get ready for another loop
         shopt -u nullglob
-        audio_count=`ls -1 0*.wav 0*.mp3 0*.aiff 0*.m4a 2>/dev/null | wc -l`
+        audio_count=`ls -1 0* 2>/dev/null | wc -l`
     done
     # open -a "/System/Applications/Quicktime Player.app" ../spectrogram/out/*.mp4
     rm __list.txt
