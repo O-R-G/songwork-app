@@ -14,7 +14,7 @@ then
 	    echo "[O] __make.sh is running and __list.txt exists."
 	else 
 		echo "[error] __make.sh is running but __list.txt doesnt exist."
-		cd "$MAKE_FILE"
+		cd "$_MAKE_LOCATION"
 		echo "        Killing process $SERVICE_PID ..."
 		kill -9 "$SERVICE_PID"
 		echo "        Removing .mp4 in spectrogram/out/ ..."
@@ -30,7 +30,7 @@ else
     if test -f "$LIST_FILE"
 	then
 	    echo "[error] __make.sh is not running but __list.txt exists."
-	    cd "$MAKE_FILE"
+	    cd "$_MAKE_LOCATION"
 	    echo "        Removing __list.txt ..."
 	    rm -rf "$LIST_FILE"
 	    echo "        Removing .mp4 in spectrogram/out/ ..."
