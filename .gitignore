@@ -6,4 +6,4 @@ data/*.txt
 data/in.wav
 spectrogram/*.txt
 _make/debug.log
-maintenance/maintenance.log
+_make/maintenance.log
