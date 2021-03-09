@@ -8,7 +8,7 @@
 
 
 
-
+pwd
 
 if [ ! -f __list.txt ]
 then
