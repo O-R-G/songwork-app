@@ -20,7 +20,7 @@ then
 	    rm -rf /var/www/app/songwork-app/data/*wav*
 	    echo "        Executing __make.sh again ..."
 	    cd "$_MAKE_LOCATION"
-	    bash "$MAKE_FILE"
+	    bash "$MAKE_FILE" 1>>debug.log 2>&1 &
 	    # cd "$MAINTENANCE_LOCATION"
 	fi
 else
@@ -35,7 +35,7 @@ else
 	    rm -rf /var/www/app/songwork-app/data/*wav*
 	    echo "        Executing __make.sh again ..."
 	    cd "$_MAKE_LOCATION"
-	    bash "$MAKE_FILE"
+	    bash "$MAKE_FILE" 1>>debug.log 2>&1 &
 	    # cd "$MAINTENANCE_LOCATION"
 	else 
 		echo "[O] __make.sh is not running and __list.txt doesnt exist."
