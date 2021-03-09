@@ -21,7 +21,7 @@ then
 	    echo "        Executing __make.sh again ..."
 	    cd "$_MAKE_LOCATION"
 	    bash "$MAKE_FILE"
-	    cd "$MAINTENANCE_LOCATION"
+	    # cd "$MAINTENANCE_LOCATION"
 	fi
 else
     if test -f "$LIST_FILE"
@@ -36,7 +36,7 @@ else
 	    echo "        Executing __make.sh again ..."
 	    cd "$_MAKE_LOCATION"
 	    bash "$MAKE_FILE"
-	    cd "$MAINTENANCE_LOCATION"
+	    # cd "$MAINTENANCE_LOCATION"
 	else 
 		echo "[O] __make.sh is not running and __list.txt doesnt exist."
 	fi
