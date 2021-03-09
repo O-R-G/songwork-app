@@ -4,7 +4,7 @@ LIST_FILE="/var/www/app/songwork-app/_make/__list.txt"
 MAKE_FILE="/var/www/app/songwork-app/_make/__make.sh"
 MAINTENANCE_LOCATION=$(pwd)
 _MAKE_LOCATION="/var/www/app/songwork-app/_make"
-
+date
 if pgrep -x "$SERVICE" >/dev/null
 then
     if test -f "$LIST_FILE"
