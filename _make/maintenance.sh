@@ -6,6 +6,7 @@ MAINTENANCE_LOCATION=$(pwd)
 _MAKE_LOCATION="/var/www/app/songwork-app/_make"
 echo "\n"
 echo "[maintenace starts] "
+date
 pwd
 
 if pgrep -x "$SERVICE" >/dev/null
