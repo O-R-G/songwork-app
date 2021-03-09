@@ -38,8 +38,6 @@ then
             else
                 ffmpeg -i "$f" -acodec pcm_s16le -ar 16000 _"$f"
             fi
-            
-            rm "$f"
 
             # only deal with one audio file at a time 
             break
@@ -83,6 +81,7 @@ then
         php "$SITE_PATH"/views/submit-finish.php
         # cleanup 
         rm ../data/"$filename".wav ../data/"$filename".wav.txt
+        rm "$filename"."$extension"
         # get ready for another loop
         shopt -u nullglob
         audio_count=`ls -1 0* 2>/dev/null | wc -l`
