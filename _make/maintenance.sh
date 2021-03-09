@@ -21,8 +21,8 @@ then
 		echo "        Removing *wav* in data/ ..."
 	    rm -rf /var/www/app/songwork-app/data/*wav*
 	    echo "        Executing __make.sh again ..."
-	    cd "$_MAKE_LOCATION"
-	    bash "$MAKE_FILE" 1>>debug.log 2>&1 &
+	    #cd "$_MAKE_LOCATION"
+	    ./__make.sh 1>>debug.log 2>&1 &
 	    # cd "$MAINTENANCE_LOCATION"
 	fi
 else
@@ -36,8 +36,8 @@ else
 		echo "        Removing *wav* in data/ ..."
 	    rm -rf /var/www/app/songwork-app/data/*wav*
 	    echo "        Executing __make.sh again ..."
-	    cd "$_MAKE_LOCATION"
-	    bash "$MAKE_FILE" 1>>debug.log 2>&1 &
+	    #cd "$_MAKE_LOCATION"
+	    ./__make.sh "$MAKE_FILE" 1>>debug.log 2>&1 &
 	    # cd "$MAINTENANCE_LOCATION"
 	else 
 		echo "[O] __make.sh is not running and __list.txt doesnt exist."
