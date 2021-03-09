@@ -2,6 +2,8 @@ SERVICE="__make.sh"
 SERVICE_PID=$(pgrep -x "$SERVICE")
 LIST_FILE="/var/www/app/songwork-app/_make/__list.txt"
 MAKE_FILE="/var/www/app/songwork-app/_make/__make.sh"
+MAINTENANCE_LOCATION=$(pwd)
+_MAKE_LOCATION="/var/www/app/songwork-app/_make"
 
 if pgrep -x "$SERVICE" >/dev/null
 then
@@ -17,7 +19,9 @@ then
 		echo "        Removing *wav* in data/ ..."
 	    rm -rf /var/www/app/songwork-app/data/*wav*
 	    echo "        Executing __make.sh again ..."
+	    cd "$_MAKE_LOCATION"
 	    bash "$MAKE_FILE"
+	    cd "$MAINTENANCE_LOCATION"
 	fi
 else
     if test -f "$LIST_FILE"
@@ -30,7 +34,9 @@ else
 		echo "        Removing *wav* in data/ ..."
 	    rm -rf /var/www/app/songwork-app/data/*wav*
 	    echo "        Executing __make.sh again ..."
+	    cd "$_MAKE_LOCATION"
 	    bash "$MAKE_FILE"
+	    cd "$MAINTENANCE_LOCATION"
 	else 
 		echo "[O] __make.sh is not running and __list.txt doesnt exist."
 	fi
