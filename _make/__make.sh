@@ -14,6 +14,7 @@ if [ ! -f __list.txt ]
 then
     # convert audio to 16-bit wav
     audio_count=`ls -1 0* 2>/dev/null | wc -l`
+    echo "audio_count = $audio_count"
     while [ $audio_count != 0 ]
     do
         shopt -s nullglob
