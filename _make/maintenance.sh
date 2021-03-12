@@ -28,8 +28,8 @@ then
 	    echo "        Executing __make.sh again ..."
 	    #cd "$_MAKE_LOCATION"
 	    # bash "$MAKE_FILE" 1>>debug.log 2>&1 &
-	    # runuser -l www-data -c './__make.sh 1>>debug.log 2>&1 &'
-	    php submit-response.php
+	    runuser -l reinfurt -c './__make.sh 1>>debug.log 2>&1 &'
+	    # php submit-response.php
 	fi
 else
     if test -f "$LIST_FILE"
@@ -46,8 +46,8 @@ else
 	    #cd "$_MAKE_LOCATION"
 	    # bash "$MAKE_FILE" 1>>debug.log 2>&1 &
 	    # bash ./__make.sh 1>>debug.log 2>&1 &
-	    # runuser -l www-data -c './__make.sh 1>>debug.log 2>&1 &'
-	    php submit-response.php
+	    runuser -l reinfurt -c './__make.sh 1>>debug.log 2>&1 &'
+	    # php submit-response.php
 	else 
 		echo "[O] __make.sh is not running and __list.txt doesnt exist."
 	fi
