@@ -8,6 +8,7 @@ echo "\n"
 echo "[maintenace starts] "
 date
 pwd
+cd /home/reinfurt
 
 if pgrep -x "$SERVICE" >/dev/null
 then
