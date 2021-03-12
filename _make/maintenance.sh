@@ -27,8 +27,7 @@ then
 	    echo "        Executing __make.sh again ..."
 	    #cd "$_MAKE_LOCATION"
 	    # bash "$MAKE_FILE" 1>>debug.log 2>&1 &
-	    bash ./__make.sh 1>>debug.log 2>&1 &
-	    # cd "$MAINTENANCE_LOCATION"
+	    runuser -l www-data -c './__make.sh 1>>debug.log 2>&1 &'
 	fi
 else
     if test -f "$LIST_FILE"
@@ -44,8 +43,8 @@ else
 	    echo "        Executing __make.sh again ..."
 	    #cd "$_MAKE_LOCATION"
 	    # bash "$MAKE_FILE" 1>>debug.log 2>&1 &
-	    bash ./__make.sh 1>>debug.log 2>&1 &
-	    # cd "$MAINTENANCE_LOCATION"
+	    # bash ./__make.sh 1>>debug.log 2>&1 &
+	    runuser -l www-data -c './__make.sh 1>>debug.log 2>&1 &'
 	else 
 		echo "[O] __make.sh is not running and __list.txt doesnt exist."
 	fi

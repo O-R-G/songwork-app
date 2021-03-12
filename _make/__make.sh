@@ -7,7 +7,8 @@
 # /var/www/app/songworks
 
 
-
+echo "Who Am I?"
+whoami
 pwd
 
 if [ ! -f __list.txt ]
