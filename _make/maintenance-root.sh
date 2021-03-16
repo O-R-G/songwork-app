@@ -53,4 +53,5 @@ then
 else
 	echo "TRUE" >> "$ISNORMAL_FILE"
 fi
+chmod 777 "$ISNORMAL_FILE"
 
