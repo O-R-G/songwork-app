@@ -9,8 +9,7 @@ whoami
 date
 cd "$_MAKE_LOCATION"
 
-ISNORMAL=$(<"$ISNORMAL_FILE")
-echo "$ISNORMAL"
+ISNORMAL=`cat "$ISNORMAL_FILE"`
 
 if [ "$ISNORMAL" = "FALSE" ] 
 then
