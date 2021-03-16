@@ -10,7 +10,7 @@ date
 cd "$_MAKE_LOCATION"
 
 ISNORMAL=$(<"$ISNORMAL_FILE")
-echo "$ISNORMAL";\
+echo "$ISNORMAL"
 
 if [ "$ISNORMAL" = "FALSE" ] 
 then
