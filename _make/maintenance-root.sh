@@ -18,6 +18,7 @@ then
 	then
 	    echo "[O] __make.sh is running and __list.txt exists."
 	else 
+		# __make.sh is running but __list.txt doesnt exist
 		ISNORMAL="FALSE"
 		echo "[error] __make.sh is running but __list.txt doesnt exist."
 		echo "        Killing process $SERVICE_PID ..."
@@ -26,41 +27,30 @@ then
 		rm -rf /var/www/app/songwork-app/spectrogram/out/*.mp4
 		echo "        Removing *wav* in data/ ..."
 	    rm -rf /var/www/app/songwork-app/data/*wav*
-	    # echo "        Executing __make.sh again ..."
-	    #cd "$_MAKE_LOCATION"
-	    # bash "$MAKE_FILE" 1>>debug.log 2>&1 &
-	    # runuser -l reinfurt -c './__make.sh 1>>debug.log 2>&1 &'
-	    # php submit-response.php
 	fi
 else
     if test -f "$LIST_FILE"
 	then
+		# __make.sh is not running but __list.txt exists
 		ISNORMAL="FALSE"
 	    echo "[error] __make.sh is not running but __list.txt exists."
-	    # cd "$_MAKE_LOCATION"
 	    echo "        Removing __list.txt ..."
 	    rm -rf "$LIST_FILE"
 	    echo "        Removing .mp4 in spectrogram/out/ ..."
 		rm -rf /var/www/app/songwork-app/spectrogram/out/*.mp4
 		echo "        Removing *wav* in data/ ..."
 	    rm -rf /var/www/app/songwork-app/data/*wav*
-	    # echo "        Executing __make.sh again ..."
-	    #cd "$_MAKE_LOCATION"
-	    # bash "$MAKE_FILE" 1>>debug.log 2>&1 &
-	    # bash ./__make.sh 1>>debug.log 2>&1 &
-	    # runuser -l reinfurt -c './__make.sh 1>>debug.log 2>&1 &'
-	    # php submit-response.php
 	else 
 		echo "[O] __make.sh is not running and __list.txt doesnt exist."
 	fi
 fi
 
+# write isNormal.txt depending on $ISNORMAL
 rm -rf "$ISNORMAL_FILE"
 if [ "$ISNORMAL" = "FALSE" ]
 then
 	echo "FALSE" >> "$ISNORMAL_FILE"
 else
-	rm -rf "$ISNORMAL_FILE"
 	echo "TRUE" >> "$ISNORMAL_FILE"
 fi
 

@@ -15,8 +15,6 @@ echo "$ISNORMAL";\
 if [ "$ISNORMAL" = "FALSE" ] 
 then
 	echo "        Executing __make.sh again ..."
-    # cd "$_MAKE_LOCATION"
-    # bash "$MAKE_FILE" 1>>debug.log 2>&1 &
     ./__make.sh 1>>debug.log 2>&1 &
 else
 	echo "        Everything is good"
