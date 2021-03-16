@@ -54,4 +54,5 @@ else
 	echo "TRUE" >> "$ISNORMAL_FILE"
 fi
 chmod 777 "$ISNORMAL_FILE"
+chown -R www-data:www-data "$ISNORMAL_FILE"
 
